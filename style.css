@@ -2,3 +2,24 @@
 Theme Name: SeniorTalents
 Author: Philipp Edlinger
 */
+
+html {
+    margin-top: 0%;
+}
+
+body{
+    margin: 0%;
+}
+
+p{
+    margin: 0px;
+}
+
+.header-container{
+    background-color: chartreuse;
+    height: 100px;
+    will-change: 100px;
+    color: blueviolet;
+    width: auto;
+}
+
