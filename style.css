@@ -28,18 +28,21 @@ p{
     width: 5%;
     border-left: 1px solid black;
     border-right: 1px solid black;
+    margin-left: 45%;
 }
 
 .login-button{
     height: 100%;
-    width: 5%;
+    width: 7%;
     border-left: 1px solid black;
     border-right: 1px solid black;
+    margin-left: 30%;
 }
 
 .register-button{
     height: 100%;
-    width: 5%;
+    width: 7%;
     border-left: 1px solid black;
     border-right: 1px solid black;
+    margin-left: 2%;
 }
