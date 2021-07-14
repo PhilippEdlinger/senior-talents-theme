@@ -16,10 +16,21 @@ p{
 }
 
 .header-container{
-    background-color: chartreuse;
-    height: 100px;
+    border-bottom: 1px solid black;
+    height: 6%;
     will-change: 100px;
-    color: blueviolet;
     width: auto;
+    display: inline-block;
+}
+
+.header-image{
+    height: 100%;
+    width: 5%;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+}
+
+.login-button{
+    
 }
 
