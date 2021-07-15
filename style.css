@@ -15,6 +15,8 @@ p{
     margin: 0px;
 }
 
+/* header  */
+
 .header-container{
     border-bottom: 1px solid black;
     height: 6%;
@@ -29,6 +31,7 @@ p{
     border-left: 1px solid black;
     border-right: 1px solid black;
     margin-left: 45%;
+    background-color: blueviolet;
 }
 
 .login-button{
@@ -46,3 +49,16 @@ p{
     border-right: 1px solid black;
     margin-left: 2%;
 }
+
+/* index */
+
+
+.content-container{
+    height: 80%;
+    width: 98%;
+    border: 1px solid black;
+    margin: auto;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
