@@ -6,7 +6,7 @@ get_header();
 
 
 
-<div id="main-content">
+<div id="main_content">
     <div class="content-container">
         
     </div>
