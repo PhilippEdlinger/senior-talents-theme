@@ -4,5 +4,6 @@ window.addEventListener('load', function () {
 })
 
 function load_page(){
-  console.log("test");
+
+
 }
