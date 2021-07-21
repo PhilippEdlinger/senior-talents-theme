@@ -1,2 +1,5 @@
 <?php /* Template Name: Login Page */ ?>
-<p> test <p>
+
+<div id="login-form">
+    
+</div>
