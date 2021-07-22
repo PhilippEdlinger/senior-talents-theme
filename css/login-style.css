@@ -3,6 +3,7 @@
 .login-form{
     border: 1px solid black;
     margin: auto;
-    height: 50vh;
-    width: 50vw;
+    margin-top: 25vh ;
+    height: 30vh;
+    width: 30vw;
 }
