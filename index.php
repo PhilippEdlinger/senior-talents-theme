@@ -4,8 +4,6 @@ get_header();
 
 ?>
 
-
-
 <div id="main_content">
     <div class="content-container">
         
