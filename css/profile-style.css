@@ -1,0 +1,12 @@
+#profile-container{
+    border: 1px solid black;
+    height: 90vh;
+    width: 70vw;
+    margin: auto;
+}
+.profile-subcontainer{
+    height: 50%;
+    width: 100%;
+    border: 1px solid black;
+    display: flex;
+}

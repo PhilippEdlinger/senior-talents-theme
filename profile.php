@@ -5,7 +5,12 @@
 </head>
 
 <body>
-    <div id="profile-container">
-
+     <div id="profile-container">
+        <div class="profile-subcontainer">
+            <div id="profile-picture"></div>
+        </div>
+        <div class="profile-subcontainer">
+            
+        </div>
     </div>
 </body>
