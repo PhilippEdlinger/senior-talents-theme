@@ -8,9 +8,11 @@
      <div id="profile-container">
         <div class="profile-subcontainer">
             <div id="profile-picture"></div>
+            <div id="profile-data"></div> 
         </div>
-        <div class="profile-subcontainer">
-            
+        <div class="profile-subcontainer subcontainer2">
+            <div id="profile-description"></div>
+            <div id="profile-files"></div>
         </div>
     </div>
 </body>
