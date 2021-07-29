@@ -7,6 +7,8 @@
 
 <body>
     <div id="admin-maincontent">
-        <div id="admin-taskbar"></div>    
+        <div id="admin-taskbar"></div>
+        <div class="admin-info-buttons" id="admin-user-info"></div>
+        <div class="admin-info-buttons" id="admin-company-info"></div>          
     <div>     
 </body>

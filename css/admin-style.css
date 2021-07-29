@@ -1,5 +1,5 @@
 
-#admin-content{
+#admin-maincontent{
     display: flex;
 }
 
@@ -8,4 +8,10 @@
    height: 70vh;
    width: 10vw;
    margin-left: 0.5%;
+}
+
+.admin-info-buttons{
+    border: 1px solid black;
+    height: 70vh;
+    width: 30vw;
 }
