@@ -1,0 +1,11 @@
+
+#admin-content{
+    display: flex;
+}
+
+#admin-taskbar{
+   border: 1px solid black;
+   height: 70vh;
+   width: 10vw;
+   margin-left: 0.5%;
+}
