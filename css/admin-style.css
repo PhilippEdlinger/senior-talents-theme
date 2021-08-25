@@ -10,8 +10,16 @@
    margin-left: 0.5%;
 }
 
+
+#admin-option-container{
+    display: flex;
+    margin-left: 10vw;
+    height: 70vh;
+    width: 80vw; 
+}
+
 .admin-info-buttons{
     border: 1px solid black;
-    height: 70vh;
-    width: 30vw;
+    height: 100%;
+    width: 30%;    
 }
