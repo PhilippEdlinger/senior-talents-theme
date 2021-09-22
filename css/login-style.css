@@ -11,7 +11,6 @@ body{
 }
 
 .login-form-section{
-    border: 1px solid black;
     width: 70%;
     height: 25%;  
     margin-top: 2.5%;
@@ -23,12 +22,14 @@ body{
     height: 100%;
     width: 100%;
     font-size: 25px;
+    text-align: center;
 }
 
 #login-form-input-password{
     height: 100%;
     width: 100%;
     font-size: 25px;
+    text-align: center;
 }
 
 #login-button{
