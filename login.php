@@ -15,4 +15,9 @@
     </div>
     <button id="login-button">Login</button>
 </div>
+<?php 
+    $response = wp_remote_get( 'http://localhost:8080/senior?email=bertl&password=UwU');
+    $body     = wp_remote_retrieve_body($response);
+    echo $body;
+?>
 </body>
