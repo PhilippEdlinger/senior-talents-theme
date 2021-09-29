@@ -1,0 +1,81 @@
+#signup_c-form{
+    height: 60vh;
+    width: 40vw;
+    border: 1px solid black; 
+    margin: auto;
+    margin-top: 25vh;
+ }
+ 
+ .signup_c-form-section{
+    width: 95%;
+    height: 15%;  
+    margin-top: 2.5%;
+    margin: auto;
+    margin-top: 5%;
+    display: flex;
+ }
+ 
+ #signup_c-form-firstname{
+    height: 100%;
+    width: 45%;
+    margin: auto;
+    font-size: 25px;
+    text-align: center;
+ }
+ 
+ #signup_c-form-lastname{
+    height: 100%;
+    width: 45%;
+    margin: auto;
+    font-size: 25px;
+    text-align: center;
+ }
+ 
+#signup_c-companyname{
+    height: 100%;
+    width: 95%;
+    margin: auto;
+    font-size: 25px;
+    text-align: center;
+}
+
+ #signup_c-form-email{
+    height: 100%;
+    width: 95%;
+    margin: auto;
+    font-size: 25px;
+    text-align: center;
+ }
+ 
+ #signup_c-form-password{
+    height: 100%;
+    width: 45%;
+    margin: auto;
+    font-size: 25px;
+    text-align: center;
+ }
+ 
+ #signup_c-form-password2{
+    height: 100%;
+    width: 45%;
+    margin: auto;
+    font-size: 25px;
+    text-align: center;
+ }
+ 
+ #signup_c-button{
+    height: 10%;
+    width: 25%;
+    font-size: 20px;
+    position: relative;
+    top: 0%;
+    left: 72%;
+ }
+ 
+ #signup_c-text{
+    font-size: 17px;
+    position: relative;
+    top: 0;
+    left: 5%;
+ 
+ }
