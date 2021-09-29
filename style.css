@@ -17,6 +17,19 @@ p{
 
 /* header  */
 
+
+
+/* index */
+
+.content-container{
+    height: 80%;
+    width: 100%;
+    border: 1px solid black;
+    margin: auto;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
 .header-container{
     border-bottom: 1px solid black;
     height: 6%;
@@ -40,6 +53,14 @@ p{
     border-left: 1px solid black;
     border-right: 1px solid black;
     margin-left: 30%;
+    text-align: center;
+}
+
+.login-button-text{
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .register-button{
@@ -48,17 +69,14 @@ p{
     border-left: 1px solid black;
     border-right: 1px solid black;
     margin-left: 2%;
+    text-align: center;      
 }
 
-/* index */
-
-.content-container{
-    height: 80%;
-    width: 98%;
-    border: 1px solid black;
-    margin: auto;
-    margin-top: 2%;
-    margin-bottom: 2%;
+.register-button-text{
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 

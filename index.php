@@ -3,6 +3,16 @@
 get_header();
 
 ?>
+<div class="header-container">
+    <div class="header-image"></div>
+    <div class="login-button">
+        <p class="login-button-text">Anmelden</p>
+    </div>
+    <div class="register-button">
+        <p class="register-button-text">Registrieren</p>
+    </div>
+</div>
+
 
 <div id="main_content">
     <div class="content-container">
