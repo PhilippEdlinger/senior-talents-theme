@@ -15,7 +15,7 @@ get_header();
 
 
 <div id="main_content">
-    <div class="content-container">
+    <div id="container_1" class="content-container">
         
     </div>
     <div class="content-container">

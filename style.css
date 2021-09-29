@@ -24,10 +24,27 @@ p{
 .content-container{
     height: 80%;
     width: 100%;
-    border: 1px solid black;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black; 
     margin: auto;
-    margin-top: 2%;
-    margin-bottom: 2%;
+}
+
+#container_1{
+    background-image: url(img/001.png);
+    /*
+    min-height: 600px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    */
+    background-attachment: fixed;
+}
+
+
+#container_2{
+    background-image: url(img/001.png);
+    
 }
 
 .header-container{
