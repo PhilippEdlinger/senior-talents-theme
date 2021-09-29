@@ -1,5 +1,3 @@
-console.log("TEst");
-
 window.addEventListener('load', function () {
     let loginButton = document.getElementById("login-button");
     loginButton.addEventListener("click", load_profile_page);
