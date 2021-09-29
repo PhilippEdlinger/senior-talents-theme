@@ -1,0 +1,65 @@
+#signup-form{
+   height: 60vh;
+   width: 40vw;
+   border: 1px solid black; 
+   margin: auto;
+   margin-top: 25vh;
+}
+
+.signup-form-section{
+   width: 95%;
+   height: 15%;  
+   margin-top: 2.5%;
+   margin: auto;
+   margin-top: 5%;
+   display: flex;
+}
+
+#signup-form-firstname{
+   height: 100%;
+   width: 45%;
+   margin: auto;
+   font-size: 25px;
+   text-align: center;
+}
+
+#signup-form-lastname{
+   height: 100%;
+   width: 45%;
+   margin: auto;
+   font-size: 25px;
+   text-align: center;
+}
+
+#signup-form-email{
+   height: 100%;
+   width: 95%;
+   margin: auto;
+   font-size: 25px;
+   text-align: center;
+}
+
+#signup-form-password{
+   height: 100%;
+   width: 45%;
+   margin: auto;
+   font-size: 25px;
+   text-align: center;
+}
+
+#signup-form-password2{
+   height: 100%;
+   width: 45%;
+   margin: auto;
+   font-size: 25px;
+   text-align: center;
+}
+
+#signup-button{
+   height: 10%;
+   width: 25%;
+   font-size: 20px;
+   position: relative;
+   top: 5%;
+   left: 72%;
+}

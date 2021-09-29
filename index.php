@@ -4,9 +4,7 @@ get_header();
 
 ?>
 
-
-
-<div id="main-content">
+<div id="main_content">
     <div class="content-container">
         
     </div>
@@ -18,3 +16,6 @@ get_header();
     </div>
 </div>
 
+<?php
+get_footer();
+?>

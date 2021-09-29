@@ -1,0 +1,43 @@
+body{
+    margin:0px;
+}
+
+.login-form{
+    border: 1px solid black;
+    margin: auto;
+    margin-top: 35vh ;
+    height: 30vh;
+    width: 30vw;
+}
+
+.login-form-section{
+    width: 70%;
+    height: 25%;  
+    margin-top: 2.5%;
+    margin: auto;
+    margin-top: 5%;
+}
+
+#login-form-input-email{
+    height: 100%;
+    width: 100%;
+    font-size: 25px;
+    text-align: center;
+}
+
+#login-form-input-password{
+    height: 100%;
+    width: 100%;
+    font-size: 25px;
+    text-align: center;
+}
+
+#login-button{
+    height: 17%;
+    width: 25%;
+    border: 1px solid black;
+    position: relative;
+    left: 65%;
+    top: 5%;
+    font-size: 20px;
+}

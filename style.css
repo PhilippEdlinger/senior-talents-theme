@@ -52,7 +52,6 @@ p{
 
 /* index */
 
-
 .content-container{
     height: 80%;
     width: 98%;
@@ -62,3 +61,10 @@ p{
     margin-bottom: 2%;
 }
 
+
+/* footer */
+#footer-container{
+    height: 10%;
+    width: 100%;
+    border-top: 1px solid black;
+}
