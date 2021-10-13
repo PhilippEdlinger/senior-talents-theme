@@ -2,6 +2,7 @@
 
 <head>
     <link rel="stylesheet" href="<?php echo get_template_directory_uri() . '/css/login-style.css'?>">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script src="<?php echo get_template_directory_uri() . '/js/login.js'?>"></script>
 </head>
 
