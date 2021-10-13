@@ -7,43 +7,25 @@
     </head>
 
 <body>
-    
-    <table border="2" >
-    <tr>
-        <td> Name </td>
-        <td> Age </td> 
-    </tr> 
-    
     <?php
-    
-        include "dbConnection.php"; 
-        echo $body;
-       $records = mysqli_query($db,"select * from Test"); 
-        while($data = mysqli_fetch_array($records)){
-    
+    include "dbConnection.php"; 
+    $seniorList = json_decode($body);
+        $html = '<table border=2>';
+        $html .= '<tr>';
+        foreach($seniorList[0] as $key=>$value){
+                $html .= '<th>' . htmlspecialchars($key) . '</th>';
+            }
+        $html .= '</tr>';
+        foreach( $seniorList as $key=>$value){
+            $html .= '<tr>';
+            foreach($value as $key2=>$value2){
+                $html .= '<td>' . htmlspecialchars($value2) . '</td>';
+            }
+            $html .= '</tr>';
+        }
+        $html .= '</table>';
+    echo $html;
     ?>        
-    
-    <tr>
-        <td><?php echo $data['Name']; ?></td>
-        <td><?php echo $data['Age']; ?></td>
-    </tr>	
-
-    <?php
-    }
-    ?>
-       
-    </table>
-
-
-    <!-- 
-    <div id="admin-maincontent">
-        <div id="admin-taskbar"></div>
-        <div id="admin-option-container">
-            <div class="admin-info-buttons admin-user-info" ></div>
-            <div class="admin-info-buttons" id="admin-company-info"></div>          
-        </div> 
-        <div>
-    -->     
 </body>
 
 

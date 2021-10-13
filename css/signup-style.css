@@ -60,6 +60,14 @@
    width: 25%;
    font-size: 20px;
    position: relative;
-   top: 5%;
+   top: 0%;
    left: 72%;
+}
+
+#signup_c-text{
+   font-size: 17px;
+   position: relative;
+   top: 0;
+   left: 5%;
+
 }

@@ -17,6 +17,9 @@
             <input id="signup-form-password" type="password" placeholder="Password"></input>
             <input id="signup-form-password2" type="password" placeholder="Password Erneut"></input>
         </div>
+        <p id="signup_c-text"> Sind Sie ein Unternehmen? Hier 
+            <a href="http://localhost/wordpress/wordpress/index.php/signup_company/" id="signup_c-link">Registrieren</a>!
+        </p>
         <button id="signup-button"> Registrieren </button>
     </div>
 </body>
