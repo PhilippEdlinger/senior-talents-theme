@@ -9,7 +9,6 @@
 <body>
 
 <form action="<?php echo home_url( '/' ) . "index.php/dbConnection" ; ?>" method="post" class="login-form">
-    <!--
     <div class="login-form-section">
             <input placeholder="Email" name="login-form-input-email" id="login-form-input-email" type="text"></input>
     </div>
@@ -17,25 +16,7 @@
             <input placeholder="Password" name="login-form-input-password" id="login-form-input-password" type="password"></input>
     </div>
     <button id="login-button" type="submit">Login</button>
-    -->
-    <input placeholder="Email" name="login-form-input-email" id="login-form-input-email" type="text"></input>
-    <input placeholder="Password" name="login-form-input-password" id="login-form-input-password" type="password"></input>
-    <button id="login-button" type="submit">Login</button>
+    
 </form>
 
-<?php echo home_url( '/' ) . "index.php/dbConnection" ; ?>
-
-<form action="<?php echo home_url( '/' ) . "index.php/dbConnection" ; ?>" method="post">
-    Pet breed: <input type="text" name="breed"><br>
-    Color: <input type="password" name="color"><br>
-    <button type="submit">gklödskflösdmöl</button>
-</form>
-
-<!--
-<?php 
-    $response = wp_remote_get( 'http://localhost:8080/senior/getByEmailPassword?email=string&password=string');
-    $body     = wp_remote_retrieve_body($response);
-    echo $body;
-?>
--->
 </body>
