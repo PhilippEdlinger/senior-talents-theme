@@ -2,6 +2,8 @@
 
 get_header();
 
+
+
 ?>
 <div class="header-container">
     <div class="header-image"></div>
