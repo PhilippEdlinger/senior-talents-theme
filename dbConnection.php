@@ -29,5 +29,4 @@ $body     = wp_remote_retrieve_body($response);
     header("Location: https://localhost/wordpress/wordpress/index.php/login");
  }
  
-
 ?>
