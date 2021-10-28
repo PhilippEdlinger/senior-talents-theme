@@ -1,5 +1,12 @@
 <?php /* Template Name: Profile Page */ ?>
 
+<?php 
+
+if(isset($_SESSION)){
+    header("Location: https://localhost/wordpress/wordpress/index.php");
+  }
+?>
+
 <head>
     <link rel="stylesheet" href="<?php echo get_template_directory_uri() . '/css/profile-style.css'?>">
 </head>
