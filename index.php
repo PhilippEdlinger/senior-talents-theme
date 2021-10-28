@@ -4,7 +4,9 @@ get_header();
 
 ?>
 <div class="header-container">
-    <div class="header-image"></div>
+    <div class="header-image">
+        <div id="logo-image"></div>
+    </div>
     <div class="login-button">
         <p class="login-button-text">Anmelden</p>
     </div>
