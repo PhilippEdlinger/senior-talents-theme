@@ -44,6 +44,7 @@
 			'body'       => $payload,
 		)
 	);
-	echo json_encode($response);
+
+	header("Location: https://localhost/wordpress/wordpress/index.php/profile");
 
 ?>

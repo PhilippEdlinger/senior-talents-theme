@@ -28,16 +28,16 @@ if(session_status() == PHP_SESSION_NONE){
               <div class="profile-subcontainer">
                   <div id="profile-picture"></div>
                   <div id="profile-data">
-                      <form action="<?php echo home_url( '/' ) . "index.php/dbConnection" ; ?>" method="post" class="login-form">
-                          <input id="profile-firstName" placeholder="<?php echo $_SESSION["firstName"] ?>" > </input>
-                          <input id="profile-lastName" placeholder="<?php echo $_SESSION["lastName"] ?>">  </input>
-                          <input id="profile-hoursPerWeek" placeholder="<?php echo $_SESSION["hoursPerWeek"] ?>"> </input>
-                          <input id="profile-interestDescr" placeholder="<?php echo $_SESSION["interestDescr"] ?>"> </input>
-                          <input id="profile-jobBranch" placeholder="<?php echo $_SESSION["jobBranche"] ?>"></input>
-                          <input id="profile-jobField" placeholder="<?php echo $_SESSION["jobField"] ?>"> </input>
-                          <input id="profile-preferableWork" placeholder="<?php echo $_SESSION["preferableWork"] ?>"></input>
-                          <input id="profile-seniorId" placeholder="<?php echo $_SESSION["seniorId"] ?>"> </input>
-                          <input id="profile-skillDescr" placeholder="<?php echo $_SESSION["seniorId"] ?>"> </input>
+                      <form action="<?php echo home_url( '/' ) . "index.php/updateprofile" ; ?>" method="post" class="login-form">
+                          <input id="profile-firstName" name="firstName" value="<?php echo $_SESSION["firstName"] ?>" > </input>
+                          <input id="profile-lastName" name="lastName" value="<?php echo $_SESSION["lastName"] ?>">  </input>
+                          <input id="profile-hoursPerWeek" name="hoursPerWeek" value="<?php echo $_SESSION["hoursPerWeek"] ?>"> </input>
+                          <input id="profile-interestDescr" name="interestDescr" value="<?php echo $_SESSION["interestDescr"] ?>"> </input>
+                          <input id="profile-jobBranch" name="jobBranche" value="<?php echo $_SESSION["jobBranche"] ?>"></input>
+                          <input id="profile-jobField" name="jobField" value="<?php echo $_SESSION["jobField"] ?>"> </input>
+                          <input id="profile-preferableWork" name="preferableWork" value="<?php echo $_SESSION["preferableWork"] ?>"></input>
+                          <input id="profile-seniorId" name="seniorId" value="<?php echo $_SESSION["seniorId"] ?>"> </input>
+                          <input id="profile-skillDescr" name="skillDescr" value="<?php echo $_SESSION["skillDescr"] ?>"> </input>
                           <button id="profile-save-button" type="submit">Speichern</button>
                       </form> 
                   </div> 
@@ -54,3 +54,4 @@ if(session_status() == PHP_SESSION_NONE){
         </div>
     </div>
 </body>
+

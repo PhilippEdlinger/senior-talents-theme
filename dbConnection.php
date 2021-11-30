@@ -2,8 +2,6 @@
 
 <?php
 
-
-
 $email = $_POST['login-form-input-email'];
 $pwd = $_POST['login-form-input-password'];
 
@@ -13,20 +11,6 @@ $response = wp_remote_get($http_request);
 $body     = wp_remote_retrieve_body($response); 
  
 if (substr_count( $body, "\n" ) == 0){
-   
-   global $wp_session;
-   $wp_session['cart_items'] = array(
-      array(
-         'item_id'   => 43,
-         'item_name' => 'My Product Name'
-      ),
-      array(
-         'item_id'   => 22,
-         'item_name' => 'My Second Product Name'
-      )	
-   );
-
-   
 
    $json_body = json_decode($body, true);
     $_SESSION["commute"] = $json_body["commute"];
