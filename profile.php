@@ -17,15 +17,18 @@ if(session_status() == PHP_SESSION_NONE){
         <div class="profile-subcontainer">
             <div id="profile-picture"></div>
             <div id="profile-data">
-                <div id="profile-firstName"> <?php echo $_SESSION["firstName"] ?> </div>
-                <div id="profile-lastName"> <?php echo $_SESSION["lastName"] ?> </div>
-                <div id="hoursPerWeek"> <?php echo $_SESSION["hoursPerWeek"] ?> </div>
-                <div id="interestDescr"> <?php echo $_SESSION["interestDescr"] ?> </div>
-                <div id="profile-jobBranch"><?php echo $_SESSION["jobBranche"] ?></div>
-                <div id="profile-jobField"> <?php echo $_SESSION["jobField"] ?> </div>
-                <div id="preferableWork"> <?php echo $_SESSION["preferableWork"] ?> </div>
-                <div id="seniorId"> <?php echo $_SESSION["seniorId"] ?> </div>
-                <div id="skillDescr"> <?php echo $_SESSION["skillDescr"] ?> </div>
+                <form action="<?php echo home_url( '/' ) . "index.php/dbConnection" ; ?>" method="post" class="login-form">
+                    <input id="profile-firstName" placeholder="<?php echo $_SESSION["firstName"] ?>" > </input>
+                    <input id="profile-lastName" placeholder="<?php echo $_SESSION["lastName"] ?>">  </input>
+                    <input id="profile-hoursPerWeek" placeholder="<?php echo $_SESSION["hoursPerWeek"] ?>"> </input>
+                    <input id="profile-interestDescr" placeholder="<?php echo $_SESSION["interestDescr"] ?>"> </input>
+                    <input id="profile-jobBranch" placeholder="<?php echo $_SESSION["jobBranche"] ?>"></input>
+                    <input id="profile-jobField" placeholder="<?php echo $_SESSION["jobField"] ?>"> </input>
+                    <input id="profile-preferableWork" placeholder="<?php echo $_SESSION["preferableWork"] ?>"></input>
+                    <input id="profile-seniorId" placeholder="<?php echo $_SESSION["seniorId"] ?>"> </input>
+                    <input id="profile-skillDescr" placeholder="<?php echo $_SESSION["seniorId"] ?>"> </input>
+                    <button id="profile-save-button" type="submit">Speichern</button>
+                </form> 
             </div> 
         </div>
         <div class="profile-subcontainer subcontainer2">
