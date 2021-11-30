@@ -1,5 +1,10 @@
 <?php
 
+if(!session_id()) {           
+  session_start();            
+}
+
+
 function senior_talents_files() {
   wp_enqueue_style('senior_talents_styles', get_stylesheet_uri());
   //wp_enqueue_style('login-style',  get_template_directory_uri() . '/css/login-style.css');
