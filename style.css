@@ -17,12 +17,12 @@ body{
     -ms-user-select: none; /* Internet Explorer/Edge */
     user-select: none; /* Non-prefixed version, currently
     supported by Chrome, Edge, Opera and Firefox */
+    color:azure;
 }
 
 p{
-    font-size: 1vw;
+    font-size: 1.1vw;
     margin: 0px;
-    color:azure;
 }
 
 /* header  */
@@ -34,14 +34,15 @@ p{
 .content-container{
     height: 80%;
     width: 100%;
-    border-top: 1px solid black;
     border-bottom: 1px solid black; 
     margin: auto;
 }
 
 #container_1{
-    background-image: url(img/001.png);
+    background-image: url(img/WomanTypingOnKeyboardLaptop.jpeg);
     background-size: contain;
+    background-repeat: no-repeat;
+    height: 456px;
     /*
     min-height: 600px;
     background-attachment: fixed;
@@ -53,7 +54,7 @@ p{
 
 
 #container_2{
-    background-image: url(img/001.png);
+    background-image: url(img/WomanTypingOnKeyboardLaptop.jpeg);
 }
 
 #logo-image {
@@ -65,8 +66,8 @@ p{
 }
 
 .header-container{
-    box-shadow: inset;
-    height: 6%;
+    box-shadow: 2px 2px 5px black;
+    height: 5%;
     will-change: 100px;
     width: auto;
     display: flex;
@@ -76,18 +77,25 @@ p{
 }
 
 .header-image{
-    height: 90%;
-    width: 13%;
+    height: 100%;
+    width: 300px;
     margin-left: 10%;
+    margin-right: 34%;
     padding: 0px 5px 0px 5px;
 }
 
 .login-button{
     height: 100%;
-    width: 7%;
-    margin-left: 50%;
+    width: 90px;
     padding: 0px 3px 0px 3px;
     text-align: center;
+    transition: background-color ease-in-out 0.2s, color ease-in-out 0.2s; 
+    border-radius: 2px;
+}
+
+.login-button:hover {
+    background-color: whitesmoke;
+    color: black;
 }
 
 .login-button-text{
@@ -99,11 +107,18 @@ p{
 
 .register-button{
     height: 100%;
-    width: 7%;
-    margin-left: 2%;
+    width: 100px;
     margin-right: 10%;
+    margin-left: 1%;
     padding: 0px 3px 0px 3px;
-    text-align: center;      
+    text-align: center;     
+    transition: background-color ease-in-out 0.2s, color ease-in-out 0.2s; 
+    border-radius: 2px;
+}
+
+.register-button:hover {
+    background-color: whitesmoke;
+    color: black;
 }
 
 .register-button-text{
@@ -120,3 +135,23 @@ p{
     width: 100%;
     border-top: 1px solid black;
 }
+
+/* Scrollbar */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888; 
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+  }
