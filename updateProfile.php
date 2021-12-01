@@ -17,20 +17,21 @@
     );
 
     $body = $_SESSION;    
+    $body["descr"] = "";
+    $body["commute"] = "";
 
     $arg = array(
         'headers'   => $headers, 
         'body'      => json_encode( $body ),
-        'method'    => 'PUT',
+        'method'    => 'PATCH',
         'sslverify' => false,
     );
 
-    $request = wp_remote_post( 'http://localhost:8080/senior/updateSingleOrMoreProperties', $arg );
+    $request = wp_remote_post( 'http://localhost:8080/senior/updateSingleOrMoreProperties/', $arg );
     $response     = wp_remote_retrieve_body($request); 
     
     echo json_encode($body);
-
-    //echo json_encode($response);
+    echo json_encode($response);
 
     //header("Location: https://localhost/wordpress/wordpress/index.php/profile");
     

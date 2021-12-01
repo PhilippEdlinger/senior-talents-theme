@@ -13,6 +13,8 @@ $body     = wp_remote_retrieve_body($response);
 if (substr_count( $body, "\n" ) == 0){
 
    $json_body = json_decode($body, true);
+   $_SESSION["firstName"] = $json_body["firstName"];
+    $_SESSION["lastName"] = $json_body["lastName"];
     $_SESSION["commute"] = $json_body["commute"];
     $_SESSION["descr"] = $json_body["descr"];
     $_SESSION["email"] = $json_body["email"];

@@ -5,9 +5,6 @@
     <script src="<?php echo get_template_directory_uri() . '/js/signup.js'?>"></script>
 </head>
 <body>
-    <?php
-        echo  wp_remote_retrieve_body(wp_remote_get("http://localhost:8080/senior/create"));
-    ?>
     <form action="<?php echo home_url( '/' ) . "index.php/signup-db-connection" ; ?>" id="signup-form" method="post">
         <div class="signup-form-section">
             <input name="signup-form-firstname" id="signup-form-firstname" type="text" placeholder="Vorname"></input>
