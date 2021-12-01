@@ -14,8 +14,8 @@
     $body = array(
                 'email' => $email,
                 'password'   => $pwd,
-                'firstname' => $firstname,
-                'lastname' => $lastname,
+                'firstName' => $firstname,
+                'lastName' => $lastname,
         );
 
     $arg = array(
@@ -26,12 +26,12 @@
     );
 
     $request = wp_remote_post( 'http://localhost:8080/senior/create', $arg );
+
     $body     = wp_remote_retrieve_body($request); 
-    
+
     if(substr_count($body, "n") == 0){
         header("Location: https://localhost/wordpress/wordpress/index.php/login");
     }else{
         header("Location: https://localhost/wordpress/wordpress/index.php/signup");
     }
-    
 ?>
