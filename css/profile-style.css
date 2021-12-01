@@ -21,6 +21,7 @@ p{
     margin: 0px;
 }
 
+/* header */
 .header-container{
     box-shadow: 0.5px 0.5px 5px black;
     height: 5%;
@@ -49,67 +50,192 @@ p{
     background-repeat: no-repeat;
 }
 
+/* navigation */
 #nav {
     box-shadow: 0.5px 0.5px 5px black;
     height: 100%;
-    width: 15%;
+    width: 14%;
     position: fixed;
     margin-left: 0%;
-    background-color: #ABA1A1;
+    background-color: #C9D1CD;
     z-index: 1;
 }
+#profile-nav {
+    margin-top: 40%;
+}
+#job-nav {
+    margin-top: 8%;
+}
 
+.nav-window {
+    border-radius: 12px;
+    background-color: navajowhite;
+    min-height: 50px;
+}
+
+.nav-title {
+    width: 100%;
+    text-align: center;
+    font-size: 0.8vw;
+    height: 10px;
+    padding:10px 0px 10px 0px;
+    background-color:#77A183;
+    color: white;
+    border-radius: 0px 12px 0px 0px;
+}
+
+.nav-box-element {
+    max-width: 100%;
+    min-height: 5px;
+    padding: 8px 0px 8px 20px;
+    font-size: 1vw;
+    color: #3E5444;
+    background-color: white;
+    transition: padding-left ease-in 0.1s;
+}
+
+.nav-box-element-last {
+    max-width: 100%;
+    min-height: 5px;
+    padding: 8px 0px 8px 20px;
+    font-size: 1vw;
+    color: #3E5444;
+    border-radius: 0px 0px 12px 0px;
+    background-color: white;
+    transition: padding-left ease-in 0.1s;
+}
+
+.nav-element {
+    font-size: 1vw;
+}
+
+.nav-box-element:hover {
+    padding-left: 22px;
+    background-color: #DFEDE3;
+}
+
+.nav-box-element-last:hover {
+    padding-left: 22px;
+    background-color: #DFEDE3;
+}
+
+/* content */
 #data-wrapper {
+    top: 9.7%;
     margin-left: 15%;
     width: 85%;
     min-height: 100%;
     padding-top: 6%;
+    margin-bottom: 50px;
 }
 
 #profile-container{
-    border: 1px solid black;
-    height: 80vh;
+    min-height: 80vh;
     width: 50vw;
     margin: auto;
+    border-radius: 12px;
+    box-shadow: 0px 0px 4px grey;
+    padding: 15px;
 }
-.profile-subcontainer{
-    height: 50%;
+
+/* pp */
+#profile-picture{   
     width: 100%;
-    border: 1px solid black;
+    min-height: 40px;
+    margin-bottom: 40px;
+}
+
+.profile-headline{
+    margin: 0 auto;
+    min-height: 1px;
+    width: 10vw;
+    text-align: center;
+    padding: 5px 0px 5px 0px;
+    box-shadow: 1px 1px 4px grey;
+    border-radius: 15px;
+    color: black;
+}
+
+.picture-container {
     display: flex;
+    justify-content: center;
+}
+
+.picture {
+    margin: 25px;
+    width: 80px;
+    height: 80px;
+    border-radius: 40px;
+    background-color: lightskyblue;
+    border: 2px solid black;
+}
+
+.picture-upload-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.picture-upload {
+    
 }
 
 
-#profile-picture{
-    height: 70%;
-    width: 33.33%;
-    border: 1px solid black;
-    background-color: navajowhite;
-    margin-left: 1%;
-    margin-top:1%;
-}
-
+/* content */
 #profile-data{
-    border: 1px solid black;
-    height: 90%;
-    width: 60%;
-    margin-top: 1%;
-    margin-left: 4% ;
+    min-height: 100px;
+    width: 100%;
+}
+
+.profile-data-content {
+    padding: 25px 0px 0px 0px;
+    
+}
+
+.pillar-l {
+    padding-left: 20px;
+    float: left;
+    min-width: 45%;
+    min-height: 1px;
+    color: black;
+}
+.pillar-r {
+    padding-left: 20px;
+    float: right;
+    min-width: 45%;
+    min-height: 1px;
+    color: black;
+}
+
+input {
+    padding: 6px;
+    width: 90%;
+}
+ #profile-save-button {
+    padding: 7px 15px 7px 15px;
+    background-color: #1AFF5F;
+    width: 45%;
+    margin-top: 10px;
+    float: right;
+    margin-right: 28px;
+    border-style: none;
+    color: white;
+ }
+ #profile-save-button:hover {
+     background-color: #16E067;
+ }
+
+/* resume */
+.profile-resume {
+    margin-top: 40px;
 }
 
 #profile-description{
-    border-bottom: 1px solid black;
-    height: 40%;
-    width: 100%;
+    
 }
+
+
 
 #profile-files{
-    border-bottom: 1px solid black;
-    height: 30%;
-    width: 100%;
-    margin-top: 1%;
-}
-
-.subcontainer2{
-    display: block;
+    width:100%;
 }
