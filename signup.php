@@ -11,7 +11,7 @@
     <form action="<?php echo home_url( '/' ) . "index.php/signup-db-connection" ; ?>" id="signup-form" method="post">
         <div class="signup-form-section">
             <input name="signup-form-firstname" id="signup-form-firstname" type="text" placeholder="Vorname"></input>
-            <input id="signup-form-lastname" type="text" placeholder="Nachname"></input>
+            <input name="signup-form-lastname" id="signup-form-lastname" type="text" placeholder="Nachname"></input>
         </div>
         <div class="signup-form-section">
             <input name="signup-form-email" id="signup-form-email" type="text" placeholder="Email"></input>

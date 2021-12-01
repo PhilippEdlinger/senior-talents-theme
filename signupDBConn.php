@@ -14,6 +14,8 @@
     $body = array(
                 'email' => $email,
                 'password'   => $pwd,
+                'firstname' => $firstname,
+                'lastname' => $lastname,
         );
 
     $arg = array(

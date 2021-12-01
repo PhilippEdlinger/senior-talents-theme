@@ -3,6 +3,7 @@
 <?php
 
 	$file_path = $_FILES["uploadedFile"]["tmp_name"];
+	$file_type = $_FILES["uploadedFile"]["type"];
 	$local_file = $file_path; 
 
 	$post_fields = array(
@@ -36,7 +37,7 @@
 	
 	$payload .= '--' . $boundary . '--';
 
-	$upload_file_url = 'http://localhost:8080/senior/file-upload/' . $_SESSION["seniorId"];
+	$upload_file_url = 'http://localhost:8080/senior/file-upload/' . $_SESSION["seniorId"].'?fileType='. $file_type;
 
 	$response = wp_remote_post( $upload_file_url,
 		array(
@@ -45,6 +46,8 @@
 		)
 	);
 
-	header("Location: https://localhost/wordpress/wordpress/index.php/profile");
+	echo json_encode($response);
+
+	//header("Location: https://localhost/wordpress/wordpress/index.php/profile");
 
 ?>
