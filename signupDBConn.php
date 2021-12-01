@@ -9,7 +9,6 @@
 
     $headers = array(
         'Content-Type'  => 'application/json',
-
     );
 
     $body = array(
