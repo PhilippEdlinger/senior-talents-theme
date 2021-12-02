@@ -30,9 +30,9 @@
     $request = wp_remote_post( 'http://localhost:8080/senior/updateSingleOrMoreProperties/', $arg );
     $response     = wp_remote_retrieve_body($request); 
     
-    echo json_encode($body);
-    echo json_encode($response);
+    echo $_SESSION["jobField"] . '/n' . $_SESSION["jobBranche"];
 
-    //header("Location: https://localhost/wordpress/wordpress/index.php/profile");
-    
+    //echo json_encode($request);
+
+    header("Location: https://localhost/wordpress/wordpress/index.php/profile");  
 ?>
