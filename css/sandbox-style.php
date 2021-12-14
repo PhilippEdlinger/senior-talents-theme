@@ -1,3 +1,15 @@
+<?php
+header("Content-type: text/css");
+
+$backgroundcolor = "#990000";
+
+?>
+
+
+body{
+  background-color: <?php echo $backgroundcolor?>;
+}
+
 #drop_file_zone {
     background-color: #EEE;
     border: #999 5px dashed;

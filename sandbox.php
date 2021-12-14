@@ -1,11 +1,14 @@
 <?php /* Template Name: Sandbox Page */ ?>
 
 <head>
-    <link rel="stylesheet" href="<?php echo get_template_directory_uri() . '/css/sandbox-style.css'?>">
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri() . '/css/sandbox-style.php'?>">
 </head>
 
 <body>
-    <!-- upload file per selection -->
+
+
+
+     <!-- upload file per selection -->
     <form action="<?php echo home_url( '/' ) . "index.php/uploadFiles" ; ?>" method="POST" enctype="multipart/form-data">
         <input type="file" id="upload_file_fields" name="uploadedFile" /> 
         <input type="submit"/>
@@ -29,5 +32,4 @@
         <option value="pumpernickel" selected >Pumpernickel</option>
         <option value="reeses">Reeses</option>
     </select>
-
 </body>

@@ -1,7 +1,6 @@
 <?php /* Template Name: Profile Page */ ?>
 
 <?php 
-
 if(session_status() == PHP_SESSION_NONE){
     header("Location: https://localhost/wordpress/wordpress/index.php");
 }
