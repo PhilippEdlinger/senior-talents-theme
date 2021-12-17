@@ -27,7 +27,6 @@ if (substr_count( $body, "\n" ) == 0){
     $_SESSION["seniorId"] = $json_body["seniorId"];
     $_SESSION["skillDescr"] = $json_body["skillDescr"];
 
-
    if(session_status() == PHP_SESSION_ACTIVE){
      header("Location: https://localhost/wordpress/wordpress/index.php/profile");
    }

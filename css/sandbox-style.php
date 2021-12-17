@@ -1,10 +1,10 @@
 <?php
 header("Content-type: text/css");
 
-$backgroundcolor = "#990000";
+$backgroundcolor = "white";
+$imagePath= "https://localhost/wordpress/wordpress/wp-content/themes/senior-talents-theme/img/001.png";
 
 ?>
-
 
 body{
   background-color: <?php echo $backgroundcolor?>;
@@ -29,3 +29,10 @@ body{
   display: none;
 }
 
+#test_profile_image{
+    height: 100px;
+    width: 100px;
+    border: 1px solid black;
+   background-image: url(<?php echo $imagePath; ?>);
+   background-position:center;
+  }

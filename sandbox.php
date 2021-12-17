@@ -2,11 +2,14 @@
 
 <head>
     <link rel="stylesheet" href="<?php echo get_template_directory_uri() . '/css/sandbox-style.php'?>">
+    <script src="<?php echo get_template_directory_uri() . '/js/sandbox.php'?>"></script>
 </head>
 
 <body>
-
-
+    <?php 
+    echo get_template_directory_uri() . "/img/001.png";
+    ?>
+    <div id="test_profile_image"> </div>
 
      <!-- upload file per selection -->
     <form action="<?php echo home_url( '/' ) . "index.php/uploadFiles" ; ?>" method="POST" enctype="multipart/form-data">
