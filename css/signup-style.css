@@ -1,73 +1,144 @@
-#signup-form{
-   height: 60vh;
-   width: 40vw;
-   border: 1px solid black; 
+body{
+   margin: 0px;
+   padding-top: 8vh;
+   font-family: Ubuntu-Regular,sans-serif;
+}
+
+h1 {
+   font-size: 25px;
+}
+
+.background {
+   position: relative;
+   background-color: black;
+   overflow: hidden;
+   text-align: center;
+}
+
+.background::before {
+   content: ' ';
+   display: block;
+   position: absolute;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+   z-index: 1;
+   opacity: 0.25;
+   background-image: url('../img/Flowers.jpg');
+   background-repeat: no-repeat;
+   background-size: 100%;
+}
+
+.content-wrapper {
    margin: auto;
-   margin-top: 25vh;
+   width: 400px;
+   border-radius: 10px;
+   overflow: hidden;
+   background: 0 0;
+   padding-bottom: 30px;
+}
+
+.headline {
+   color: #fff;
+   padding: 10px 12px;
+}
+
+input {
+   border: none;
+}
+
+input:focus {
+   border: none;
+   outline: none;
+}
+
+.input-icons {
+   position: relative;
+}
+
+.input-icons #icon {
+   position: absolute;
+   top: 37px;
+   left: 25px;
+   transition: ease-in-out 0.3s;
+   z-index: 10;
+}
+
+#signup-form{
+   text-decoration: none;
+   position: relative;
+   z-index: 2;
+   width: 100%;
+   border-radius: 10px;
+   background-color: #fff;
 }
 
 .signup-form-section{
-   width: 95%;
-   height: 15%;  
-   margin-top: 2.5%;
-   margin: auto;
-   margin-top: 5%;
-   display: flex;
+   width: 100%;
 }
 
-#signup-form-firstname{
-   height: 100%;
-   width: 45%;
-   margin: auto;
-   font-size: 25px;
-   text-align: center;
+#signup-form-input_01 {
+   font-size: 15px;
+   position: relative;
+   width: 49%;
+   border-bottom: 1px solid #e6e6e6;
+   padding: 35px 40px;
+   color: black;
+   border-radius: 20px 20px 0px 0px;
+   transition: ease-in-out 0.3s;
 }
 
-#signup-form-lastname{
-   height: 100%;
-   width: 45%;
-   margin: auto;
-   font-size: 25px;
-   text-align: center;
+#signup-form-input_02 {
+   font-size: 15px;
+   position: relative;
+   width:100%;
+   border-bottom: 1px solid #e6e6e6;
+   padding: 35px 40px;
+   color: black;
+   transition: ease-in-out 0.3s;
 }
-
-#signup-form-email{
-   height: 100%;
-   width: 95%;
-   margin: auto;
-   font-size: 25px;
-   text-align: center;
+#signup-form-input_01:focus {
+   border-bottom: 1px solid #fa4299;
+   padding-left: 30px;
 }
-
-#signup-form-password{
-   height: 100%;
-   width: 45%;
-   margin: auto;
-   font-size: 25px;
-   text-align: center;
+#singup-form-input_01:focus ~ #icon {
+   color: #d41872;
+   left: 20px;
 }
-
-#signup-form-password2{
-   height: 100%;
-   width: 45%;
-   margin: auto;
-   font-size: 25px;
-   text-align: center;
+#signup-form-input_02:focus {
+   border-bottom: 1px solid #fa4299;
+   padding-left: 30px;
+}
+#singup-form-input_02:focus ~ #icon {
+   color: #d41872;
+   left: 20px;
 }
 
 #signup-button{
-   height: 10%;
-   width: 25%;
-   font-size: 20px;
-   position: relative;
-   top: 0%;
-   left: 72%;
+   width: 50%;
+   margin-top: 10px;
+   margin-bottom: 30px;
+   padding: 12px 15px;
+   border: none;
+   border-radius: 30px;
+   font-size: 10px;
+   color: #fff;
+   background: -webkit-linear-gradient(left, #a445b2, #d41872, #fa4299);
+   background: -o-linear-gradient(left, #a445b2, #d41872, #fa4299);
+   background: -moz-linear-gradient(left, #a445b2, #d41872, #fa4299);
+}
+
+#signup-button:hover {
+   background: -webkit-linear-gradient(left, grey, grey, grey);
+}
+
+h2 {
+   margin: 0px;
+   padding: 0px;
 }
 
 #signup_info{
-   font-size: 17px;
+   font-size: 12px;
    position: relative;
-   top: 0;
-   left: 5%;
-
 }

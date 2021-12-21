@@ -2,21 +2,10 @@
 
 get_header();
 
-
-
 ?>
-<div class="header-container">
-    <div class="header-image">
-        <div id="logo-image"></div>
-    </div>
-    <div class="login-button">
-        <p class="login-button-text">Anmelden</p>
-    </div>
-    <div class="register-button">
-        <p class="register-button-text">Registrieren</p>
-    </div>
-</div>
-
+<head>
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri() . '/style.css'?>">
+</head>
 
 <div id="main_content">
     <div id="container_1" class="content-container">

@@ -25,8 +25,22 @@ if(session_status() == PHP_SESSION_NONE){
     <div id="data-wrapper">
         <div id="profile-container">
               <div class="profile-subcontainer">
-                  <div id="profile-picture"></div>
+                  <div id="profile-picture">
+                      <div class="profile-headline">
+                        <p>Profilbild</p>
+                      </div>
+                      <div class="picture-container">
+                        <div class="picture"></div>
+                      </div>
+                      <div class="picture-upload-container">
+                        <input type="file" class="picture-upload" placeholder="Eigenes Foto hochladen">    
+                      </div>
+                  </div>
+
                   <div id="profile-data">
+                      <div class="profile-headline" style="width: 13vw;">
+                          <p>Persönliche Daten</p>
+                      </div>
                       <form action="<?php echo home_url( '/' ) . "index.php/updateprofile" ; ?>" method="post" class="login-form">
                           <input id="profile-firstName" name="firstName" value="<?php echo $_SESSION["firstName"] ?>" > </input>
                           <input id="profile-lastName" name="lastName" value="<?php echo $_SESSION["lastName"] ?>">  </input>
@@ -133,4 +147,5 @@ if(session_status() == PHP_SESSION_NONE){
         </div>
     </div>
 </body>
+
 

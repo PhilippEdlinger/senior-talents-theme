@@ -30,6 +30,9 @@ p{
 
 
 /* index */
+#main_content {
+    margin: 0px;
+}
 
 .content-container{
     height: 80%;
@@ -57,6 +60,8 @@ p{
     background-image: url(img/WomanTypingOnKeyboardLaptop.jpeg);
 }
 
+/* header */
+
 #logo-image {
     background-image: url(img/logo-white.png);
     height: 100%;
@@ -66,12 +71,12 @@ p{
 }
 
 .header-container{
-    box-shadow: 2px 2px 5px black;
-    height: 5%;
+    box-shadow: 0.5px 0.5px 5px black;
+    height: 38px;
     will-change: 100px;
-    width: auto;
+    width: 100%;
     display: flex;
-    background-color:#787171;
+    background-color:#35393B;
     padding-top: 1%;
     padding-bottom: 1%;
 }
@@ -80,54 +85,82 @@ p{
     height: 100%;
     width: 300px;
     margin-left: 10%;
-    margin-right: 34%;
     padding: 0px 5px 0px 5px;
 }
 
-.login-button{
-    height: 100%;
-    width: 90px;
-    padding: 0px 3px 0px 3px;
+.nav-elements {
+    margin-left: 15%;
+    padding: 0;
+    overflow: hidden;
+}
+
+.nav-list {
+    float: left;
+    margin-left: 10px;
+}
+
+.nav-list a {
+    display: block;
+    color: white;
     text-align: center;
-    transition: background-color ease-in-out 0.2s, color ease-in-out 0.2s; 
+    padding: 10px 12px;
+    text-decoration: none;
+    transition: ease-in-out 0.3s;
     border-radius: 2px;
 }
 
-.login-button:hover {
+.nav-list a:hover {
     background-color: whitesmoke;
-    color: black;
+    color: #35393B;
 }
 
-.login-button-text{
+/* dropdown */
+
+.dropdown-profile {
+    margin-left: 10%;
     position: relative;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    display: inline-block;
 }
 
-.register-button{
-    height: 100%;
-    width: 100px;
-    margin-right: 10%;
-    margin-left: 1%;
-    padding: 0px 3px 0px 3px;
-    text-align: center;     
-    transition: background-color ease-in-out 0.2s, color ease-in-out 0.2s; 
-    border-radius: 2px;
+.dd-button {
+    color: white;
+    font-size: 35px;
+    border: none;
+    cursor: pointer;
+    border-radius: 20px;
+    transition: ease-in-out 0.3s;
 }
 
-.register-button:hover {
+.dd-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    transition: ease-in-out 0.3s;
+}
+
+.dd-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    transition: ease-in-out 0.3s;
+}
+  
+.dd-content a:hover {
+    background-color: rgba(0,0,0,0.2);
+}
+  
+.dropdown-profile:hover .dd-content {
+    display: block;
+}
+  
+.dropdown-profile:hover .dd-button {
     background-color: whitesmoke;
-    color: black;
+    color: #35393B;
 }
-
-.register-button-text{
-    position: relative;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
 
 /* footer */
 #footer-container{
@@ -136,22 +169,3 @@ p{
     border-top: 1px solid black;
 }
 
-/* Scrollbar */
-::-webkit-scrollbar {
-    width: 10px;
-  }
-  
-  /* Track */
-  ::-webkit-scrollbar-track {
-    background: #f1f1f1; 
-  }
-   
-  /* Handle */
-  ::-webkit-scrollbar-thumb {
-    background: #888; 
-  }
-  
-  /* Handle on hover */
-  ::-webkit-scrollbar-thumb:hover {
-    background: #555; 
-  }
