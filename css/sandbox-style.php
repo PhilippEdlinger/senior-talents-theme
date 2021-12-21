@@ -3,7 +3,6 @@ header("Content-type: text/css");
 
 $backgroundcolor = "white";
 $imagePath= "https://localhost/wordpress/wordpress/wp-content/themes/senior-talents-theme/img/001.png";
-
 ?>
 
 body{
@@ -24,7 +23,7 @@ body{
 }
 #drag_upload_file p {
   text-align: center;
-}
+} 
 #drag_upload_file #selectfile {
   display: none;
 }
@@ -35,4 +34,5 @@ body{
     border: 1px solid black;
    background-image: url(<?php echo $imagePath; ?>);
    background-position:center;
+    background-size: 100%;
   }

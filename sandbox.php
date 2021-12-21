@@ -1,14 +1,18 @@
 <?php /* Template Name: Sandbox Page */ ?>
 
+<?php 
+    session_start();
+    $newImg = "https://localhost/wordpress/wordpress/wp-content/themes/senior-talents-theme/img/002.png"; 
+    setcookie("test", "https://localhost/wordpress/wordpress/wp-content/themes/senior-talents-theme/img/002.png" );
+?>
+
 <head>
     <link rel="stylesheet" href="<?php echo get_template_directory_uri() . '/css/sandbox-style.php'?>">
     <script src="<?php echo get_template_directory_uri() . '/js/sandbox.php'?>"></script>
 </head>
 
 <body>
-    <?php 
-    echo get_template_directory_uri() . "/img/001.png";
-    ?>
+    <?php echo get_template_directory_uri(); ?>
     <div id="test_profile_image"> </div>
 
      <!-- upload file per selection -->

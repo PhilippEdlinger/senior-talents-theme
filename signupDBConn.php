@@ -1,6 +1,9 @@
 <?php /* Template Name: Signup DB Connection */ ?> 
 
 <?php 
+
+    echo "uwu";
+
     $firstname = $_POST['signup-form-firstname'];
     $lastname = $_POST['signup-form-lastname'];
     $email = $_POST['signup-form-email'];
@@ -29,9 +32,11 @@
 
     $body     = wp_remote_retrieve_body($request); 
 
+    /*
     if(substr_count($body, "n") == 0){
         header("Location: https://localhost/wordpress/wordpress/index.php/login");
     }else{
         header("Location: https://localhost/wordpress/wordpress/index.php/signup");
     }
+    */
 ?>
