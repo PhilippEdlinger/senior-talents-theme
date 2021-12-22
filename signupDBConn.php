@@ -32,11 +32,10 @@
 
     $body     = wp_remote_retrieve_body($request); 
 
-    /*
     if(substr_count($body, "n") == 0){
         header("Location: https://localhost/wordpress/wordpress/index.php/login");
     }else{
         header("Location: https://localhost/wordpress/wordpress/index.php/signup");
     }
-    */
+
 ?>
