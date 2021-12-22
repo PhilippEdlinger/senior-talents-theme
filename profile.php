@@ -21,9 +21,44 @@ if(session_status() == PHP_SESSION_NONE){
     </div>
 </header>
 
-<div id="nav"></div>
+<div id="nav">
+<div id="profile-nav" class="nav-window">
+        <div  class="nav-title">
+            <h2 class="nav-element">Profile</h2>
+        </div>
+        <a href="#pp">
+        <div class="nav-box-element">
+            <p class="nav-element">Daten</p>
+        </div>
+        </a>
+        <a href="#pd">
+        <div class="nav-box-element">
+            <p class="nav-element">Über Mich</p>
+        </div>
+        </a>
+        <a href="#ji">
+        <div class="nav-box-element">
+            <p class="nav-element">Job Interessen</p>
+        </div>
+        </a>
+    </div>
+    <div id="job-nav" class="nav-window">
+        <div class="nav-title">
+            <h2 class="nav-element">Jobs</h2>
+        </div>
+        <div class="nav-box-element">
+            <p class="nav-element">Empfohlen</p>
+        </div>
+        <div class="nav-box-element">
+            <p class="nav-element">Suche</p>
+        </div>
+        <div class="nav-box-element-last">
+            <p class="nav-element">Gespeichert</p>
+        </div>
+    </div>
+</div>
 
-<body>
+<body id="pp">
     <div id="data-wrapper">
             <div id="profile-container">
               <div class="profile-subcontainer">
@@ -34,7 +69,7 @@ if(session_status() == PHP_SESSION_NONE){
                       <div class="picture-container">
                         <div class="picture"></div>
                       </div>
-                      <div class="picture-upload-container">
+                      <div id="pd" class="picture-upload-container">
                         <input type="file" class="picture-upload" placeholder="Eigenes Foto hochladen">    
                       </div>
                   </div>
@@ -49,7 +84,7 @@ if(session_status() == PHP_SESSION_NONE){
                                     <input id="profile-firstName" placeholder="Vorname" class="profile-input-form" name="firstName" value="<?php echo $_SESSION["firstName"] ?>" > </input>
                                     <ion-icon class="icon" name="person-outline"></ion-icon>
                                 </div>
-                                <div class="input-icons01">
+                                <div id="ji" class="input-icons01">
                                     <input id="profile-lastName" placeholder="Nachname" class="profile-input-form" name="lastName" value="<?php echo $_SESSION["lastName"] ?>">  </input>
                                     <ion-icon class="icon" name="person-outline"></ion-icon>
                                 </div>

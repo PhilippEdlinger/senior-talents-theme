@@ -26,6 +26,11 @@ h2 {
     padding: 0px;
  }
 
+ a {
+     text-decoration: none;
+     color: #3E5444;
+ }
+
 /* header */
 .header-container{
     box-shadow: 0.5px 0.5px 5px black;
@@ -67,9 +72,15 @@ h2 {
 }
 #profile-nav {
     margin-top: 40%;
+    background: -webkit-linear-gradient(left, #a445b2, #d41872, #fa4299);
+    background: -o-linear-gradient(left, #a445b2, #d41872, #fa4299);
+    background: -moz-linear-gradient(left, #a445b2, #d41872, #fa4299);
 }
 #job-nav {
     margin-top: 8%;
+    background: -webkit-linear-gradient(left, #a445b2, #d41872, #fa4299);
+    background: -o-linear-gradient(left, #a445b2, #d41872, #fa4299);
+    background: -moz-linear-gradient(left, #a445b2, #d41872, #fa4299);
 }
 
 .nav-window {
@@ -82,9 +93,8 @@ h2 {
     width: 100%;
     text-align: center;
     font-size: 0.8vw;
-    height: 10px;
+    padding: 5px 10px;
     padding:10px 0px 10px 0px;
-    background-color:#77A183;
     color: white;
     border-radius: 0px 12px 0px 0px;
 }
@@ -116,12 +126,12 @@ h2 {
 
 .nav-box-element:hover {
     padding-left: 22px;
-    background-color: #DFEDE3;
+    background-color: lightgrey;
 }
 
 .nav-box-element-last:hover {
     padding-left: 22px;
-    background-color: #DFEDE3;
+    background-color: lightgrey;
 }
 
 /* content */
