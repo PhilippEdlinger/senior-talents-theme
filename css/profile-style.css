@@ -3,7 +3,7 @@ html {
 }
 
 body{
-    font-family: 'Montserrat', sans-serif;
+    font-family: Ubuntu-Regular,sans-serif;
     margin: 0%;
     -webkit-touch-callout: none; /* iOS Safari */
     -webkit-user-select: none; /* Safari */
@@ -13,7 +13,7 @@ body{
     user-select: none; /* Non-prefixed version, currently
     supported by Chrome, Edge, Opera and Firefox */
     color:azure;
-    background-color: whitesmoke;
+    background-color: rgba(0,0,0,0.1);
 }
 
 p{
@@ -21,10 +21,15 @@ p{
     margin: 0px;
 }
 
+h2 {
+    margin: 0px;
+    padding: 0px;
+ }
+
 /* header */
 .header-container{
     box-shadow: 0.5px 0.5px 5px black;
-    height: 35px;
+    height: 45px;
     will-change: 100px;
     width: 100%;
     position: fixed;
@@ -54,7 +59,7 @@ p{
 #nav {
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.3);
     height: 100%;
-    width: 14%;
+    width: 220px;
     position: fixed;
     margin-left: 0%;
     background-color: #F0F0F0;
@@ -121,21 +126,23 @@ p{
 
 /* content */
 #data-wrapper {
-    top: 9.7%;
-    margin-left: 15%;
-    width: 85%;
+    position: absolute;
+    top: 90px;
+    margin-left: 18%;
+    width: 82%;
     min-height: 100%;
-    padding-top: 6%;
-    margin-bottom: 50px;
+    margin-bottom: 400px;
 }
 
 #profile-container{
     min-height: 80vh;
-    width: 50vw;
+    max-width: 900px;
     margin: auto;
     border-radius: 12px;
     box-shadow: 0px 0px 10px lightgray;
     padding: 15px;
+    margin-bottom: 50px;
+    background: #fff;
 }
 
 /* pp */
@@ -154,6 +161,8 @@ p{
     box-shadow: 1px 1px 4px grey;
     border-radius: 15px;
     color: black;
+    margin-top: 50px;
+    margin-bottom:30px;
 }
 
 .picture-container {
@@ -187,6 +196,72 @@ p{
     width: 100%;
 }
 
+.sections {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    min-height:30px;   
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+select {
+    border: none;
+    outline: none;
+}
+
+input {
+    border: none;
+    text-decoration: none;
+}
+
+.input-icons01 {
+    position: relative;
+    width: 49%;
+ }
+
+ .input-icons02 {
+     position: relative;
+     width: 100%;
+ }
+
+ .input-icons01 .icon {
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    color: grey;
+    transition: ease-in-out 0.3s;
+}
+
+.input-icons02 .icon {
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    color: grey;
+    transition: ease-in-out 0.3s;
+}
+
+.profile-input-form {
+    outline: none;
+    font-size: 15px;
+    position: relative;
+    width: 100%;
+    border-bottom: 1px solid #e6e6e6;
+    padding: 25px 62px;
+    color: black;
+    border-radius: 5px;
+    transition: ease-in-out 0.3s;
+}
+
+.profile-input-form:focus {
+    border-bottom: 1px solid #fa4299;
+    padding-left: 45px;
+}
+.profile-input-form:focus ~ .icon {
+    color: #d41872;
+    left: 15px;
+}
+
 .profile-data-content {
     padding: 25px 0px 0px 0px;
     
@@ -212,14 +287,19 @@ input {
     width: 90%;
 }
  #profile-save-button {
-    padding: 7px 15px 7px 15px;
-    background-color: #1AFF5F;
-    width: 45%;
+    position: relative;
+    left: 35%;
+    width: 30%;
     margin-top: 10px;
-    float: right;
-    margin-right: 28px;
-    border-style: none;
-    color: white;
+    margin-bottom: 30px;
+    padding: 12px 15px;
+    border: none;
+    border-radius: 30px;
+    font-size: 10px;
+    color: #fff;
+    background: -webkit-linear-gradient(left, #a445b2, #d41872, #fa4299);
+    background: -o-linear-gradient(left, #a445b2, #d41872, #fa4299);
+    background: -moz-linear-gradient(left, #a445b2, #d41872, #fa4299);
  }
  #profile-save-button:hover {
      background-color: #16E067;

@@ -57,12 +57,17 @@ input:focus {
    position: relative;
 }
 
-.input-icons #icon {
+.input-icons #icon1 {
    position: absolute;
-   top: 37px;
-   left: 25px;
+   top: 35px;
+   left: 15px;
    transition: ease-in-out 0.3s;
-   z-index: 10;
+}
+.input-icons #icon2 {
+   position: absolute;
+   top: 35px;
+   left: 215px;
+   transition: ease-in-out 0.3s;
 }
 
 #signup-form{
@@ -98,21 +103,30 @@ input:focus {
    color: black;
    transition: ease-in-out 0.3s;
 }
+
 #signup-form-input_01:focus {
    border-bottom: 1px solid #fa4299;
    padding-left: 30px;
 }
-#singup-form-input_01:focus ~ #icon {
+
+#signup-form-input_01:focus ~ #icon1 {
    color: #d41872;
-   left: 20px;
+   left: 10px;
 }
+
+#signup-form-input_01:focus ~ #icon2 {
+   color: #d41872;
+   left: 210px;
+}
+
 #signup-form-input_02:focus {
    border-bottom: 1px solid #fa4299;
    padding-left: 30px;
 }
-#singup-form-input_02:focus ~ #icon {
+
+#signup-form-input_02:focus ~ #icon1 {
    color: #d41872;
-   left: 20px;
+   left: 10px;
 }
 
 #signup-button{
