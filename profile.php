@@ -73,7 +73,6 @@ if(session_status() == PHP_SESSION_NONE){
                         <input type="file" class="picture-upload" placeholder="Eigenes Foto hochladen">    
                       </div>
                   </div>-->
-
                   <div id="profile-data">
                       <div class="profile-headline" style="width: 13vw; margin-top: 15px;">
                           <p>Persönliche Daten</p>
@@ -117,11 +116,11 @@ if(session_status() == PHP_SESSION_NONE){
                             <div class="sections">
                                 <div class="input-icons01">
                                     <select id="profile-jobBranch" class="profile-input-form" name="jobBranche">
-                                        <option value=<?php echo $_SESSION["jobBranch"] ?>> <?php
-                                            if($_SESSION["jobBranch"] == null ){
+                                        <option value=<?php echo $_SESSION["jobBranche"] ?>> <?php
+                                            if($_SESSION["jobBranche"] == null ){
                                                 echo "-- Branche auswählen --";
                                             }else{
-                                                echo $_SESSION["jobBranch"];
+                                                echo $_SESSION["jobBranche"];
                                             }
                                         ?></option>
                                         <option value="Verwaltung | Büro | Administration">Verwaltung | Büro | Administration</option>
@@ -178,7 +177,6 @@ if(session_status() == PHP_SESSION_NONE){
                                             }
                                         ?>    
                                         </option>
-                                
                                         <option value="Personalentwicklung">Personalentwicklung</option>
                                         <option value="Programmierung | IT | EDV">Programmierung | IT | EDV</option>
                                         <option value="Tourismus | Gastronomie">Tourismus | Gastronomie</option>
@@ -194,15 +192,15 @@ if(session_status() == PHP_SESSION_NONE){
                                         <option value="Zustellung | Einkauf | Transport | Logistik">Zustellung | Einkauf | Transport | Logistik</option>
                                         <option value="Gewerbe | Produktion | Handwerk">Gewerbe | Produktion | Handwerk</option>
                                         <option value="Redaktion | Werbung | Marketing">Redaktion | Werbung | Marketing</option>
-                                        <option value="Künstlerische- | Kreative Tätigkeit">Künstlerische- | Kreative Tätigkeit</option>
-                                        <option value="Messe- | Eventpersonal | Promotion">Messe- | Eventpersonal | Promotion</option>
+                                        <option value="Künstlerische Tätigkeit | Kreative Tätigkeit">Künstlerische Tätigkeit | Kreative Tätigkeit</option>
+                                        <option value="Messe | Eventpersonal | Promotion">Messe | Eventpersonal | Promotion</option>
                                         <option value="Call Center | Verkauf | Außendienst | Kundenbetreuung">Call Center | Verkauf | Außendienst | Kundenbetreuung</option>
                                         <option value="Sachbearbeitung | Assistenz | Büro">Sachbearbeitung | Assistenz | Büro</option>
                                     </select>
                                 </div>
                             </div>
                             <!-- <input id="profile-jobBranch" name="jobBranche" value="<?php // echo $_SESSION["jobBranche"] ?>"></input> -->
-                            
+
                           <input id="profile-seniorId" name="seniorId" value="<?php echo $_SESSION["seniorId"] ?>"> </input>
                           <button id="profile-save-button" type="submit"><h2>Speichern</h2></button>
                       </form> 
