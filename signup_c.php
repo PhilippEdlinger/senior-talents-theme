@@ -5,7 +5,7 @@
     <script src="<?php echo get_template_directory_uri() . '/js/signup_c.js'?>"></script>
 </head>
 <body>
-    <div id="signup_c-form">
+    <div id="signup_c-form" action="<?php echo home_url( '/' ) . "index.php/company-signup-db-connection" ; ?>" method="post">
         <div class="signup_c-form-section">
             <input id="signup_c-companyname" type="text" placeholder="Unternehmen"></input>
         </div>
@@ -19,6 +19,6 @@
         <p id="signup_c-text"> Wenn Sie kein Unternehmen sind, bitte hier 
             <a href="http://localhost/wordpress/wordpress/index.php/signup/" id="signup-link">Registrieren</a>!
         </p>
-        <button id="signup_c-button"> Registrieren </button>
+        <button type="submit" id="signup_c-button"> Registrieren </button>
     </div>
 </body>
