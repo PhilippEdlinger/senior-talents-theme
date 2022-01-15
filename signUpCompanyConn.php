@@ -1,9 +1,6 @@
 <?php /* Template Name: Company Signup DB Connection */ ?>
 
 <?php 
-
-    echo "test";
-
     $companyName = $_POST['signup_c-form-companyName'];
     $email = $_POST['signup_c-form-email'];
     $pwd = $_POST['signup_c-form-password'];
@@ -29,13 +26,12 @@
 
     $body    = wp_remote_retrieve_body($request); 
 
-    echo $body;
+    echo json_decode($body);
 
-    /*
     if(substr_count($body, "n") == 0){
-        header("Location: https://localhost/wordpress/wordpress/index.php/login");
+        header("Location: https://localhost/wordpress/wordpress/index.php/login-company");
     }else{
         header("Location: https://localhost/wordpress/wordpress/index.php/signup_company");
-    }
-    */
+    } 
+    
 ?>

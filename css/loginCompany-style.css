@@ -69,7 +69,7 @@ input:focus {
     transition: ease-in-out 0.3s;
 }
 
-.login-form{
+.login-company-form{
     text-decoration: none;
     position: relative;
     z-index: 2;
@@ -78,7 +78,7 @@ input:focus {
     background-color: #fff;
 }
 
-#login-form-input{
+#login-company-form-input{
     font-size: 15px;
     position: relative;
     width:100%;
@@ -88,16 +88,16 @@ input:focus {
     transition: ease-in-out 0.3s;
 }
 
-#login-form-input:focus {
+#login-company-form-input:focus {
     border-bottom: 1px solid #fa4299;
     padding-left: 55px;
 }
-#login-form-input:focus ~ #icon {
+#login-company-form-input:focus ~ #icon {
     color: #d41872;
     left: 20px;
 }
 
-#login-button{
+#login-company-button{
     width: 50%;
     margin-top: 30px;
     margin-bottom: 30px;
@@ -111,7 +111,7 @@ input:focus {
     background: -moz-linear-gradient(left, #a445b2, #d41872, #fa4299);
 }
 
-#login-button:hover {
+#login-company-button:hover {
     background: -webkit-linear-gradient(left, grey, grey, grey);
 }
 

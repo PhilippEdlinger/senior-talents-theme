@@ -62,7 +62,7 @@ if(session_status() == PHP_SESSION_NONE){
     <div id="data-wrapper">
             <div id="profile-container">
               <div class="profile-subcontainer">
-                  <!-- <div id="profile-picture">
+                  <div id="profile-picture">
                       <div class="profile-headline" style="margin-top: 10px;">
                         <p>Profilbild</p>
                       </div>
@@ -72,7 +72,7 @@ if(session_status() == PHP_SESSION_NONE){
                       <div id="pd" class="picture-upload-container">
                         <input type="file" class="picture-upload" placeholder="Eigenes Foto hochladen">    
                       </div>
-                  </div>-->
+                  </div>
                   <div id="profile-data">
                       <div class="profile-headline" style="width: 13vw; margin-top: 15px;">
                           <p>Persönliche Daten</p>

@@ -9,7 +9,7 @@
 <body class="background">
 
     <div class="content-wrapper">
-        <h1 class="headline">ACCOUNT REGISTER</h1>
+        <h1 class="headline">BENUTZERKONTO REGISTRIERUNG</h1>
         <form action="<?php echo home_url( '/' ) . "index.php/signup-db-connection" ; ?>" id="signup-form" method="post">
             <div class="signup-form-section">
                 <div class="input-icons">
@@ -27,16 +27,16 @@
             </div>
             <div class="signup-form-section">
                 <div class="input-icons">
-                    <input name="signup-form-password" id="signup-form-input_01" id="signup-form-password" type="password" placeholder="Password"></input>
+                    <input name="signup-form-password" id="signup-form-input_01" id="signup-form-password" type="password" placeholder="Passwort"></input>
                     <ion-icon id="icon1" name="lock-closed-outline"></ion-icon>
-                    <input name="signup-form-password2" id="signup-form-input_01" id="signup-form-password2" type="password" placeholder="Password"></input>
+                    <input name="signup-form-password2" id="signup-form-input_01" id="signup-form-password2" type="password" placeholder="Passwort"></input>
                     <ion-icon id="icon2" name="lock-open-outline"></ion-icon>
                 </div>
             </div>
             <p id="signup_info"> Sind Sie ein Unternehmen? Hier 
                 <a href="http://localhost/wordpress/wordpress/index.php/signup_company/" id="signup_c-link">Registrieren</a>!
             </p>
-            <button type="submit" id="signup-button"><h2>REGISTER</h2></button>
+            <button type="submit" id="signup-button"><h2>REGISTRIEREN</h2></button>
         </form>
     </div>
     

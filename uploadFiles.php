@@ -6,6 +6,8 @@
 	$file_type = $_FILES["uploadedFile"]["type"];
 	$local_file = $file_path; 
 
+	echo $file_path . "###" . $file_type;
+
 	$post_fields = array(
 		'name' => 'value',
 	);
@@ -46,6 +48,24 @@
 		)
 	);
 
-	header("Location: https://localhost/wordpress/wordpress/index.php/profile");
 
+	/*
+	$file_size=$_FILES['uploadedFile']['size'];
+    $file_tmp= $_FILES['uploadedFile']['tmp_name'];
+
+    $type = pathinfo($file_tmp, PATHINFO_EXTENSION);
+    $data = file_get_contents($file_tmp);
+    $base64 = 'data:image/' . $type . ';base64,' . base64_encode($data);
+    echo $base64;
+	*/
+
+	$encodedString = base64_encode($_FILES["uploadedFile"]["tmp_name"]);
+	//echo $encodedString;
+
+	/*
+	$decodedString = base64_decode($encodedString);
+	$decodedeImage = imageCreateFromString(d$decodedString);
+	*/
+
+	//header("Location: https://localhost/wordpress/wordpress/index.php/profile");
 ?>
