@@ -35,6 +35,17 @@
  </div>
 
 <body>
+<div id="company-logo">
+    <div class="company-profile-headline" style="margin-top: 10px;">
+        <p>Firmenlogo</p>
+    </div>
+    <div class="logo-container">
+        <div class="logo-picture"></div>
+        </div>
+    <div class="logo-upload-container">
+        <input type="file" class="logo-upload" placeholder="Eigenes Logo hochladen">    
+    </div>
+</div>
     <form action="<?php echo home_url( '/' ) . "index.php/update-company-profile" ; ?>" method="post" class="login-form">
         <div class="sections">
             <div class="input-iconsXX">
