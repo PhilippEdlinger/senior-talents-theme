@@ -40,7 +40,9 @@
         <p>Firmenlogo</p>
     </div>
     <div class="logo-container">
-        <div class="logo-picture"></div>
+        <div class="logo-picture">
+
+        </div>
         </div>
     <div class="logo-upload-container">
         <input type="file" class="logo-upload" placeholder="Eigenes Logo hochladen">    
@@ -117,5 +119,15 @@
             </div>
         </div>  
         <button id="profile-company-save-button" type="submit"><h2>Speichern</h2></button>
+
+        <div id="joboffers-container">
+            <h1> Berufsinserate </h1>
+            <div id="jobsoffers">
+                <!-- Auflistung der Jobs in divs -->
+            <div>
+            <a href= "http://localhost/wordpress/wordpress/index.php/create-job"> 
+                <div id="joboffer-button"> Job erstellen! </div>          
+            </a>
+        </div>
     </form>
 </body>
