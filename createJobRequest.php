@@ -32,9 +32,6 @@
 
     $body    = wp_remote_retrieve_body($request); 
 
-    echo json_encode($request);
-
-    
     if(substr_count($body, "n") == 0){
         header("Location: https://localhost/wordpress/wordpress/index.php/company-profile");
     }else{

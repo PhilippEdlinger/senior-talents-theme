@@ -124,6 +124,22 @@
             <h1> Berufsinserate </h1>
             <div id="jobsoffers">
                 <!-- Auflistung der Jobs in divs -->
+                <?php 
+
+                                 
+                $request = wp_remote_get( 'http://localhost:8080/job-offer/getByCompanyId/' . $_SESSION["companyId"], $arg );
+                $body    = wp_remote_retrieve_body($request); 
+                $jobList = json_decode($body, true);
+                
+                foreach ($jobList as $job){
+                echo '<div class="joboffer">
+                        <h3 class="joboffer-title">' . $job["title"] . '</h3>
+                        <p class="joboffer-category">' . $job["category"] . '</p>
+                        <p class="joboffer-descr">'. $job["descr"] .'</p>
+                    </div>';
+                }
+
+                ?>
             <div>
             <a href= "http://localhost/wordpress/wordpress/index.php/create-job"> 
                 <div id="joboffer-button"> Job erstellen! </div>          
