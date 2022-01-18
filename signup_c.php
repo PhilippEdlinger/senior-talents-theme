@@ -1,7 +1,6 @@
 <?php /* Template Name: Signup_Company Page */ ?>
 
 <head>
-    <link rel="stylesheet" href="<?php echo get_template_directory_uri() . '/css/signup_c-style.css'?>">
     <script src="<?php echo get_template_directory_uri() . '/js/signup_c.js'?>"></script>
 </head>
 <body>
@@ -22,3 +21,6 @@
         <button type="submit" id="signup_c-button"> REGISTRIEREN </button>
     </form>
 </body>
+
+
+<link rel="stylesheet" href="<?php echo get_template_directory_uri() . '/css/signup_c-style.css'?>">
