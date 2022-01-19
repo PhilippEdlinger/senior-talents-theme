@@ -6,7 +6,7 @@
 }
 
 .joboffer{
-    float: left;
+    display: inline-block;
     width: 45%;
     margin: 1%;
     min-height: 10px;
