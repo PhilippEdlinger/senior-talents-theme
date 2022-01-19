@@ -75,46 +75,46 @@
                             echo $_SESSION["branche"];
                         }
                     ?></option>
-                    <option value="Verwaltung | Büro | Administration">Verwaltung | Büro | Administration</option>
-                    <option value="Kultur | Kunst | Unterhaltung">Kultur | Kunst | Unterhaltung</option>
+                    <option value="Verwaltung &verbar; Büro &verbar; Administration">Verwaltung | Büro | Administration</option>
+                    <option value="Kultur &verbar; Kunst &verbar; Unterhaltung">Kultur | Kunst | Unterhaltung</option>
                     <option value="Vereine">Vereine</option>
-                    <option value="Automobilzulieferer | Automobil">Automobilzulieferer | Automobil</option>
+                    <option value="Automobilzulieferer &verbar; Automobil">Automobilzulieferer | Automobil</option>
                     <option value="Banken">Banken</option>
                     <option value="Chemie">Chemie</option>
-                    <option value="Handel | Konsum">Handel | Konsum</option>
-                    <option value="Baugewerbe | Architektur">Baugewerbe | Architektur</option>
-                    <option value="Beratung | Consulting">Beratung | Consulting</option>
-                    <option value="Bildung | Universität | Schulen | FH">Bildung | Universität | Schulen | FH</option>
-                    <option value="Elektronik | Elektro">Elektronik | Elektro</option>
+                    <option value="Handel &verbar; Konsum">Handel | Konsum</option>
+                    <option value="Baugewerbe &verbar; Architektur">Baugewerbe | Architektur</option>
+                    <option value="Beratung &verbar; Consulting">Beratung | Consulting</option>
+                    <option value="Bildung &verbar; Universität &verbar; Schulen &verbar; FH">Bildung | Universität | Schulen | FH</option>
+                    <option value="Elektronik &verbar; Elektro">Elektronik | Elektro</option>
                     <option value="Energiewirtschaft">Energiewirtschaft</option>
                     <option value="Finanzen">Finanzen</option>
-                    <option value="Nahrungmittel | Forstwirtschaft | Land">Nahrungmittel | Forstwirtschaft | Land</option>
-                    <option value="Gesundheitswesen | Pflege | Soziales">Gesundheitswesen | Pflege | Soziales</option>
-                    <option value="Personalbeschafung | Personalwesen">Personalbeschafung | Personalwesen</option>
+                    <option value="Nahrungmittel &verbar; Forstwirtschaft &verbar; Land">Nahrungmittel | Forstwirtschaft | Land</option>
+                    <option value="Gesundheitswesen &verbar; Pflege &verbar; Soziales">Gesundheitswesen | Pflege | Soziales</option>
+                    <option value="Personalbeschafung &verbar; Personalwesen">Personalbeschafung | Personalwesen</option>
                     <option value="Industrie">Industrie</option>
                     <option value="Versicherung">Versicherung</option>
-                    <option value="Multimedia | Internet">Multimedia | Internet</option>
-                    <option value="IT | EDV"> IT | EDV </option>
+                    <option value="Multimedia &verbar; Internet">Multimedia | Internet</option>
+                    <option value="IT &verbar; EDV"> IT | EDV </option>
                     <option value="Rechtsberatung"> Rechtsberatung </option>
-                    <option value="Werbung | Marketing | PR"> Werbung | Marketing | PR </option>
+                    <option value="Werbung &verbar; Marketing &verbar; PR"> Werbung | Marketing | PR </option>
                     <option value="Marktforschung">Marktforschung</option>
-                    <option value="Anlagenbau | Maschienen">Anlagenbau | Maschienen</option>
+                    <option value="Anlagenbau &verbar; Maschienen">Anlagenbau | Maschienen</option>
                     <option value="Medien">Medien</option>
                     <option value="Medizintechnik">Medizintechnik</option>
-                    <option value="Medizin | Pharma">Medizin | Pharma</option>
-                    <option value="Druck | Verpackung | Papier">Druck | Verpackung | Papier</option>
+                    <option value="Medizin &verbar; Pharma">Medizin | Pharma</option>
+                    <option value="Druck &verbar; Verpackung &verbar; Papier">Druck | Verpackung | Papier</option>
                     <option value="Öffentliche Verwaltung">Öffentliche Verwaltung</option>
-                    <option value="Einkauf | Beschaffung">Einkauf | Beschaffung</option>
+                    <option value="Einkauf &verbar; Beschaffung">Einkauf | Beschaffung</option>
                     <option value="Immobilien">Immobilien</option>
-                    <option value="Entwickung | Forschung | Wissenschaft">Entwickung | Forschung | Wissenschaft</option>
+                    <option value="Entwickung &verbar; Forschung &verbar; Wissenschaft">Entwickung | Forschung | Wissenschaft</option>
                     <option value="Dienstleistung">Dienstleistung</option>
-                    <option value="Beaty | Fitness | Sport">Beaty | Fitness | Sport</option>
-                    <option value="Wirtschaftsprüfung | Steuerberatung">Wirtschaftsprüfung | Steuerberatung</option>
+                    <option value="Beaty &verbar; Fitness &verbar; Sport">Beaty | Fitness | Sport</option>
+                    <option value="Wirtschaftsprüfung &verbar; Steuerberatung">Wirtschaftsprüfung | Steuerberatung</option>
                     <option value="Telekommunikation">Telekommunikation</option>
                     <option value="Textilbranche">Textilbranche</option>
-                    <option value="Gastronomie | Tourismus | Hotel">Gastronomie | Tourismus | Hotel</option>
-                    <option value="Messeanbieter | Seminar">Messeanbieter | Seminar</option>
-                    <option value="Logistik | Verkehr | Transport">Marktforschung</option>
+                    <option value="Gastronomie &verbar; Tourismus &verbar; Hotel">Gastronomie | Tourismus | Hotel</option>
+                    <option value="Messeanbieter &verbar; Seminar">Messeanbieter | Seminar</option>
+                    <option value="Logistik &verbar; Verkehr &verbar; Transport">Marktforschung</option>
                 </select>
             </div>
         </div>  
