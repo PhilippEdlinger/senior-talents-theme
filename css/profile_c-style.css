@@ -6,9 +6,35 @@
 }
 
 .joboffer{
-    border: 1px solid black;
-    width: 100px;
+    float: left;
+    width: 45%;
+    margin: 1%;
+    min-height: 10px;
+    padding: 5px;
+    border-radius: 4px;
+    box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.3);
+    background: #fff;
 }
+
+.joboffer-title {
+    width: 100%;
+    position: relative;
+    border-bottom: 1px solid #e6e6e6;
+    padding: 10px;
+}
+
+.joboffer-category {
+    width: 100%;
+    position: relative;
+    padding: 5px;
+}
+
+.joboffer-descr {
+    width: 100%;
+    position: relative;
+    padding: 5px;
+}
+
 html {
     margin: 0%;
 }

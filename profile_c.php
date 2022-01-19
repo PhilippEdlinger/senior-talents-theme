@@ -156,7 +156,7 @@
                         foreach ($jobList as $job){
                         echo '<div class="joboffer">
                                 <h3 class="joboffer-title">' . $job["title"] . '</h3>
-                                <p class="joboffer-category">' . $job["category"] . '</p>
+                                <p class="joboffer-category">Kategory: ' . $job["category"] . '</p>
                                 <p class="joboffer-descr">'. $job["descr"] .'</p>
                             </div>';
                         }
