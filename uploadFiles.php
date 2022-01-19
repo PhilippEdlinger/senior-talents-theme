@@ -6,7 +6,7 @@
 	$file_type = $_FILES["uploadedFile"]["type"];
 	$local_file = $file_path; 
 
-	echo $file_path . "###" . $file_type;
+	//echo $file_path . "###" . $file_type;
 
 	$post_fields = array(
 		'name' => 'value',
@@ -48,11 +48,10 @@
 		)
 	);
 
-
 	/*
 	$file_size=$_FILES['uploadedFile']['size'];
     $file_tmp= $_FILES['uploadedFile']['tmp_name'];
-
+	
     $type = pathinfo($file_tmp, PATHINFO_EXTENSION);
     $data = file_get_contents($file_tmp);
     $base64 = 'data:image/' . $type . ';base64,' . base64_encode($data);
@@ -61,6 +60,13 @@
 
 	$encodedString = base64_encode($_FILES["uploadedFile"]["tmp_name"]);
 	//echo $encodedString;
+	$imagedata = file_get_contents($_FILES["uploadedFile"]["tmp_name"]);
+             // alternatively specify an URL, if PHP settings allow
+	$base64 = base64_encode($imagedata);
+	//echo $base64;
+
+	 
+	file_put_contents('img/my-quick-file.png', file_get_contents($base64));
 
 	/*
 	$decodedString = base64_decode($encodedString);
