@@ -61,7 +61,6 @@ if(session_status() == PHP_SESSION_NONE){
 <body id="pp">
     <div id="data-wrapper">
             <div id="profile-container">
-              <div class="profile-subcontainer">
                   <div id="profile-picture">
                       <div class="profile-headline" style="margin-top: 10px;">
                         <p>Profilbild</p>

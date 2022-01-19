@@ -9,3 +9,336 @@
     border: 1px solid black;
     width: 100px;
 }
+html {
+    margin: 0%;
+}
+
+body{
+    font-family: Ubuntu-Regular,sans-serif;
+    margin: 0%;
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Old versions of Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none; /* Non-prefixed version, currently
+    supported by Chrome, Edge, Opera and Firefox */
+    color:azure;
+    background-color: rgba(0,0,0,0.1);
+}
+
+p{
+    font-size: 1.1vw;
+    margin: 0px;
+}
+
+h2 {
+    margin: 0px;
+    padding: 0px;
+ }
+
+ a {
+     text-decoration: none;
+     color: #3E5444;
+ }
+
+/* header */
+.header-container{
+    box-shadow: 0.5px 0.5px 5px black;
+    height: 45px;
+    will-change: 100px;
+    width: 100%;
+    position: fixed;
+    background-color: #35393B;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    z-index: 2;
+}
+
+.header-image{
+    height: 100%;
+    width: 300px;
+    margin-left: 5%;
+    margin-right: 34%;
+    padding: 0px 5px 0px 5px;
+}
+
+#logo-image {
+    background-image: url(../img/logo-white.png);
+    height: 100%;
+    width: 100%;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+/* navigation */
+#nav {
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.3);
+    height: 100%;
+    width: 220px;
+    position: fixed;
+    margin-left: 0%;
+    background-color: #F0F0F0;
+    z-index: 1;
+}
+#profile-nav {
+    margin-top: 40%;
+    background: -webkit-linear-gradient(left, #a445b2, #d41872, #fa4299);
+    background: -o-linear-gradient(left, #a445b2, #d41872, #fa4299);
+    background: -moz-linear-gradient(left, #a445b2, #d41872, #fa4299);
+}
+#job-nav {
+    margin-top: 8%;
+    background: -webkit-linear-gradient(left, #a445b2, #d41872, #fa4299);
+    background: -o-linear-gradient(left, #a445b2, #d41872, #fa4299);
+    background: -moz-linear-gradient(left, #a445b2, #d41872, #fa4299);
+}
+
+.nav-window {
+    border-radius: 12px;
+    background-color: navajowhite;
+    min-height: 50px;
+}
+
+.nav-title {
+    width: 100%;
+    text-align: center;
+    font-size: 0.8vw;
+    padding: 5px 10px;
+    padding:10px 0px 10px 0px;
+    color: white;
+    border-radius: 0px 12px 0px 0px;
+}
+
+.nav-box-element {
+    max-width: 100%;
+    min-height: 5px;
+    padding: 8px 0px 8px 20px;
+    font-size: 1vw;
+    color: #3E5444;
+    background-color: white;
+    transition: padding-left ease-in 0.1s;
+}
+
+.nav-box-element-last {
+    max-width: 100%;
+    min-height: 5px;
+    padding: 8px 0px 8px 20px;
+    font-size: 1vw;
+    color: #3E5444;
+    border-radius: 0px 0px 12px 0px;
+    background-color: white;
+    transition: padding-left ease-in 0.1s;
+}
+
+.nav-element {
+    font-size: 1vw;
+}
+
+.nav-box-element:hover {
+    padding-left: 22px;
+    background-color: lightgrey;
+}
+
+.nav-box-element-last:hover {
+    padding-left: 22px;
+    background-color: lightgrey;
+}
+
+/* content */
+#data-wrapper {
+    position: absolute;
+    top: 90px;
+    margin-left: 18%;
+    width: 82%;
+    min-height: 100%;
+    margin-bottom: 400px;
+}
+
+#profile-container{
+    min-height: 80vh;
+    max-width: 900px;
+    margin: auto;
+    border-radius: 12px;
+    box-shadow: 0px 0px 10px lightgray;
+    padding: 15px;
+    margin-bottom: 50px;
+    background: #fff;
+}
+
+/* pp */
+#profile-picture{   
+    width: 100%;
+    min-height: 40px;
+    margin-bottom: 40px;
+}
+
+.profile-headline{
+    margin: 0 auto;
+    min-height: 1px;
+    width: 10vw;
+    text-align: center;
+    padding: 5px 0px 5px 0px;
+    box-shadow: 1px 1px 4px grey;
+    border-radius: 15px;
+    color: black;
+    margin-top: 10px;
+    margin-bottom:30px;
+}
+
+.picture-container {
+    display: flex;
+    justify-content: center;
+}
+
+.picture {
+    margin: 25px;
+    width: 80px;
+    height: 80px;
+    border-radius: 40px;
+    background-color: grey;
+    border: 2px solid black;
+}
+
+.picture-upload-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.picture-upload {
+    
+}
+
+
+/* content */
+#profile-data{
+    min-height: 100px;
+    width: 100%;
+}
+
+.sections {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    min-height:30px;   
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+select {
+    border: none;
+    outline: none;
+}
+
+input {
+    border: none;
+    text-decoration: none;
+}
+
+.input-icons01 {
+    position: relative;
+    width: 49%;
+ }
+
+ .input-icons02 {
+     position: relative;
+     width: 100%;
+ }
+
+ .input-icons01 .icon {
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    color: grey;
+    transition: ease-in-out 0.3s;
+}
+
+.input-icons02 .icon {
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    color: grey;
+    transition: ease-in-out 0.3s;
+}
+
+.profile-company-input-form {
+    outline: none;
+    font-size: 15px;
+    position: relative;
+    width: 100%;
+    border-bottom: 1px solid #e6e6e6;
+    padding: 25px 62px;
+    color: black;
+    border-radius: 5px;
+    transition: ease-in-out 0.3s;
+}
+
+.profile-company-input-form:focus {
+    border-bottom: 1px solid #fa4299;
+    padding-left: 45px;
+}
+.profile-company-input-form:focus ~ .icon {
+    color: #d41872;
+    left: 15px;
+}
+
+.profile-data-content {
+    padding: 25px 0px 0px 0px;
+    
+}
+
+.pillar-l {
+    padding-left: 20px;
+    float: left;
+    min-width: 45%;
+    min-height: 1px;
+    color: black;
+}
+.pillar-r {
+    padding-left: 20px;
+    float: right;
+    min-width: 45%;
+    min-height: 1px;
+    color: black;
+}
+
+input {
+    padding: 6px;
+    width: 90%;
+}
+ #profile-save-button {
+     text-decoration: none;
+    position: relative;
+    left: 35%;
+    width: 30%;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    padding: 12px 15px;
+    border: none;
+    border-radius: 30px;
+    font-size: 10px;
+    color: white;
+    text-align: center;
+    background: -webkit-linear-gradient(left, #a445b2, #d41872, #fa4299);
+    background: -o-linear-gradient(left, #a445b2, #d41872, #fa4299);
+    background: -moz-linear-gradient(left, #a445b2, #d41872, #fa4299);
+ }
+ #profile-save-button:hover {
+     background-color: #16E067;
+ }
+
+/* resume */
+.profile-resume {
+    margin-top: 40px;
+}
+
+#profile-description{
+    
+}
+
+
+
+#profile-files{
+    width:100%;
+}

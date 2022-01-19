@@ -20,8 +20,10 @@
                 <input placeholder="Passwort" name="login-form-input-password" id="login-form-input" id="login-form-input-password" type="password" style="margin-top: 3px;"></input>
                 <ion-icon id="icon" name="lock-closed-outline"></ion-icon>
             </div>
-            <p id="signup_info"> Sind Sie ein Unternehmen? Hier 
-                <a href="http://localhost/wordpress/wordpress/index.php/login-company/" id="signup_c-link">Anmelden</a>!
+            <p id="signup_info"> Sind Sie ein Unternehmen? <br>Hier
+                <a href="http://localhost/wordpress/wordpress/index.php/login-company/" id="signup_c-link">Anmelden</a>
+                oder
+                <a href="http://localhost/wordpress/wordpress/index.php/signup_company/" id="signup_c-link">Registrieren</a>!
             </p>
             <button id="login-button" type="submit"><h2>ANMELDEN</h2></button>
         </form>
