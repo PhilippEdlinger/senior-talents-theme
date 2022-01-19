@@ -163,7 +163,7 @@
 
                         ?>
                     <div id="profile-save-button">
-                    <a href= "http://localhost/wordpress/wordpress/index.php/create-job" style="color: #fff"> 
+                    <a href= "http://localhost/wordpress/wordpress/index.php/create-job" style="color: #fff; float: block;"> 
                         <div id="joboffer-button"><h2>Job erstellen!</h2></div>          
                     </a>
                     </div>
