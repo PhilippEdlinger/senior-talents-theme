@@ -75,13 +75,13 @@ p{
     height: 38px;
     will-change: 100px;
     width: 100%;
-    display: flex;
     background-color:#35393B;
     padding-top: 1%;
     padding-bottom: 1%;
 }
 
 .header-image{
+    float: left;
     height: 100%;
     width: 300px;
     margin-left: 10%;
@@ -89,6 +89,7 @@ p{
 }
 
 .nav-elements {
+    float: right;
     margin-left: 15%;
     padding: 0;
     overflow: hidden;
@@ -117,7 +118,9 @@ p{
 /* dropdown */
 
 .dropdown-profile {
+    float: right;
     margin-left: 10%;
+    margin-right: 15%;
     position: relative;
     display: inline-block;
 }

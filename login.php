@@ -10,7 +10,7 @@
 <body class="background">
 
     <div class="content-wrapper">
-        <h1 class="headline">BENUTZERKONTO ANMELDUNG</h1>
+        <h1 class="headline">BENUTZERKONTO ANMELDEN</h1>
         <form action="<?php echo home_url( '/' ) . "index.php/dbConnection" ; ?>" method="post" class="login-form">
             <div class="input-icons">
                 <input placeholder="Email" name="login-form-input-email" id="login-form-input" id="login-form-input-email" type="text" style="border-radius: 10px 10px 0px 0px; margin-top: 3px;"></input>

@@ -10,7 +10,7 @@
 <body class="background">
 
     <div class="content-wrapper">
-        <h1 class="headline">UNTERNEHMEN ANMELDUNG</h1>
+        <h1 class="headline">UNTERNEHMEN ANMELDEN</h1>
         <form action="<?php echo home_url( '/' ) . "index.php/company-db-connection" ; ?>" method="post" class="login-company-form">
             <div class="input-icons">
                 <input placeholder="Email" name="login-company-form-input-email" id="login-company-form-input" id="login-company-form-input-email" type="text" style="border-radius: 10px 10px 0px 0px; margin-top: 3px;"></input>
@@ -20,7 +20,7 @@
                 <input placeholder="Passwort" name="login-company-form-input-password" id="login-company-form-input" id="login-company-form-input-password" type="password" style="margin-top: 3px;"></input>
                 <ion-icon id="icon" name="lock-closed-outline"></ion-icon>
             </div>
-            <p id="signup_c-text"> Wenn Sie kein Unternehmen sind, bitte hier 
+            <p id="signup_info"> Wenn Sie kein Unternehmen sind, bitte hier 
                 <a href="http://localhost/wordpress/wordpress/index.php/login/" id="signup-link">Anmelden</a>!
             </p>
             <button id="login-company-button" type="submit"><h2>ANMELDEN</h2></button>

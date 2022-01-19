@@ -9,28 +9,32 @@
 <body class="background">
 
     <div class="content-wrapper">
-        <h1 class="headline">BENUTZERKONTO REGISTRIERUNG</h1>
+        <h1 class="headline">BENUTZERKONTO REGISTRIEREN</h1>
         <form action="<?php echo home_url( '/' ) . "index.php/signup-db-connection" ; ?>" id="signup-form" method="post">
-            <div class="signup-form-section">
-                <div class="input-icons">
-                    <input name="signup-form-firstname" id="signup-form-input_01" id="signup-form-firstname" type="text" placeholder="Vorname"></input>
-                    <ion-icon id="icon1" name="bookmark-outline"></ion-icon>
-                    <input name="signup-form-lastname" id="signup-form-input_01" id="signup-form-lastname" type="text" placeholder="Nachname"></input>
-                    <ion-icon id="icon2" name="bookmark-outline"></ion-icon>
+            <div class="sections">
+                <div class="input-icons01"style="margin-top: 4px;">
+                    <input name="signup-form-firstname" class="signup-form-input" id="signup-form-firstname" type="text" placeholder="Vorname"></input>
+                    <ion-icon class="icon" name="bookmark-outline"></ion-icon>
+                </div>
+                <div class="input-icons01"style="margin-top: 4px;">    
+                    <input name="signup-form-lastname" class="signup-form-input" id="signup-form-lastname" type="text" placeholder="Nachname"></input>
+                    <ion-icon class="icon" name="bookmark-outline"></ion-icon>
                 </div>
             </div>
-            <div class="signup-form-section">
-                <div class="input-icons">
-                    <input name="signup-form-email" id="signup-form-input_02" id="signup-form-email" type="text" placeholder="Email"></input>
-                    <ion-icon id="icon1" name="mail-outline"></ion-icon>
+            <div class="sections">
+                <div class="input-icons02">
+                    <input name="signup-form-email" class="signup-form-input" id="signup-form-email" type="text" placeholder="Email"></input>
+                    <ion-icon class="icon" name="mail-outline"></ion-icon>
                 </div>
             </div>
-            <div class="signup-form-section">
-                <div class="input-icons">
-                    <input name="signup-form-password" id="signup-form-input_01" id="signup-form-password" type="password" placeholder="Passwort"></input>
-                    <ion-icon id="icon1" name="lock-closed-outline"></ion-icon>
-                    <input name="signup-form-password2" id="signup-form-input_01" id="signup-form-password2" type="password" placeholder="Passwort"></input>
-                    <ion-icon id="icon2" name="lock-open-outline"></ion-icon>
+            <div class="sections">
+                <div class="input-icons01">
+                    <input name="signup-form-password" class="signup-form-input" id="signup-form-password" type="password" placeholder="Passwort"></input>
+                    <ion-icon class="icon" name="lock-closed-outline"></ion-icon>
+                </div>
+                <div class="input-icons01">    
+                    <input name="signup-form-password2" class="signup-form-input" id="signup-form-password2" type="password" placeholder="Passwort"></input>
+                    <ion-icon class="icon" name="lock-open-outline"></ion-icon>
                 </div>
             </div>
             <p id="signup_info"> Sind Sie ein Unternehmen? Hier 
