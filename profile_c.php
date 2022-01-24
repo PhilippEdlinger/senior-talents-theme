@@ -148,7 +148,6 @@
                         <!-- Auflistung der Jobs in divs -->
                         <?php 
 
-                                        
                         $request = wp_remote_get( 'http://localhost:8080/job-offer/getByCompanyId/' . $_SESSION["companyId"], $arg );
                         $body    = wp_remote_retrieve_body($request); 
                         $jobList = json_decode($body, true);
@@ -160,7 +159,6 @@
                                 <p class="joboffer-descr">'. $job["descr"] .'</p>
                             </div>';
                         }
-
                         ?>
                     <div id="profile-save-button">
                     <a href= "http://localhost/wordpress/wordpress/index.php/create-job" style="color: #fff; float: block;"> 
@@ -169,9 +167,17 @@
                     </div>
                 </div>
             </form>
+            <form action="<?php echo home_url( '/' ) . "index.php/company-add-address-request" ; ?>" method="post" class="login-form">
+                <input id="profile-streetname" placeholder="Straße" class="profile-input-form" name="company-street" value="<?php echo $_SESSION["street"] ?>"></input>
+                <input id="profile-streetnumber" placeholder="Straßennummer" class="profile-input-form" name="company-streetNo" value="<?php echo $_SESSION["streetNo"] ?>"></input>
+                <input id="profile-zipNo" placeholder="Postleitzahl" class="profile-input-form" name="company-zipNo" value="<?php echo $_SESSION["zipNo"] ?>"></input>
+                <input id="profile-city" placeholder="Stadt" class="profile-input-form" name="company-city" value="<?php echo $_SESSION["city"] ?>"></input>
+                <input id="profile-country" placeholder="Land" class="profile-input-form" name="company-country" value="<?php echo $_SESSION["country"] ?>"></input>
+                <input id="profile-state" placeholder="Bundesland" class="profile-input-form" name="compnay-state" value="<?php echo $_SESSION["state"] ?>"></input>
+                <button id="profile-add-address-button" type="submit"><h2> Speichern</h2></button>
+            </form>
         </div>
     </div>
 </body>
-
 
 <link rel="stylesheet" href="<?php echo get_template_directory_uri() . '/css/profile_c-style.css'?>">
