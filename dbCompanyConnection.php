@@ -34,6 +34,12 @@ if (substr_count( $body, "\n" ) == 0){
   $_SESSION["contactperson-email"] = null;
   $_SESSION["contactperson-telNo"] = null;
 
+  $_SESSION["contactperson-title"] = null;
+  $_SESSION["contactperson-firstName"] = null;
+  $_SESSION["contactperson-lastName"] = null;
+  $_SESSION["contactperson-email"] = null;
+  $_SESSION["contactperson-telNo"] = null;
+
   $addressId = $json_body["address"]["addressId"];
   $contactPersonId = $json_body["contactPerson"]["id"];
 
@@ -54,29 +60,29 @@ if (substr_count( $body, "\n" ) == 0){
   }
 
   if ( $contactPersonId != null){
-    /* ####### TODO ########
-    $response = wp_remote_get("http://localhost:8080/address/" . $addressId);
+
+    $response = wp_remote_get("http://localhost:8080/contact-person/getById/" . $contactPersonId);
     $body     = wp_remote_retrieve_body($response); 
+
+    echo json_encode($response);
 
     if (substr_count( $body, "\n" ) == 0){
       $json_body = json_decode($body, true);
-      $_SESSION["street"] = $json_body["street"];
-      $_SESSION["streetNo"] = $json_body["streetNo"];
-      $_SESSION["zipNo"] = $json_body["zipNo"];
-      $_SESSION["city"] = $json_body["city"];
-      $_SESSION["country"] = $json_body["country"];
-      $_SESSION["state"] = $json_body["state"];
-      $_SESSION["addressId"] = $json_body["addressId"];
+      $_SESSION["contactperson-title"] = $json_body["title"];
+      $_SESSION["contactperson-firstName"] = $json_body["firstName"];
+      $_SESSION["contactperson-lastName"] = $json_body["lastName"];
+      $_SESSION["contactperson-email"] = $json_body["email"];
+      $_SESSION["contactperson-telNo"] = $json_body["telNo"];
     }
-    */  
+      
   }
 
 
- header("Location: https://localhost/wordpress/wordpress/index.php/company-profile");
+  header("Location: https://localhost/wordpress/wordpress/index.php/company-profile");
 }
 
 else{ 
- header("Location: https://localhost/wordpress/wordpress/index.php/signup_company");
- }
+  header("Location: https://localhost/wordpress/wordpress/index.php/signup_company");
+}
  
 ?>

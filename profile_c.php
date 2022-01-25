@@ -152,13 +152,24 @@
                         $body    = wp_remote_retrieve_body($request); 
                         $jobList = json_decode($body, true);
                         
-                        foreach ($jobList as $job){
-                        echo '<div class="joboffer">
-                                <h3 class="joboffer-title">' . $job["title"] . '</h3>
-                                <p class="joboffer-category">Kategory: ' . $job["category"] . '</p>
-                                <p class="joboffer-descr">'. $job["descr"] .'</p>
-                            </div>';
-                        }
+                        if ($jobList != null){
+                            foreach ($jobList as $job){
+                            echo '<div class="joboffer">
+                                    <form name="jobofferId" value="test" action="http://localhost/wordpress/wordpress/index.php/update-job-offer" class="login-form" method="post">
+                                        <h3  class="joboffer-title">' . $job["title"] . '</h3>
+                                        <p name="joboffer-category" class="joboffer-category">Kategory: ' . $job["category"] . '</p>
+                                        <p class="joboffer-descr">'. $job["descr"] .'</p>
+                                        <input hidden name="joboffer-title" value='. $job["title"] .'></input>
+                                        <input hidden name="joboffer-category" value='. $job["category"] .'></input>
+                                        <input hidden name="joboffer-descr" value='. $job["descr"] .'></input>
+                                        <input hidden name="joboffer-condition" value='. $job["condition"] .'></input>
+                                        <input hidden name="joboffer-salary" value='. $job["salary"] .'></input>
+                                        <input hidden name="joboffer-id" value='. $job["jobOfferId"] .'></input>
+                                        <button id="profile-update-job-button" type="submit">Bearbeiten</button>
+                                    </form>    
+                                </div>';
+                                }
+                            }
                         ?>
                     <div id="profile-save-button">
                     <a href= "http://localhost/wordpress/wordpress/index.php/create-job" style="color: #fff; float: block;"> 
