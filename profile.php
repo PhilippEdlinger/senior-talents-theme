@@ -202,7 +202,7 @@ if(session_status() == PHP_SESSION_NONE){
                           <input id="profile-seniorId" name="seniorId" value="<?php echo $_SESSION["seniorId"] ?>"> </input>
                           <button id="profile-save-button" type="submit"><h2>Speichern</h2></button>
                       </form>
-                        <div class="profile-headline">
+                    <div class="profile-headline">
                         <p> Addresse </p>
                     </div>
                     <form action="<?php echo home_url( '/' ) . "index.php/senior-add-address-request" ; ?>" method="post" class="login-form">
@@ -213,6 +213,17 @@ if(session_status() == PHP_SESSION_NONE){
                         <input id="profile-country" placeholder="Land" class="profile-input-form" name="senior-country" value="<?php echo $_SESSION["country"] ?>"></input>
                         <input id="profile-state" placeholder="Bundesland" class="profile-input-form" name="senior-state" value="<?php echo $_SESSION["state"] ?>"></input>
                         <button id="profile-add-address-button" type="submit"><h2> Speichern</h2></button>
+                    </form>
+                    <div class="profile-headline">
+                        <p> Kontaktperson </p>
+                    </div>
+                    <form action="<?php echo home_url( '/' ) . "index.php/senior-add-contact-person-request" ; ?>" method="post" class="login-form">
+                        <input id="contactperson-title" placeholder="title" class="profile-input-form" name="senior-contactperson-title" value="<?php echo $_SESSION["contactperson-title"] ?>"></input>
+                        <input id="contactperson-firstname" placeholder="Vorname" class="profile-input-form" name="senior-contactperson-firstName" value="<?php echo $_SESSION["contactperson-firstName"] ?>"></input>
+                        <input id="contactperson-lastname" placeholder="Nachname" class="profile-input-form" name="senior-contactperson-lastName" value="<?php echo $_SESSION["contactperson-lastName"] ?>"></input>
+                        <input id="contactperson-email" placeholder="Email" class="profile-input-form" name="senior-contactperson-email" value="<?php echo $_SESSION["contactperson-email"] ?>"></input>
+                        <input id="contactperson-telno" placeholder="Telefonnummer" class="profile-input-form" name="senior-contactperson-telNo" value="<?php echo $_SESSION["contactperson-telNo"] ?>"></input>
+                        <button id="contact-add-contactperson-button" type="submit"><h2> Speichern</h2></button>
                     </form>
                   </div> 
               </div>

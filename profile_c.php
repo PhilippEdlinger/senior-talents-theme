@@ -179,6 +179,17 @@
                 <input id="profile-state" placeholder="Bundesland" class="profile-input-form" name="compnay-state" value="<?php echo $_SESSION["state"] ?>"></input>
                 <button id="profile-add-address-button" type="submit"><h2> Speichern</h2></button>
             </form>
+            <div class="profile-headline">
+                <p> Kontaktperson </p>
+            </div>
+            <form action="<?php echo home_url( '/' ) . "index.php/company-add-contact-person-request" ; ?>" method="post" class="login-form">
+                <input id="contactperson-title" placeholder="Anrede" class="profile-input-form" name="company-contactperson-title" value="<?php echo $_SESSION["contactperson-title"] ?>"></input>
+                <input id="contactperson-firstname" placeholder="Vorname" class="profile-input-form" name="company-contactperson-firstName" value="<?php echo $_SESSION["contactperson-firstName"] ?>"></input>
+                <input id="contactperson-lastname" placeholder="Nachname" class="profile-input-form" name="company-contactperson-lastName" value="<?php echo $_SESSION["contactperson-lastName"] ?>"></input>
+                <input id="contactperson-email" placeholder="Email" class="profile-input-form" name="company-contactperson-email" value="<?php echo $_SESSION["contactperson-email"] ?>"></input>
+                <input id="contactperson-telno" placeholder="Telefonnummer" class="profile-input-form" name="company-contactperson-telNo" value="<?php echo $_SESSION["contactperson-telNo"] ?>"></input>
+                <button id="contact-add-contactperson-button" type="submit"><h2> Speichern</h2></button>
+            </form>
         </div>
     </div>
 </body>
