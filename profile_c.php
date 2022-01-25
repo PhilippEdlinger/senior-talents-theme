@@ -167,6 +167,9 @@
                     </div>
                 </div>
             </form>
+            <div class="profile-headline">
+                <p> Addresse </p>
+            </div>
             <form action="<?php echo home_url( '/' ) . "index.php/company-add-address-request" ; ?>" method="post" class="login-form">
                 <input id="profile-streetname" placeholder="Straße" class="profile-input-form" name="company-street" value="<?php echo $_SESSION["street"] ?>"></input>
                 <input id="profile-streetnumber" placeholder="Straßennummer" class="profile-input-form" name="company-streetNo" value="<?php echo $_SESSION["streetNo"] ?>"></input>

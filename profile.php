@@ -202,20 +202,21 @@ if(session_status() == PHP_SESSION_NONE){
                           <input id="profile-seniorId" name="seniorId" value="<?php echo $_SESSION["seniorId"] ?>"> </input>
                           <button id="profile-save-button" type="submit"><h2>Speichern</h2></button>
                       </form>
-                      <div class="profile-headline" style="width: 13vw; margin-top: 15px;">
-                          <p>Adresse</p>
-                      </div>
-                      <form action="<?php echo home_url( '/' ) . "index.php/senior-add-address-request" ; ?>" method="post" class="login-form">
-                        <input id="profile-streetname" placeholder="Straße" class="profile-input-form" name="street" value="<?php echo $_SESSION["street"] ?>"></input>
-                        <input id="profile-streetnumber" placeholder="Straßennummer" class="profile-input-form" name="streetNo" value="<?php echo $_SESSION["streetNo"] ?>"></input>
-                        <input id="profile-zipNo" placeholder="Postleitzahl" class="profile-input-form" name="zipNo" value="<?php echo $_SESSION["zipNo"] ?>"></input>
-                        <input id="profile-city" placeholder="Stadt" class="profile-input-form" name="city" value="<?php echo $_SESSION["city"] ?>"></input>
-                        <input id="profile-country" placeholder="Land" class="profile-input-form" name="country" value="<?php echo $_SESSION["country"] ?>"></input>
-                        <input id="profile-state" placeholder="Bundesland" class="profile-input-form" name="state" value="<?php echo $_SESSION["state"] ?>"></input>
+                        <div class="profile-headline">
+                        <p> Addresse </p>
+                    </div>
+                    <form action="<?php echo home_url( '/' ) . "index.php/senior-add-address-request" ; ?>" method="post" class="login-form">
+                        <input id="profile-streetname" placeholder="Straße" class="profile-input-form" name="senior-street" value="<?php echo $_SESSION["street"] ?>"></input>
+                        <input id="profile-streetnumber" placeholder="Straßennummer" class="profile-input-form" name="senior-streetNo" value="<?php echo $_SESSION["streetNo"] ?>"></input>
+                        <input id="profile-zipNo" placeholder="Postleitzahl" class="profile-input-form" name="senior-zipNo" value="<?php echo $_SESSION["zipNo"] ?>"></input>
+                        <input id="profile-city" placeholder="Stadt" class="profile-input-form" name="senior-city" value="<?php echo $_SESSION["city"] ?>"></input>
+                        <input id="profile-country" placeholder="Land" class="profile-input-form" name="senior-country" value="<?php echo $_SESSION["country"] ?>"></input>
+                        <input id="profile-state" placeholder="Bundesland" class="profile-input-form" name="senior-state" value="<?php echo $_SESSION["state"] ?>"></input>
                         <button id="profile-add-address-button" type="submit"><h2> Speichern</h2></button>
-                     </form>
+                    </form>
                   </div> 
               </div>
+              
               <div class="profile-subcontainer subcontainer2">
                   <div id="profile-description"></div>
                   <div id="profile-files">

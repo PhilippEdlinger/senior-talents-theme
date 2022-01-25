@@ -19,6 +19,14 @@ if (substr_count( $body, "\n" ) == 0){
   $_SESSION["email"] = $json_body["email"];
   $_SESSION["branche"] = $json_body["branche"];
   $_SESSION["companyId"] = $json_body["companyId"];
+
+  $_SESSION["street"] = null;
+  $_SESSION["streetNo"] = null;
+  $_SESSION["zipNo"] = null;
+  $_SESSION["city"] = null;
+  $_SESSION["country"] = null;
+  $_SESSION["state"] = null;
+  $_SESSION["addressId"] = null;
    
   $addressId = $json_body["address"]["addressId"];
 

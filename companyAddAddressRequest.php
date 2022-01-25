@@ -48,7 +48,6 @@ $arg = array(
 $request = wp_remote_post( 'http://localhost:8080/company/addAddressById/' . $companyId . "/" . $addressId , $arg );
 $body    = wp_remote_retrieve_body($request); 
 
-
 header("Location: https://localhost/wordpress/wordpress/index.php/company-profile");
 
 ?> 
