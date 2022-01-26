@@ -65,10 +65,14 @@ if(session_status() == PHP_SESSION_NONE){
                         <p>Profilbild</p>
                       </div>
                       <div class="picture-container">
-                        <div class="picture"></div>
+                        <div class="picture" style="background-image: url('<?php echo get_template_directory_uri() . $_SESSION["imageData"] ?>'); background-position: center;">
                       </div>
-                      <div id="pd" class="picture-upload-container">
-                        <input type="file" class="picture-upload" placeholder="Eigenes Foto hochladen">    
+                      </div>
+                      <div id="pd" class="picture-upload-container"
+                      ><form action="<?php echo home_url( '/' ) . "index.php/uploadFiles" ; ?>" method="POST" enctype="multipart/form-data">
+                          <input type="file"  placeholder="Eigenes Foto hochladen" id="upload_file_fields" name="uploadedFile" /> 
+                          <input type="submit"/>
+                      </form>
                       </div>
                   </div>
                   <div id="profile-data">
@@ -220,7 +224,7 @@ if(session_status() == PHP_SESSION_NONE){
               <div class="profile-subcontainer subcontainer2">
                   <div id="profile-description"></div>
                   <div id="profile-files">
-                      <form action="<?php // echo home_url( '/' ) . "index.php/uploadFiles" ; ?>" method="POST" enctype="multipart/form-data">
+                      <form action="<?php echo home_url( '/' ) . "index.php/uploadFiles" ; ?>" method="POST" enctype="multipart/form-data">
                           <input type="file" id="upload_file_fields" name="uploadedFile" /> 
                           <input type="submit"/>
                       </form>

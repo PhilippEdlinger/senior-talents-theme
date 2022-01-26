@@ -54,12 +54,12 @@
                     <p>Firmenlogo</p>
                 </div>
                 <div class="picture-container">
-                    <div class="logo-picture">
-
-                    </div>
+                    <div class="logo-picture" style="background-image: url('<?php echo get_template_directory_uri() . $_SESSION["logoData"] ?>'); background-position: center;">
                 </div>
                 <div class="picture-upload-container">
-                    <input type="file" class="logo-upload" placeholder="Eigenes Logo hochladen">    
+                <form action="<?php echo home_url( '/' ) . "index.php/uploadlogorequest" ; ?>" method="POST" enctype="multipart/form-data">
+                    <input type="file"  placeholder="Logo hochladen" id="upload_file_fields" name="uploadedFile" /> 
+                    <input type="submit"/>
                 </div>
             </div>
 
