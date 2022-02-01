@@ -19,5 +19,5 @@
 	}
 	
 	header("Location: https://localhost/wordpress/wordpress/index.php/profile");
-
-?>
+	//echo $_POST["contact_list"]; 
+	?>

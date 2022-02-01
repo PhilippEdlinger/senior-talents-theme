@@ -10,6 +10,7 @@
     <script src="<?php echo get_template_directory_uri() . '/js/profile_c.js'?>"></script>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script> 
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri() . '/css/profile_c-style.css'?>">   
 </head>
 
 <header>
@@ -54,12 +55,13 @@
                     <p>Firmenlogo</p>
                 </div>
                 <div class="picture-container">
-                    <div class="logo-picture" style="background-image: url('<?php echo get_template_directory_uri() . $_SESSION["logoData"] ?>'); background-position: center;">
+                    <div class="logo-picture" style="background-image: url('<?php echo get_template_directory_uri() . $_SESSION["logoData"] ?>'); background-position: center;"></div>
                 </div>
                 <div class="picture-upload-container">
                 <form action="<?php echo home_url( '/' ) . "index.php/uploadlogorequest" ; ?>" method="POST" enctype="multipart/form-data">
                     <input type="file"  placeholder="Logo hochladen" id="upload_file_fields" name="uploadedFile" /> 
                     <input type="submit"/>
+                </form>   
                 </div>
             </div>
 
@@ -154,23 +156,24 @@
                         
                         if ($jobList != null){
                             foreach ($jobList as $job){
-                            echo '<div class="joboffer">
-                                    <form name="jobofferId" value="test" action="http://localhost/wordpress/wordpress/index.php/update-job-offer" class="login-form" method="post">
-                                        <h3  class="joboffer-title">' . $job["title"] . '</h3>
-                                        <p name="joboffer-category" class="joboffer-category">Kategory: ' . $job["category"] . '</p>
-                                        <p class="joboffer-descr">'. $job["descr"] .'</p>
-                                        <input hidden name="joboffer-title" value='. $job["title"] .'></input>
-                                        <input hidden name="joboffer-category" value='. $job["category"] .'></input>
-                                        <input hidden name="joboffer-descr" value='. $job["descr"] .'></input>
-                                        <input hidden name="joboffer-condition" value='. $job["condition"] .'></input>
-                                        <input hidden name="joboffer-salary" value='. $job["salary"] .'></input>
-                                        <input hidden name="joboffer-id" value='. $job["jobOfferId"] .'></input>
-                                        <button id="profile-update-job-button" type="submit">Bearbeiten</button>
-                                    </form>    
-                                </div>';
+                                echo '<div class="joboffer">
+                                <h3  class="joboffer-title">' . $job["title"] . '</h3>
+                                <p name="joboffer-category" class="joboffer-category">Kategory: ' . $job["category"] . '</p>
+                                <p class="joboffer-descr">'. $job["descr"] .'</p>
+                                        <form action="http://localhost/wordpress/wordpress/index.php/update-job-offer" method="post">
+                                            <input type="hidden" name="joboffer-title" value='. $job["title"] .'></input>
+                                            <input type="hidden" name="joboffer-category" value='. $job["category"] .'></input>
+                                            <input type="hidden" name="joboffer-descr" value='. $job["descr"] .'></input>
+                                            <input type="hidden" name="joboffer-condition" value='. $job["condition"] .'></input>
+                                            <input type="hidden" name="joboffer-salary" value='. $job["salary"] .'></input>
+                                            <input type="hidden" name="joboffer-id" value='. $job["jobOfferId"] .'></input>
+                                            <button class="profile-update-job-button" type="submit">Bearbeiten</button>
+                                        </form>
+                                    </div>';
                                 }
                             }
                         ?>
+                    </div>
                     <div id="profile-save-button">
                     <a href= "http://localhost/wordpress/wordpress/index.php/create-job" style="color: #fff; float: block;"> 
                         <div id="joboffer-button"><h2>Job erstellen!</h2></div>          
@@ -194,7 +197,19 @@
                 <p> Kontaktperson </p>
             </div>
             <form action="<?php echo home_url( '/' ) . "index.php/company-add-contact-person-request" ; ?>" method="post" class="login-form">
-                <input id="contactperson-title" placeholder="Anrede" class="profile-input-form" name="company-contactperson-title" value="<?php echo $_SESSION["contactperson-title"] ?>"></input>
+                <!-- <input id="contactperson-title" placeholder="Anrede" class="profile-input-form" name="company-contactperson-title" value="<?php echo $_SESSION["contactperson-title"] ?>"></input> -->
+                <select id="contactperson-title" class="profile-company-input-form" name="company-contactperson-title">
+                    <option value=<?php echo $_SESSION["contactperson-title"] ?>> <?php
+                        if($_SESSION["contactperson-title"] == null ){
+                            echo "-- Anrede auswählen --";
+                        }else{
+                            echo $_SESSION["contactperson-title"];
+                        }
+                    ?></option>
+                    <option value="Frau">Frau</option>
+                    <option value="Herr">Herr</option>
+                    <option value="Divers">Divers</option>
+                </select>
                 <input id="contactperson-firstname" placeholder="Vorname" class="profile-input-form" name="company-contactperson-firstName" value="<?php echo $_SESSION["contactperson-firstName"] ?>"></input>
                 <input id="contactperson-lastname" placeholder="Nachname" class="profile-input-form" name="company-contactperson-lastName" value="<?php echo $_SESSION["contactperson-lastName"] ?>"></input>
                 <input id="contactperson-email" placeholder="Email" class="profile-input-form" name="company-contactperson-email" value="<?php echo $_SESSION["contactperson-email"] ?>"></input>
@@ -204,5 +219,3 @@
         </div>
     </div>
 </body>
-
-<link rel="stylesheet" href="<?php echo get_template_directory_uri() . '/css/profile_c-style.css'?>">

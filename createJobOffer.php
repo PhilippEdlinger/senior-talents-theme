@@ -8,9 +8,9 @@
 <body>
     <form action="<?php echo home_url( '/' ) . "index.php/create-job-request" ; ?>" method="post" id="job-formular">
         <input id="job-title" name="job-title" placeholder="Berufsbezeichnung" ></input>
-        <input id="job-descr" name="job-descr" placeholder="Berufsbeschreibung"></input>
+        <textarea id="job-descr" name="job-descr" placeholder="Berufsbeschreibung"></textarea>
         <input id="job-category" name="job-category" placeholder="Berufskategory"></input>
-        <input id="job-condition" name="job-condition" placeholder="Berufsbedinung"></input>
+        <textarea id="job-condition" name="job-condition" placeholder="Berufsbedinung"></textarea>
         <input id="job-salary" name="job-salary" placeholder="Gehalt"></input>
         <button type="submit" id="create-job-offer">
             <h1> Jobangebot Erstellen! </h1>

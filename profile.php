@@ -68,8 +68,8 @@ if(session_status() == PHP_SESSION_NONE){
                         <div class="picture" style="background-image: url('<?php echo get_template_directory_uri() . $_SESSION["imageData"] ?>'); background-position: center;">
                       </div>
                       </div>
-                      <div id="pd" class="picture-upload-container"
-                      ><form action="<?php echo home_url( '/' ) . "index.php/uploadFiles" ; ?>" method="POST" enctype="multipart/form-data">
+                      <div id="pd" class="picture-upload-container">
+                          <form action="<?php echo home_url( '/' ) . "index.php/uploadFiles" ; ?>" method="POST" enctype="multipart/form-data">
                           <input type="file"  placeholder="Eigenes Foto hochladen" id="upload_file_fields" name="uploadedFile" /> 
                           <input type="submit"/>
                       </form>
@@ -99,19 +99,19 @@ if(session_status() == PHP_SESSION_NONE){
                                     <ion-icon class="icon" name="time-outline"></ion-icon>
                                 </div>
                                 <div class="input-icons01">
-                                    <input id="profile-preferableWork" placeholder="Bevorzugte Arbeit" class="profile-input-form" name="preferableWork" value="<?php echo $_SESSION["preferableWork"] ?>"></input>
+                                    <textarea id="profile-preferableWork" placeholder="Bevorzugte Arbeit" class="profile-input-form"  rows="5" cols="112" name="preferableWork"><?php echo $_SESSION["preferableWork"] ?></textarea>
                                     <ion-icon class="icon"name="briefcase-outline"></ion-icon>
                                 </div>
                             </div>
                             <div class="sections">
                                 <div class="input-icons02">
-                                    <input id="profile-interestDescr" placeholder="Interessen Beschreibung" class="profile-input-form" name="interestDescr" value="<?php echo $_SESSION["interestDescr"] ?>"> </input>
+                                    <textarea id="profile-interestDescr" placeholder="Interessen Beschreibung" class="profile-input-form" rows="5" cols="112" name="interestDescr" ><?php echo $_SESSION["interestDescr"] ?> </textarea>
                                     <ion-icon class="icon" name="receipt-outline"></ion-icon>
                                 </div>
                             </div>
                             <div class="sections">
                                 <div class="input-icons02">
-                                    <input id="profile-skillDescr" placeholder="Skill Beschreibung" class="profile-input-form" name="skillDescr" value="<?php echo $_SESSION["skillDescr"] ?>"> </input>
+                                    <textarea id="profile-skillDescr" placeholder="Skill Beschreibung" class="profile-input-form" rows="5" cols="112" name="skillDescr"> <?php echo $_SESSION["skillDescr"] ?> </textarea>
                                     <ion-icon class="icon" name="accessibility-outline"></ion-icon>
                                 </div>
                             </div>

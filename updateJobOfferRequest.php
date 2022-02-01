@@ -2,7 +2,6 @@
 
 <?php 
     
-    echo json_encode($_POST);
 
     $headers = array(
         'Content-Type'  => 'application/json',
@@ -27,7 +26,6 @@
     $request = wp_remote_post( 'http://localhost:8080/job-offer/update', $arg );
     $response     = wp_remote_retrieve_body($request); 
 
-    echo "arguments: " . json_encode($arg) . "<br> <br> response: " . json_encode($request) ;
-
-   // header("Location: https://localhost/wordpress/wordpress/index.php/company-profile");  
+   
+   header("Location: https://localhost/wordpress/wordpress/index.php/company-profile");  
 ?>

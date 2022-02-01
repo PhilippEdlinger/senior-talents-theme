@@ -1,7 +1,5 @@
 <?php /* Template Name: update job offer */ ?>
 
-<?php echo json_encode($_POST) ?>
-
 <head>
     <link rel="stylesheet" href="<?php echo get_template_directory_uri() . '/css/updateJobOffer-style.css?'?>">
     <script src="<?php echo get_template_directory_uri() . '/js/updateJobOffer.js'?>"></script>
