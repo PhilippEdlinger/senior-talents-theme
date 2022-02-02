@@ -2,6 +2,29 @@
 
 <?php
 
+$_SESSION["street"] = null;
+$_SESSION["streetNo"] = null;
+$_SESSION["zipNo"] = null;
+$_SESSION["city"] = null;
+$_SESSION["country"] = null;
+$_SESSION["state"] = null;
+$_SESSION["addressId"] = null;
+
+$_SESSION["firstName"] = null;
+$_SESSION["lastName"] = null;
+$_SESSION["commute"] = null;
+$_SESSION["descr"] = null;
+$_SESSION["email"] = null;
+$_SESSION["hoursPerWeek"] = null;
+$_SESSION["interestDescr"] = null;
+$_SESSION["jobBranche"] = null;
+$_SESSION["jobField"] = null;
+$_SESSION["password"] = null;
+$_SESSION["preferableWork"] = null;
+$_SESSION["seniorId"] = null;
+$_SESSION["skillDescr"] = null;
+$_SESSION["imageData"] = null;
+
 $email = $_POST['login-form-input-email'];
 $pwd = $_POST['login-form-input-password'];
 
@@ -25,15 +48,8 @@ if (substr_count( $body, "\n" ) == 0){
     $_SESSION["preferableWork"] = $json_body["preferableWork"];
     $_SESSION["seniorId"] = $json_body["seniorId"];
     $_SESSION["skillDescr"] = $json_body["skillDescr"];
-
-    $_SESSION["street"] = null;
-    $_SESSION["streetNo"] = null;
-    $_SESSION["zipNo"] = null;
-    $_SESSION["city"] = null;
-    $_SESSION["country"] = null;
-    $_SESSION["state"] = null;
-    $_SESSION["addressId"] = null;
-
+    $_SESSION["imageData"] = $json_body["imageData"];
+    
     $addressId = $json_body["address"]["addressId"];
 
     if ( $addressId != null){

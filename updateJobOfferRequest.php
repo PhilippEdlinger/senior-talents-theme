@@ -1,7 +1,6 @@
 <?php /* Template Name: updateJobOfferRequest */ ?>
 
 <?php 
-    
 
     $headers = array(
         'Content-Type'  => 'application/json',
@@ -28,4 +27,4 @@
 
    
    header("Location: https://localhost/wordpress/wordpress/index.php/company-profile");  
-?>
+?>           

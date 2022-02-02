@@ -105,13 +105,13 @@ if(session_status() == PHP_SESSION_NONE){
                             </div>
                             <div class="sections">
                                 <div class="input-icons02">
-                                    <textarea id="profile-interestDescr" placeholder="Interessen Beschreibung" class="profile-input-form" rows="5" cols="112" name="interestDescr" ><?php echo $_SESSION["interestDescr"] ?> </textarea>
+                                    <textarea id="profile-interestDescr" placeholder="Interessen Beschreibung" class="profile-input-form" rows="5" cols="112" name="interestDescr" ><?php echo $_SESSION["interestDescr"] ?></textarea>
                                     <ion-icon class="icon" name="receipt-outline"></ion-icon>
                                 </div>
                             </div>
                             <div class="sections">
                                 <div class="input-icons02">
-                                    <textarea id="profile-skillDescr" placeholder="Skill Beschreibung" class="profile-input-form" rows="5" cols="112" name="skillDescr"> <?php echo $_SESSION["skillDescr"] ?> </textarea>
+                                    <textarea id="profile-skillDescr" placeholder="Skill Beschreibung" class="profile-input-form" rows="5" cols="112" name="skillDescr"><?php echo $_SESSION["skillDescr"] ?></textarea>
                                     <ion-icon class="icon" name="accessibility-outline"></ion-icon>
                                 </div>
                             </div>

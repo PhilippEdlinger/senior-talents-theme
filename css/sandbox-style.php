@@ -4,7 +4,7 @@ header("Content-type: text/css");
 $backgroundcolor = "white";
 $imagePath= "https://localhost/wordpress/wordpress/wp-content/themes/senior-talents-theme/img/001.png";
 $imageData= $_SESSION["imageData"];
-echo $imageData;
+
 ?>
 
 body{

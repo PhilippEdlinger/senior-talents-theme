@@ -10,9 +10,9 @@ window.addEventListener('load', function () {
 })
 
 function load_login_page(){
-    window.location.assign("http://localhost/wordpress/wordpress/index.php/login/");
+    window.location.assign("https://localhost/wordpress/wordpress/index.php/login/");
 }
 
 function load_signup_page(){
-    window.location.assign("http://localhost/wordpress/wordpress/index.php/signup/ ");
+    window.location.assign("https://localhost/wordpress/wordpress/index.php/signup/ ");
 }

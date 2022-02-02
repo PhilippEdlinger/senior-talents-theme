@@ -2,8 +2,6 @@
 
 <?php 
 
-    echo "uwu";
-
     $firstname = $_POST['signup-form-firstname'];
     $lastname = $_POST['signup-form-lastname'];
     $email = $_POST['signup-form-email'];
@@ -30,7 +28,7 @@
 
     $request = wp_remote_post( 'http://localhost:8080/senior/create', $arg );
 
-    $body     = wp_remote_retrieve_body($request); 
+    $body    = wp_remote_retrieve_body($request); 
 
     if(substr_count($body, "n") == 0){
         header("Location: https://localhost/wordpress/wordpress/index.php/login");

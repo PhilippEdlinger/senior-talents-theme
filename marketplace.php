@@ -6,9 +6,11 @@
 </head>
 
 <body>
-    <div id="jobs-offer-area">
-    <?php 
 
+    <form action=""  method="post">
+    </form>
+
+    <?php 
         $request = wp_remote_get( 'http://localhost:8080/job-offer/getRandomJobOffers/1' . $_SESSION["companyId"], $arg );
         $body    = wp_remote_retrieve_body($request); 
         $jobList = json_decode($body, true);
@@ -24,6 +26,5 @@
             }
         }
         ?>
-
     </div>
 </body>

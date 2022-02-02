@@ -22,7 +22,7 @@
 </header>
 
 <div id="nav">
-<div id="profile-nav" class="nav-window">
+    <div id="profile-nav" class="nav-window">
         <div  class="nav-title">
             <h2 class="nav-element">Profile</h2>
         </div>
@@ -41,7 +41,7 @@
             <p class="nav-element">Job Interessen</p>
         </div>
         </a>
-</div>
+    </div>
 </div>
 
 <body id="pp">
@@ -94,8 +94,8 @@
                                         echo "-- Branche auswählen --";
                                     }else{
                                         echo $_SESSION["branche"];
-                                    }
-                                ?></option>
+                                    }?>
+                                </option>
                                 <option value="Verwaltung | Büro | Administration">Verwaltung | Büro | Administration</option>
                                 <option value="Kultur | Kunst | Unterhaltung">Kultur | Kunst | Unterhaltung</option>
                                 <option value="Vereine">Vereine</option>
@@ -152,15 +152,16 @@
 
                         $request = wp_remote_get( 'http://localhost:8080/job-offer/getByCompanyId/' . $_SESSION["companyId"], $arg );
                         $body    = wp_remote_retrieve_body($request); 
-                        $jobList = json_decode($body, true);
                         
+                        $jobList = json_decode($body, true);
+
                         if ($jobList != null){
                             foreach ($jobList as $job){
                                 echo '<div class="joboffer">
-                                <h3  class="joboffer-title">' . $job["title"] . '</h3>
-                                <p name="joboffer-category" class="joboffer-category">Kategory: ' . $job["category"] . '</p>
-                                <p class="joboffer-descr">'. $job["descr"] .'</p>
-                                        <form action="http://localhost/wordpress/wordpress/index.php/update-job-offer" method="post">
+                                        <h3  class="joboffer-title">' . $job["title"] . '</h3>
+                                        <p  class="joboffer-category">Kategory: ' . $job["category"] . '</p>
+                                        <p class="joboffer-descr">'. $job["descr"] .'</p>
+                                        <form action="https://localhost/wordpress/wordpress/index.php/update-job-offer" method="post">
                                             <input type="hidden" name="joboffer-title" value='. $job["title"] .'></input>
                                             <input type="hidden" name="joboffer-category" value='. $job["category"] .'></input>
                                             <input type="hidden" name="joboffer-descr" value='. $job["descr"] .'></input>
@@ -169,13 +170,13 @@
                                             <input type="hidden" name="joboffer-id" value='. $job["jobOfferId"] .'></input>
                                             <button class="profile-update-job-button" type="submit">Bearbeiten</button>
                                         </form>
-                                    </div>';
+                                      </div>';
                                 }
                             }
                         ?>
                     </div>
                     <div id="profile-save-button">
-                    <a href= "http://localhost/wordpress/wordpress/index.php/create-job" style="color: #fff; float: block;"> 
+                    <a href= "https://localhost/wordpress/wordpress/index.php/create-job" style="color: #fff; float: block;"> 
                         <div id="joboffer-button"><h2>Job erstellen!</h2></div>          
                     </a>
                     </div>
@@ -197,8 +198,7 @@
                 <p> Kontaktperson </p>
             </div>
             <form action="<?php echo home_url( '/' ) . "index.php/company-add-contact-person-request" ; ?>" method="post" class="login-form">
-                <!-- <input id="contactperson-title" placeholder="Anrede" class="profile-input-form" name="company-contactperson-title" value="<?php echo $_SESSION["contactperson-title"] ?>"></input> -->
-                <select id="contactperson-title" class="profile-company-input-form" name="company-contactperson-title">
+               <select id="contactperson-title" class="profile-company-input-form" name="company-contactperson-title">
                     <option value=<?php echo $_SESSION["contactperson-title"] ?>> <?php
                         if($_SESSION["contactperson-title"] == null ){
                             echo "-- Anrede auswählen --";
