@@ -331,7 +331,7 @@ input {
     padding: 6px;
     width: 90%;
 }
- #profile-save-button {
+ .profile-save-button {
      text-decoration: none;
     position: relative;
     left: 35%;

@@ -7,9 +7,10 @@
 ?>
 
 <head>
-    <link rel="stylesheet" href="<?php echo get_template_directory_uri() . '/css/profile_c-style.css'?>">
+    <script src="<?php echo get_template_directory_uri() . '/js/profile_c.js'?>"></script>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script> 
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri() . '/css/profile_c-style.css'?>">   
 </head>
 
 <header>
@@ -54,15 +55,16 @@
                     <p>Firmenlogo</p>
                 </div>
                 <div class="picture-container">
-                    <div class="logo-picture">
-
-                    </div>
+                    <div class="logo-picture" style="background-image: url('<?php echo get_template_directory_uri() . $_SESSION["logoData"] ?>'); background-position: center;"></div>
                 </div>
                 <div class="picture-upload-container">
-                    <input type="file" class="logo-upload" placeholder="Eigenes Logo hochladen">    
+                <form action="<?php echo home_url( '/' ) . "index.php/uploadlogorequest" ; ?>" method="POST" enctype="multipart/form-data">
+                    <input type="file"  placeholder="Logo hochladen" id="upload_file_fields" name="uploadedFile" /> 
+                    <input type="submit"/>
+                </form>   
                 </div>
             </div>
-
+            <br><hl><br>
             <div id="profile-data">
                 <div class="profile-headline">
                     <p>Daten</p>
@@ -137,8 +139,9 @@
                             </select>
                         </div>
                     </div>  
-                    <button id="profile-save-button" type="submit"><h2>Speichern</h2></button>
+                    <button id="profile-save-button" class="profile-save-button" type="submit"><h2>Speichern</h2></button>
                 </div>
+                <br><br>
                 <div id="joboffers-container">
                     <div class="profile-headline">
                         <p> Berufsinserate </p>
@@ -148,40 +151,117 @@
                         <!-- Auflistung der Jobs in divs -->
                         <?php 
 
-                                        
                         $request = wp_remote_get( 'http://localhost:8080/job-offer/getByCompanyId/' . $_SESSION["companyId"], $arg );
                         $body    = wp_remote_retrieve_body($request); 
                         $jobList = json_decode($body, true);
                         
-                        foreach ($jobList as $job){
-                        echo '<div class="joboffer">
-                                <h3 class="joboffer-title">' . $job["title"] . '</h3>
-                                <p class="joboffer-category">Kategory: ' . $job["category"] . '</p>
+                        if ($jobList != null){
+                            foreach ($jobList as $job){
+                                echo '<div class="joboffer">
+                                <h3  class="joboffer-title">' . $job["title"] . '</h3>
+                                <p name="joboffer-category" class="joboffer-category">Kategory: ' . $job["category"] . '</p>
                                 <p class="joboffer-descr">'. $job["descr"] .'</p>
-                            </div>';
-                        }
-
+                                        <form action="http://localhost/wordpress/wordpress/index.php/update-job-offer" method="post">
+                                            <input type="hidden" name="joboffer-title" value='. $job["title"] .'></input>
+                                            <input type="hidden" name="joboffer-category" value='. $job["category"] .'></input>
+                                            <input type="hidden" name="joboffer-descr" value='. $job["descr"] .'></input>
+                                            <input type="hidden" name="joboffer-condition" value='. $job["condition"] .'></input>
+                                            <input type="hidden" name="joboffer-salary" value='. $job["salary"] .'></input>
+                                            <input type="hidden" name="joboffer-id" value='. $job["jobOfferId"] .'></input>
+                                            <button class="profile-update-job-button" class="profile-save-button" type="submit">Bearbeiten</button>
+                                        </form>
+                                    </div>';
+                                }
+                            }
                         ?>
-
-<div class="joboffer">
-                                <h3 class="joboffer-title">Wichser</h3>
-                                <p class="joboffer-category">Kategorie: asdfsajflk</p>
-                                <p class="joboffer-descr">hure</p>
-                            </div>
-                            <div class="joboffer">
-                                <h3 class="joboffer-title">Wichser</h3>
-                                <p class="joboffer-category">Kategorie: asdfsajflk</p>
-                                <p class="joboffer-descr">hure</p>
-                            </div>
-                    <div id="profile-save-button">
+                    <div class="profile-save-button">
                     <a href= "http://localhost/wordpress/wordpress/index.php/create-job" style="color: #fff; float: block;"> 
                         <div id="joboffer-button"><h2>Job erstellen!</h2></div>          
                     </a>
                     </div>
                 </div>
             </form>
+            <br><br>
+            <div class="profile-headline">
+                <p> Addresse </p>
+            </div>
+            <form action="<?php echo home_url( '/' ) . "index.php/company-add-address-request" ; ?>" method="post" class="login-form">
+                    <div class="sections">
+                        <div class="input-icons01">
+                            <input id="profile-streetname" class="profile-company-input-form" placeholder="Straße" class="profile-input-form" name="company-street" value="<?php echo $_SESSION["street"] ?>"></input>
+                            <ion-icon class="icon" name="briefcase-outline"></ion-icon>
+                        </div>
+                        <div class="input-icons01">
+                            <input id="profile-streetnumber" class="profile-company-input-form" placeholder="Straßennummer" class="profile-input-form" name="company-streetNo" value="<?php echo $_SESSION["streetNo"] ?>"></input>
+                            <ion-icon class="icon" name="person-outline"></ion-icon>
+                        </div>
+                    </div>
+                    <div class="sections">
+                        <div class="input-icons01">
+                            <input id="profile-zipNo" class="profile-company-input-form" placeholder="Postleitzahl" class="profile-input-form" name="company-zipNo" value="<?php echo $_SESSION["zipNo"] ?>"></input>
+                            <ion-icon class="icon" name="briefcase-outline"></ion-icon>
+                        </div>
+                        <div class="input-icons01">
+                            <input id="profile-city" class="profile-company-input-form" placeholder="Stadt" class="profile-input-form" name="company-city" value="<?php echo $_SESSION["city"] ?>"></input>
+                            <ion-icon class="icon" name="person-outline"></ion-icon>
+                        </div>
+                    </div>
+                    <div class="sections">
+                        <div class="input-icons01">
+                            <input id="profile-country" class="profile-company-input-form" placeholder="Land" class="profile-input-form" name="company-country" value="<?php echo $_SESSION["country"] ?>"></input>
+                            <ion-icon class="icon" name="briefcase-outline"></ion-icon>
+                        </div>
+                        <div class="input-icons01">
+                            <input id="profile-state" class="profile-company-input-form" placeholder="Bundesland" class="profile-input-form" name="compnay-state" value="<?php echo $_SESSION["state"] ?>"></input>
+                            <ion-icon class="icon" name="person-outline"></ion-icon>
+                        </div>
+                    </div>
+                <button id="profile-add-address-button" class="profile-save-button" type="submit"><h2> Speichern</h2></button>
+            </form>
+            <br><br>
+            <div class="profile-headline">
+                <p> Kontaktperson </p>
+            </div>
+            <form action="<?php echo home_url( '/' ) . "index.php/company-add-contact-person-request" ; ?>" method="post" class="login-form">
+                <!-- <input id="contactperson-title" placeholder="Anrede" class="profile-input-form" name="company-contactperson-title" value="<?php echo $_SESSION["contactperson-title"] ?>"></input> -->
+                <div class="sections">
+                        <div class="input-icons02">
+                            <select id="contactperson-title" class="profile-company-input-form" name="company-contactperson-title">
+                                <option value=<?php echo $_SESSION["contactperson-title"] ?>> <?php
+                                    if($_SESSION["contactperson-title"] == null ){
+                                        echo "-- Anrede auswählen --";
+                                    }else{
+                                        echo $_SESSION["contactperson-title"];
+                                    }
+                                ?></option>
+                                <option value="Frau">Frau</option>
+                                <option value="Herr">Herr</option>
+                                <option value="Divers">Divers</option>
+                            </select>
+                        </div>
+                </div>
+                <div class="sections">
+                        <div class="input-icons01">
+                            <input id="contactperson-firstname" class="profile-company-input-form" placeholder="Vorname" class="profile-input-form" name="company-contactperson-firstName" value="<?php echo $_SESSION["contactperson-firstName"] ?>"></input>
+                            <ion-icon class="icon" name="briefcase-outline"></ion-icon>
+                        </div>
+                        <div class="input-icons01">
+                            <input id="contactperson-lastname" class="profile-company-input-form" placeholder="Nachname" class="profile-input-form" name="company-contactperson-lastName" value="<?php echo $_SESSION["contactperson-lastName"] ?>"></input>
+                            <ion-icon class="icon" name="person-outline"></ion-icon>
+                        </div>
+                </div>
+                <div class="sections">
+                        <div class="input-icons01">
+                            <input id="contactperson-email" class="profile-company-input-form" placeholder="Email" class="profile-input-form" name="company-contactperson-email" value="<?php echo $_SESSION["contactperson-email"] ?>"></input>
+                            <ion-icon class="icon" name="briefcase-outline"></ion-icon>
+                        </div>
+                        <div class="input-icons01">
+                            <input id="contactperson-telno" class="profile-company-input-form" placeholder="Telefonnummer" class="profile-input-form" name="company-contactperson-telNo" value="<?php echo $_SESSION["contactperson-telNo"] ?>"></input>
+                            <ion-icon class="icon" name="person-outline"></ion-icon>
+                        </div>
+                </div>
+                <button id="contact-add-contactperson-button" class="profile-save-button" type="submit"><h2> Speichern</h2></button>
+            </form>
         </div>
     </div>
 </body>
-
-<script src="<?php echo get_template_directory_uri() . '/js/profile_c.js'?>"></script>

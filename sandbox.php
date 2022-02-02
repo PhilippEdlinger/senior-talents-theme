@@ -17,7 +17,8 @@
 
      <!-- upload file per selection -->
     <form action="<?php echo home_url( '/' ) . "index.php/uploadFiles" ; ?>" method="POST" enctype="multipart/form-data">
-        <input type="file" id="upload_file_fields" name="uploadedFile" /> 
+        <input type="file" id="upload_file_fields" name="uploadedFile" />
+        <textarea id="contact_list" name="contact_list"></textarea>
         <input type="submit"/>
     </form>
 
@@ -39,10 +40,12 @@
         <option value="pumpernickel" selected >Pumpernickel</option>
         <option value="reeses">Reeses</option>
     </select>
+
+    <!--- file uploader --->
 </body>
 
 
-<! -- 
+<!-- 
 < ? php
 $absolute_path = explode('wp-content', $_SERVER['SCRIPT_FILENAME']);
 $wp_load = $absolute_path[0].
