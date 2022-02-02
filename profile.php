@@ -71,7 +71,7 @@ if(session_status() == PHP_SESSION_NONE){
                       <div id="pd" class="picture-upload-container">
                           <form action="<?php echo home_url( '/' ) . "index.php/uploadFiles" ; ?>" method="POST" enctype="multipart/form-data">
                           <input type="file"  placeholder="Eigenes Foto hochladen" id="upload_file_fields" name="uploadedFile" /> 
-                          <input type="submit"/>
+                          <input class="profile-save-button" type="submit"/>
                       </form>
                       </div>
                   </div>
@@ -94,18 +94,24 @@ if(session_status() == PHP_SESSION_NONE){
                                 <p>Job Interessen</p>
                             </div>    
                             <div class="sections">
-                                <div class="input-icons01">
+                                <div class="input-icons02">
                                     <input id="profile-hoursPerWeek" placeholder="Stunden/Woche" class="profile-input-form" name="hoursPerWeek" value="<?php echo $_SESSION["hoursPerWeek"] ?>"> </input>
                                     <ion-icon class="icon" name="time-outline"></ion-icon>
-                                </div>
-                                <div class="input-icons01">
-                                    <textarea id="profile-preferableWork" placeholder="Bevorzugte Arbeit" class="profile-input-form"  rows="5" cols="112" name="preferableWork"><?php echo $_SESSION["preferableWork"] ?></textarea>
-                                    <ion-icon class="icon"name="briefcase-outline"></ion-icon>
                                 </div>
                             </div>
                             <div class="sections">
                                 <div class="input-icons02">
+<<<<<<< HEAD
                                     <textarea id="profile-interestDescr" placeholder="Interessen Beschreibung" class="profile-input-form" rows="5" cols="112" name="interestDescr" ><?php echo $_SESSION["interestDescr"] ?></textarea>
+=======
+                                        <textarea id="profile-preferableWork" placeholder="Bevorzugte Arbeit" class="profile-input-form"  rows="5" cols="112" name="preferableWork"><?php echo $_SESSION["preferableWork"] ?></textarea>
+                                        <ion-icon class="icon"name="briefcase-outline"></ion-icon>
+                                    </div>
+                                </div>
+                            <div class="sections">
+                                <div class="input-icons02">
+                                    <textarea id="profile-interestDescr" placeholder="Interessen Beschreibung" class="profile-input-form" rows="5" cols="112" name="interestDescr" ><?php echo $_SESSION["interestDescr"] ?> </textarea>
+>>>>>>> e3da0e3e8ba5dfdc5dcea1fcb10ee52f9a066295
                                     <ion-icon class="icon" name="receipt-outline"></ion-icon>
                                 </div>
                             </div>
@@ -204,31 +210,61 @@ if(session_status() == PHP_SESSION_NONE){
                             <!-- <input id="profile-jobBranch" name="jobBranche" value="<?php // echo $_SESSION["jobBranche"] ?>"></input> -->
 
                           <input id="profile-seniorId" name="seniorId" value="<?php echo $_SESSION["seniorId"] ?>"> </input>
-                          <button id="profile-save-button" type="submit"><h2>Speichern</h2></button>
+                          <button class="profile-save-button" type="submit"><h2>Speichern</h2></button>
                       </form>
                     <div class="profile-headline">
                         <p> Addresse </p>
                     </div>
                     <form action="<?php echo home_url( '/' ) . "index.php/senior-add-address-request" ; ?>" method="post" class="login-form">
-                        <input id="profile-streetname" placeholder="Straße" class="profile-input-form" name="senior-street" value="<?php echo $_SESSION["street"] ?>"></input>
-                        <input id="profile-streetnumber" placeholder="Straßennummer" class="profile-input-form" name="senior-streetNo" value="<?php echo $_SESSION["streetNo"] ?>"></input>
-                        <input id="profile-zipNo" placeholder="Postleitzahl" class="profile-input-form" name="senior-zipNo" value="<?php echo $_SESSION["zipNo"] ?>"></input>
-                        <input id="profile-city" placeholder="Stadt" class="profile-input-form" name="senior-city" value="<?php echo $_SESSION["city"] ?>"></input>
-                        <input id="profile-country" placeholder="Land" class="profile-input-form" name="senior-country" value="<?php echo $_SESSION["country"] ?>"></input>
-                        <input id="profile-state" placeholder="Bundesland" class="profile-input-form" name="senior-state" value="<?php echo $_SESSION["state"] ?>"></input>
-                        <button id="profile-add-address-button" type="submit"><h2> Speichern</h2></button>
+                        <div class="sections">
+                                <div class="input-icons01">
+                                    <input id="profile-streetname" placeholder="Straße" class="profile-input-form" name="senior-street" value="<?php echo $_SESSION["street"] ?>"></input>
+                                    <ion-icon class="icon" name="time-outline"></ion-icon>
+                                </div>
+                                <div class="input-icons01">
+                                    <input id="profile-streetnumber" placeholder="Straßennummer" class="profile-input-form" name="senior-streetNo" value="<?php echo $_SESSION["streetNo"] ?>"></input>
+                                    <ion-icon class="icon"name="briefcase-outline"></ion-icon>
+                                </div>
+                        </div>
+                        <div class="sections">
+                                <div class="input-icons01">
+                                    <input id="profile-zipNo" placeholder="Postleitzahl" class="profile-input-form" name="senior-zipNo" value="<?php echo $_SESSION["zipNo"] ?>"></input>
+                                    <ion-icon class="icon" name="time-outline"></ion-icon>
+                                </div>
+                                <div class="input-icons01">
+                                    <input id="profile-city" placeholder="Stadt" class="profile-input-form" name="senior-city" value="<?php echo $_SESSION["city"] ?>"></input>
+                                    <ion-icon class="icon"name="briefcase-outline"></ion-icon>
+                                </div>
+                        </div>
+                        <div class="sections">
+                                <div class="input-icons01">
+                                    <input id="profile-country" placeholder="Land" class="profile-input-form" name="senior-country" value="<?php echo $_SESSION["country"] ?>"></input>
+                                    <ion-icon class="icon" name="time-outline"></ion-icon>
+                                </div>
+                                <div class="input-icons01">
+                                    <input id="profile-state" placeholder="Bundesland" class="profile-input-form" name="senior-state" value="<?php echo $_SESSION["state"] ?>"></input>
+                                    <ion-icon class="icon"name="briefcase-outline"></ion-icon>
+                                </div>
+                        </div>
+                        <button id="profile-add-address-button" class="profile-save-button" type="submit"><h2> Speichern</h2></button>
                     </form>
                   </div> 
-              </div>
-              
-              <div class="profile-subcontainer subcontainer2">
-                  <div id="profile-description"></div>
+                
+                  <!--<div id="profile-description"></div>
                   <div id="profile-files">
+                      <div class="profile-headline">
+                            
+                      </div>
                       <form action="<?php echo home_url( '/' ) . "index.php/uploadFiles" ; ?>" method="POST" enctype="multipart/form-data">
                           <input type="file" id="upload_file_fields" name="uploadedFile" /> 
                           <input type="submit"/>
                       </form>
-                </div>
+                    </div>-->
+
+              </div>
+              
+              <div class="profile-subcontainer subcontainer2">
+                  
             </div>
         </div>
     </div>

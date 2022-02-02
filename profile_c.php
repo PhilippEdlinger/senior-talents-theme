@@ -64,7 +64,7 @@
                 </form>   
                 </div>
             </div>
-
+            <br><hl><br>
             <div id="profile-data">
                 <div class="profile-headline">
                     <p>Daten</p>
@@ -139,8 +139,9 @@
                             </select>
                         </div>
                     </div>  
-                    <button id="profile-save-button" type="submit"><h2>Speichern</h2></button>
+                    <button id="profile-save-button" class="profile-save-button" type="submit"><h2>Speichern</h2></button>
                 </div>
+                <br><br>
                 <div id="joboffers-container">
                     <div class="profile-headline">
                         <p> Berufsinserate </p>
@@ -168,36 +169,62 @@
                                             <input type="hidden" name="joboffer-condition" value='. $job["condition"] .'></input>
                                             <input type="hidden" name="joboffer-salary" value='. $job["salary"] .'></input>
                                             <input type="hidden" name="joboffer-id" value='. $job["jobOfferId"] .'></input>
-                                            <button class="profile-update-job-button" type="submit">Bearbeiten</button>
+                                            <button class="profile-update-job-button" class="profile-save-button" type="submit">Bearbeiten</button>
                                         </form>
                                       </div>';
                                 }
                             }
                         ?>
-                    </div>
-                    <div id="profile-save-button">
-                    <a href= "https://localhost/wordpress/wordpress/index.php/create-job" style="color: #fff; float: block;"> 
+                    <div class="profile-save-button">
+                    <a href= "http://localhost/wordpress/wordpress/index.php/create-job" style="color: #fff; float: block;"> 
                         <div id="joboffer-button"><h2>Job erstellen!</h2></div>          
                     </a>
                     </div>
                 </div>
             </form>
+            <br><br>
             <div class="profile-headline">
                 <p> Addresse </p>
             </div>
             <form action="<?php echo home_url( '/' ) . "index.php/company-add-address-request" ; ?>" method="post" class="login-form">
-                <input id="profile-streetname" placeholder="Straße" class="profile-input-form" name="company-street" value="<?php echo $_SESSION["street"] ?>"></input>
-                <input id="profile-streetnumber" placeholder="Straßennummer" class="profile-input-form" name="company-streetNo" value="<?php echo $_SESSION["streetNo"] ?>"></input>
-                <input id="profile-zipNo" placeholder="Postleitzahl" class="profile-input-form" name="company-zipNo" value="<?php echo $_SESSION["zipNo"] ?>"></input>
-                <input id="profile-city" placeholder="Stadt" class="profile-input-form" name="company-city" value="<?php echo $_SESSION["city"] ?>"></input>
-                <input id="profile-country" placeholder="Land" class="profile-input-form" name="company-country" value="<?php echo $_SESSION["country"] ?>"></input>
-                <input id="profile-state" placeholder="Bundesland" class="profile-input-form" name="compnay-state" value="<?php echo $_SESSION["state"] ?>"></input>
-                <button id="profile-add-address-button" type="submit"><h2> Speichern</h2></button>
+                    <div class="sections">
+                        <div class="input-icons01">
+                            <input id="profile-streetname" class="profile-company-input-form" placeholder="Straße" class="profile-input-form" name="company-street" value="<?php echo $_SESSION["street"] ?>"></input>
+                            <ion-icon class="icon" name="briefcase-outline"></ion-icon>
+                        </div>
+                        <div class="input-icons01">
+                            <input id="profile-streetnumber" class="profile-company-input-form" placeholder="Straßennummer" class="profile-input-form" name="company-streetNo" value="<?php echo $_SESSION["streetNo"] ?>"></input>
+                            <ion-icon class="icon" name="person-outline"></ion-icon>
+                        </div>
+                    </div>
+                    <div class="sections">
+                        <div class="input-icons01">
+                            <input id="profile-zipNo" class="profile-company-input-form" placeholder="Postleitzahl" class="profile-input-form" name="company-zipNo" value="<?php echo $_SESSION["zipNo"] ?>"></input>
+                            <ion-icon class="icon" name="briefcase-outline"></ion-icon>
+                        </div>
+                        <div class="input-icons01">
+                            <input id="profile-city" class="profile-company-input-form" placeholder="Stadt" class="profile-input-form" name="company-city" value="<?php echo $_SESSION["city"] ?>"></input>
+                            <ion-icon class="icon" name="person-outline"></ion-icon>
+                        </div>
+                    </div>
+                    <div class="sections">
+                        <div class="input-icons01">
+                            <input id="profile-country" class="profile-company-input-form" placeholder="Land" class="profile-input-form" name="company-country" value="<?php echo $_SESSION["country"] ?>"></input>
+                            <ion-icon class="icon" name="briefcase-outline"></ion-icon>
+                        </div>
+                        <div class="input-icons01">
+                            <input id="profile-state" class="profile-company-input-form" placeholder="Bundesland" class="profile-input-form" name="compnay-state" value="<?php echo $_SESSION["state"] ?>"></input>
+                            <ion-icon class="icon" name="person-outline"></ion-icon>
+                        </div>
+                    </div>
+                <button id="profile-add-address-button" class="profile-save-button" type="submit"><h2> Speichern</h2></button>
             </form>
+            <br><br>
             <div class="profile-headline">
                 <p> Kontaktperson </p>
             </div>
             <form action="<?php echo home_url( '/' ) . "index.php/company-add-contact-person-request" ; ?>" method="post" class="login-form">
+<<<<<<< HEAD
                <select id="contactperson-title" class="profile-company-input-form" name="company-contactperson-title">
                     <option value=<?php echo $_SESSION["contactperson-title"] ?>> <?php
                         if($_SESSION["contactperson-title"] == null ){
@@ -215,6 +242,46 @@
                 <input id="contactperson-email" placeholder="Email" class="profile-input-form" name="company-contactperson-email" value="<?php echo $_SESSION["contactperson-email"] ?>"></input>
                 <input id="contactperson-telno" placeholder="Telefonnummer" class="profile-input-form" name="company-contactperson-telNo" value="<?php echo $_SESSION["contactperson-telNo"] ?>"></input>
                 <button id="contact-add-contactperson-button" type="submit"><h2> Speichern</h2></button>
+=======
+                <!-- <input id="contactperson-title" placeholder="Anrede" class="profile-input-form" name="company-contactperson-title" value="<?php echo $_SESSION["contactperson-title"] ?>"></input> -->
+                <div class="sections">
+                        <div class="input-icons02">
+                            <select id="contactperson-title" class="profile-company-input-form" name="company-contactperson-title">
+                                <option value=<?php echo $_SESSION["contactperson-title"] ?>> <?php
+                                    if($_SESSION["contactperson-title"] == null ){
+                                        echo "-- Anrede auswählen --";
+                                    }else{
+                                        echo $_SESSION["contactperson-title"];
+                                    }
+                                ?></option>
+                                <option value="Frau">Frau</option>
+                                <option value="Herr">Herr</option>
+                                <option value="Divers">Divers</option>
+                            </select>
+                        </div>
+                </div>
+                <div class="sections">
+                        <div class="input-icons01">
+                            <input id="contactperson-firstname" class="profile-company-input-form" placeholder="Vorname" class="profile-input-form" name="company-contactperson-firstName" value="<?php echo $_SESSION["contactperson-firstName"] ?>"></input>
+                            <ion-icon class="icon" name="briefcase-outline"></ion-icon>
+                        </div>
+                        <div class="input-icons01">
+                            <input id="contactperson-lastname" class="profile-company-input-form" placeholder="Nachname" class="profile-input-form" name="company-contactperson-lastName" value="<?php echo $_SESSION["contactperson-lastName"] ?>"></input>
+                            <ion-icon class="icon" name="person-outline"></ion-icon>
+                        </div>
+                </div>
+                <div class="sections">
+                        <div class="input-icons01">
+                            <input id="contactperson-email" class="profile-company-input-form" placeholder="Email" class="profile-input-form" name="company-contactperson-email" value="<?php echo $_SESSION["contactperson-email"] ?>"></input>
+                            <ion-icon class="icon" name="briefcase-outline"></ion-icon>
+                        </div>
+                        <div class="input-icons01">
+                            <input id="contactperson-telno" class="profile-company-input-form" placeholder="Telefonnummer" class="profile-input-form" name="company-contactperson-telNo" value="<?php echo $_SESSION["contactperson-telNo"] ?>"></input>
+                            <ion-icon class="icon" name="person-outline"></ion-icon>
+                        </div>
+                </div>
+                <button id="contact-add-contactperson-button" class="profile-save-button" type="submit"><h2> Speichern</h2></button>
+>>>>>>> e3da0e3e8ba5dfdc5dcea1fcb10ee52f9a066295
             </form>
         </div>
     </div>
