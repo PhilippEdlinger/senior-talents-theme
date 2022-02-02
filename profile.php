@@ -94,15 +94,17 @@ if(session_status() == PHP_SESSION_NONE){
                                 <p>Job Interessen</p>
                             </div>    
                             <div class="sections">
-                                <div class="input-icons01">
+                                <div class="input-icons02">
                                     <input id="profile-hoursPerWeek" placeholder="Stunden/Woche" class="profile-input-form" name="hoursPerWeek" value="<?php echo $_SESSION["hoursPerWeek"] ?>"> </input>
                                     <ion-icon class="icon" name="time-outline"></ion-icon>
                                 </div>
-                                <div class="input-icons01">
-                                    <textarea id="profile-preferableWork" placeholder="Bevorzugte Arbeit" class="profile-input-form"  rows="5" cols="112" name="preferableWork"><?php echo $_SESSION["preferableWork"] ?></textarea>
-                                    <ion-icon class="icon"name="briefcase-outline"></ion-icon>
-                                </div>
                             </div>
+                            <div class="sections">
+                                <div class="input-icons02">
+                                        <textarea id="profile-preferableWork" placeholder="Bevorzugte Arbeit" class="profile-input-form"  rows="5" cols="112" name="preferableWork"><?php echo $_SESSION["preferableWork"] ?></textarea>
+                                        <ion-icon class="icon"name="briefcase-outline"></ion-icon>
+                                    </div>
+                                </div>
                             <div class="sections">
                                 <div class="input-icons02">
                                     <textarea id="profile-interestDescr" placeholder="Interessen Beschreibung" class="profile-input-form" rows="5" cols="112" name="interestDescr" ><?php echo $_SESSION["interestDescr"] ?> </textarea>
