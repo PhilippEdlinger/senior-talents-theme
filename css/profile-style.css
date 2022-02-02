@@ -224,7 +224,11 @@ input {
     border: none;
     text-decoration: none;
 }
-
+textarea {
+    border:none;
+    text-decoration: none;
+    font-family: Ubuntu-Regular,sans-serif;
+}
 .input-icons01 {
     position: relative;
     width: 49%;
