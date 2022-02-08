@@ -332,3 +332,44 @@ input {
 #profile-files{
     width:100%;
 }
+
+/* footer */
+#footer-container{
+    min-height: 30vh;
+    width: 84%;
+    margin-left: 16%;
+    background-color: #787171;
+    padding-bottom: 20px;
+}
+.copyright {
+    text-align: center;
+}
+.footer-center {
+    display: flex;
+    justify-content: space-around;
+    margin: 0px auto;
+    margin-bottom: 10px;
+    padding-top: 30px;
+    width: 50vw;
+    height: 20vh;
+}
+.footer-center .column {
+    text-align: center;
+    width: 30%;
+    height: 20vh;
+}
+.icon-div {
+    text-align: center;
+    width: 10%;
+    height: 20vh;
+}
+.social-icons {
+    width: 25px;
+    height: 25px;
+    border-radius: 20px;
+    color: white;
+}
+.social-icons a {
+    text-decoration: none;
+    color: white;
+}
