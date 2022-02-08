@@ -12,13 +12,15 @@ if(session_status() == PHP_SESSION_NONE){
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script> 
 </head>
 
-<header>
-    <div class="header-container">
-        <div class="header-image">
-            <div id="logo-image"></div>
-        </div>
+
+
+<body id="pp">
+<div class="header-container">
+    <div class="header-image">
+        <div id="logo-image"></div>
     </div>
-</header>
+</div>
+
 
 <div id="nav">
 <div id="profile-nav" class="nav-window">
@@ -57,7 +59,6 @@ if(session_status() == PHP_SESSION_NONE){
     </div>
 </div>
 
-<body id="pp">
     <div id="data-wrapper">
             <div id="profile-container">
                   <div id="profile-picture">
@@ -267,6 +268,33 @@ if(session_status() == PHP_SESSION_NONE){
                   
             </div>
         </div>
+        <div id="footer-container">
+    <div class="footer-center">
+        <div class="column">
+            <p>Mag. Doris Mandel, DA<br><br>
+            Lärchenauerstraße 2e<br><br>
+            4020 Linz-Zaubertal</p> 
+        </div>
+        <div class="icon-div" >
+            <a href="https://www.facebook.com/DieMandel.at/">
+                <ion-icon class="social-icons" name="logo-facebook"></ion-icon><br>
+            </a>
+            <a href="https://www.instagram.com/_diemandel_/">
+                <ion-icon class="social-icons" style="margin-top: 4px;" name="logo-instagram"></ion-icon><br>
+            </a>
+            <a href="https://www.linkedin.com/in/doris-mandel-aa8690a6/">
+                <ion-icon class="social-icons" style="margin-top: 4px;" name="logo-linkedin"></ion-icon><br>             
+            </a>
+            </div>
+        <div class="column">
+            <p>+43 676 7504925<br><br>
+            doris@dieMandel.at<br><br>
+            www.dieMandel.at</p>
+        </div>
+    </div>
+    
+    <p class="copyright">© Senior-Talents, 2022</p>
+    </div>
     </div>
 </body>
 

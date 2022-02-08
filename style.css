@@ -31,33 +31,130 @@ p{
 
 /* index */
 #main_content {
-    margin: 0px;
+    margin: 0px auto;
 }
 
 .content-container{
-    height: 80%;
-    width: 100%;
-    border-bottom: 1px solid black; 
-    margin: auto;
+    width: 100%; 
+    min-height: 100vh;
 }
 
-#container_1{
+#container_1 {
     background-image: url(img/WomanTypingOnKeyboardLaptop.jpeg);
-    background-size: contain;
-    background-repeat: no-repeat;
-    height: 456px;
-    /*
-    min-height: 600px;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
     background-size: cover;
-    */
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 70vh;
 }
-
 
 #container_2{
-    background-image: url(img/WomanTypingOnKeyboardLaptop.jpeg);
+    position: relative;
+    background-color: white;
+    min-height: 80vh;
+}
+.text-container {
+    position: relative;
+    margin: 0px auto;
+    width: 60%;
+    margin-top: 15vh;
+    min-height: 50vh;
+    padding: 10px;
+    color: #787171;
+}
+.text-aufz {
+    display: inline-block;
+    width: 60%;
+    min-height: auto;
+}
+.blue {
+    font-size: 1.2vw;
+    color: rgb(0, 24, 131);
+}
+.pic-mandel {
+    display: inline-block;
+    width: 38%;
+    height: 30vh;
+    margin-bottom: 10vh;
+    background-image: url(img/Mandel.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#container_3 {
+    position: relative;
+    background-color: #787171;
+    background-image: linear-gradient(350deg, #35393B 0%, #787171 70%);
+    padding-bottom: 10vh;
+}
+.center-container {
+    display: flex;
+    justify-content: space-around;
+    margin: 0px auto;
+    width: 80%;
+    min-height: 40vh;
+}
+.four-container {
+    width: 225px;
+    position: relative;
+    display:inline-block;
+    border-radius: 200px;
+    height: 225px;
+    background-color: whitesmoke;
+    transition: background-color 0.4s ease-in-out;
+    margin: 2px;
+}
+#container_3 h3 {
+    font-size: 1.3vw;
+    text-align: center;
+    margin-bottom: 60px;
+    margin-top: 30px;
+}
+.icon-text-bottom {
+    position: absolute;
+    text-align: center;
+    font-size: 1vw;
+    top: 100%;
+    color: #787171;
+    transition: ease-in-out 0.4s;
+    color: white;
+    width: 100%;
+    height: auto;
+}
+.icon {
+    margin: 0px auto;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 80px;
+    height: 80px;
+    margin-left: -40px;
+    margin-top: -40px;
+    color: #787171;
+    transition: ease-in-out 0.4s;
+}
+.four-container:hover .icon-text-bottom {
+    color: white;
+}
+.four-container:hover .icon-text-top {
+    color: white;
+}
+.four-container:hover .icon {
+    width: 100px;
+    height: 100px;
+    margin-top: -50px;
+    margin-left: -50px;
+    color: white;
+}
+.four-container:hover {
+    background-color: transparent;
+    margin: 0px;
+    border: 2px solid white;
+}
+
+#container_4 {
+    position: relative;
+    background-color: white;
 }
 
 /* header */
@@ -67,23 +164,26 @@ p{
     height: 100%;
     width: 100%;
     background-size: contain;
+    background-position: center;
     background-repeat: no-repeat;
 }
 
 .header-container{
+    position: fixed;
     box-shadow: 0.5px 0.5px 5px black;
     height: 38px;
     will-change: 100px;
     width: 100%;
-    background-color:#35393B;
+    background-color:#787171;
     padding-top: 1%;
     padding-bottom: 1%;
+    z-index: 10;
 }
 
 .header-image{
     float: left;
     height: 100%;
-    width: 300px;
+    width: 20vw;
     margin-left: 10%;
     padding: 0px 5px 0px 5px;
 }
@@ -167,8 +267,129 @@ p{
 
 /* footer */
 #footer-container{
-    height: 10%;
+    min-height: 30vh;
     width: 100%;
-    border-top: 1px solid black;
+    background-color: #787171;
+}
+.copyright {
+    text-align: center;
+}
+.footer-center {
+    display: flex;
+    justify-content: space-around;
+    margin: 0px auto;
+    margin-bottom: 10px;
+    padding-top: 10px;
+    width: 50vw;
+    height: 20vh;
+}
+.footer-center .column {
+    text-align: center;
+    width: 30%;
+    height: 20vh;
+}
+.icon-div {
+    text-align: center;
+    width: 10%;
+    height: 20vh;
+}
+.social-icons {
+    width: 25px;
+    height: 25px;
+    border-radius: 20px;
+    color: white;
+}
+.social-icons a {
+    text-decoration: none;
+    color: white;
 }
 
+
+
+
+/* Devider */
+/* Container 3 top */
+.custom-shape-divider-top-1644078667 {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-top-1644078667 svg {
+    position: relative;
+    display: block;
+    width: calc(133% + 1.3px);
+    height: 92px;
+}
+
+.custom-shape-divider-top-1644078667 .shape-fill {
+    fill: #FFFFFF;
+}
+
+/** For mobile devices **/
+@media (max-width: 767px) {
+    .custom-shape-divider-top-1644078667 svg {
+        width: calc(189% + 1.3px);
+        height: 50px;
+    }
+}
+/*Container 3 bottom */
+.custom-shape-divider-bottom-1644079459 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1644079459 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 70px;
+}
+
+.custom-shape-divider-bottom-1644079459 .shape-fill {
+    fill: #FFFFFF;
+}
+
+/** For mobile devices **/
+@media (max-width: 767px) {
+    .custom-shape-divider-bottom-1644079459 svg {
+        width: calc(189% + 1.3px);
+        height: 50px;
+    }
+}
+/* Container 4 bottom */
+.custom-shape-divider-bottom-1644079230 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-bottom-1644079230 svg {
+    position: relative;
+    display: block;
+    width: calc(145% + 1.3px);
+    height: 110px;
+}
+
+.custom-shape-divider-bottom-1644079230 .shape-fill {
+    fill: #787171;
+}
+
+/** For mobile devices **/
+@media (max-width: 767px) {
+    .custom-shape-divider-bottom-1644079230 svg {
+        width: calc(189% + 1.3px);
+        height: 50px;
+    }
+}
