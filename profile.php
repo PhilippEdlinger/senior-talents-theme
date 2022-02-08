@@ -58,7 +58,7 @@ if(session_status() == PHP_SESSION_NONE){
 
     <div class="settings">
         <p>Einstellungen</p>
-        <ion-icon name="settings-outline"></ion-icon>               
+        <ion-icon class="settings-icon" name="settings-outline"></ion-icon>               
     </div>
 </div>
 
@@ -75,9 +75,13 @@ if(session_status() == PHP_SESSION_NONE){
                       </div>
                       <div id="pd" class="picture-upload-container">
                           <form action="<?php echo home_url( '/' ) . "index.php/uploadFiles" ; ?>" method="POST" enctype="multipart/form-data">
-                          <input type="file"  placeholder="Eigenes Foto hochladen" id="upload_file_fields" name="uploadedFile" /> 
-                          <input class="profile-save-button" type="submit"/>
-                      </form>
+                          <div class="box-for-button">
+                            <input type="file" placeholder="Eigenes Foto hochladen" id="upload_file_fields" name="uploadedFile" /> 
+                          </div>
+                          <div class="box-for-button">
+                            <button class="profile-save-button" type="submit"><h2>Speichern</h2></button>
+                          </div>
+                          </form>
                       </div>
                   </div>
                   <div id="profile-data">
@@ -126,7 +130,9 @@ if(session_status() == PHP_SESSION_NONE){
                                     <ion-icon class="icon"name="briefcase-outline"></ion-icon>
                                 </div>
                         </div>
-                        <button id="profile-add-address-button" class="profile-save-button" type="submit"><h2> Speichern</h2></button>
+                        <div class="box-for-button">
+                            <button id="profile-add-address-button" class="profile-save-button" type="submit"><h2> Speichern</h2></button>
+                        </div>
                     </form>
                             <div class=profile-headline>
                                 <p>Job Interessen</p>
@@ -214,7 +220,7 @@ if(session_status() == PHP_SESSION_NONE){
                                         <option value=<?php echo $_SESSION["jobField"] ?>> 
                                         <?php 
                                             if($_SESSION["jobField"] == null){
-                                                echo "-- JobFeld auswählen --";
+                                                echo "JobFeld auswählen";
                                             }else {
                                                 echo $_SESSION["jobField"];
                                             }
@@ -245,8 +251,10 @@ if(session_status() == PHP_SESSION_NONE){
                             <!-- <input id="profile-jobBranch" name="jobBranche" value="<?php // echo $_SESSION["jobBranche"] ?>"></input> -->
 
                           <input id="profile-seniorId" name="seniorId" value="<?php echo $_SESSION["seniorId"] ?>"> </input>
-                          <button class="profile-save-button" type="submit"><h2>Speichern</h2></button>
-                      </form>
+                            <div class="box-for-button">
+                                <button class="profile-save-button" type="submit"><h2>Speichern</h2></button>
+                            </div>
+                          </form>
                     
                   </div> 
                 
