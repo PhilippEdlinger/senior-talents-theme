@@ -12,15 +12,13 @@ if(session_status() == PHP_SESSION_NONE){
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script> 
 </head>
 
-
-
-<body id="pp">
-<div class="header-container">
-    <div class="header-image">
-        <div id="logo-image"></div>
+<header>
+    <div class="header-container">
+        <div class="header-image">
+            <div id="logo-image"></div>
+        </div>
     </div>
-</div>
-
+</header>
 
 <div id="nav">
 <div id="profile-nav" class="nav-window">
@@ -59,6 +57,7 @@ if(session_status() == PHP_SESSION_NONE){
     </div>
 </div>
 
+<body id="pp">
     <div id="data-wrapper">
             <div id="profile-container">
                   <div id="profile-picture">
@@ -91,6 +90,39 @@ if(session_status() == PHP_SESSION_NONE){
                                     <ion-icon class="icon" name="person-outline"></ion-icon>
                                 </div>
                             </div>  
+                    <form action="<?php echo home_url( '/' ) . "index.php/senior-add-address-request" ; ?>" method="post" class="login-form">
+                        <div class="sections">
+                                <div class="input-icons01">
+                                    <input id="profile-streetname" placeholder="Straße" class="profile-input-form" name="senior-street" value="<?php echo $_SESSION["street"] ?>"></input>
+                                    <ion-icon class="icon" name="time-outline"></ion-icon>
+                                </div>
+                                <div class="input-icons01">
+                                    <input id="profile-streetnumber" placeholder="Straßennummer" class="profile-input-form" name="senior-streetNo" value="<?php echo $_SESSION["streetNo"] ?>"></input>
+                                    <ion-icon class="icon"name="briefcase-outline"></ion-icon>
+                                </div>
+                        </div>
+                        <div class="sections">
+                                <div class="input-icons01">
+                                    <input id="profile-zipNo" placeholder="Postleitzahl" class="profile-input-form" name="senior-zipNo" value="<?php echo $_SESSION["zipNo"] ?>"></input>
+                                    <ion-icon class="icon" name="time-outline"></ion-icon>
+                                </div>
+                                <div class="input-icons01">
+                                    <input id="profile-city" placeholder="Stadt" class="profile-input-form" name="senior-city" value="<?php echo $_SESSION["city"] ?>"></input>
+                                    <ion-icon class="icon"name="briefcase-outline"></ion-icon>
+                                </div>
+                        </div>
+                        <div class="sections">
+                                <div class="input-icons01">
+                                    <input id="profile-country" placeholder="Land" class="profile-input-form" name="senior-country" value="<?php echo $_SESSION["country"] ?>"></input>
+                                    <ion-icon class="icon" name="time-outline"></ion-icon>
+                                </div>
+                                <div class="input-icons01">
+                                    <input id="profile-state" placeholder="Bundesland" class="profile-input-form" name="senior-state" value="<?php echo $_SESSION["state"] ?>"></input>
+                                    <ion-icon class="icon"name="briefcase-outline"></ion-icon>
+                                </div>
+                        </div>
+                        <button id="profile-add-address-button" class="profile-save-button" type="submit"><h2> Speichern</h2></button>
+                    </form>
                             <div class=profile-headline>
                                 <p>Job Interessen</p>
                             </div>    
@@ -102,9 +134,7 @@ if(session_status() == PHP_SESSION_NONE){
                             </div>
                             <div class="sections">
                                 <div class="input-icons02">
-<<<<<<< HEAD
                                     <textarea id="profile-interestDescr" placeholder="Interessen Beschreibung" class="profile-input-form" rows="5" cols="112" name="interestDescr" ><?php echo $_SESSION["interestDescr"] ?></textarea>
-=======
                                         <textarea id="profile-preferableWork" placeholder="Bevorzugte Arbeit" class="profile-input-form"  rows="5" cols="112" name="preferableWork"><?php echo $_SESSION["preferableWork"] ?></textarea>
                                         <ion-icon class="icon"name="briefcase-outline"></ion-icon>
                                     </div>
@@ -112,7 +142,6 @@ if(session_status() == PHP_SESSION_NONE){
                             <div class="sections">
                                 <div class="input-icons02">
                                     <textarea id="profile-interestDescr" placeholder="Interessen Beschreibung" class="profile-input-form" rows="5" cols="112" name="interestDescr" ><?php echo $_SESSION["interestDescr"] ?> </textarea>
->>>>>>> e3da0e3e8ba5dfdc5dcea1fcb10ee52f9a066295
                                     <ion-icon class="icon" name="receipt-outline"></ion-icon>
                                 </div>
                             </div>
@@ -213,42 +242,7 @@ if(session_status() == PHP_SESSION_NONE){
                           <input id="profile-seniorId" name="seniorId" value="<?php echo $_SESSION["seniorId"] ?>"> </input>
                           <button class="profile-save-button" type="submit"><h2>Speichern</h2></button>
                       </form>
-                    <div class="profile-headline">
-                        <p> Addresse </p>
-                    </div>
-                    <form action="<?php echo home_url( '/' ) . "index.php/senior-add-address-request" ; ?>" method="post" class="login-form">
-                        <div class="sections">
-                                <div class="input-icons01">
-                                    <input id="profile-streetname" placeholder="Straße" class="profile-input-form" name="senior-street" value="<?php echo $_SESSION["street"] ?>"></input>
-                                    <ion-icon class="icon" name="time-outline"></ion-icon>
-                                </div>
-                                <div class="input-icons01">
-                                    <input id="profile-streetnumber" placeholder="Straßennummer" class="profile-input-form" name="senior-streetNo" value="<?php echo $_SESSION["streetNo"] ?>"></input>
-                                    <ion-icon class="icon"name="briefcase-outline"></ion-icon>
-                                </div>
-                        </div>
-                        <div class="sections">
-                                <div class="input-icons01">
-                                    <input id="profile-zipNo" placeholder="Postleitzahl" class="profile-input-form" name="senior-zipNo" value="<?php echo $_SESSION["zipNo"] ?>"></input>
-                                    <ion-icon class="icon" name="time-outline"></ion-icon>
-                                </div>
-                                <div class="input-icons01">
-                                    <input id="profile-city" placeholder="Stadt" class="profile-input-form" name="senior-city" value="<?php echo $_SESSION["city"] ?>"></input>
-                                    <ion-icon class="icon"name="briefcase-outline"></ion-icon>
-                                </div>
-                        </div>
-                        <div class="sections">
-                                <div class="input-icons01">
-                                    <input id="profile-country" placeholder="Land" class="profile-input-form" name="senior-country" value="<?php echo $_SESSION["country"] ?>"></input>
-                                    <ion-icon class="icon" name="time-outline"></ion-icon>
-                                </div>
-                                <div class="input-icons01">
-                                    <input id="profile-state" placeholder="Bundesland" class="profile-input-form" name="senior-state" value="<?php echo $_SESSION["state"] ?>"></input>
-                                    <ion-icon class="icon"name="briefcase-outline"></ion-icon>
-                                </div>
-                        </div>
-                        <button id="profile-add-address-button" class="profile-save-button" type="submit"><h2> Speichern</h2></button>
-                    </form>
+                    
                   </div> 
                 
                   <!--<div id="profile-description"></div>
@@ -268,33 +262,6 @@ if(session_status() == PHP_SESSION_NONE){
                   
             </div>
         </div>
-        <div id="footer-container">
-    <div class="footer-center">
-        <div class="column">
-            <p>Mag. Doris Mandel, DA<br><br>
-            Lärchenauerstraße 2e<br><br>
-            4020 Linz-Zaubertal</p> 
-        </div>
-        <div class="icon-div" >
-            <a href="https://www.facebook.com/DieMandel.at/">
-                <ion-icon class="social-icons" name="logo-facebook"></ion-icon><br>
-            </a>
-            <a href="https://www.instagram.com/_diemandel_/">
-                <ion-icon class="social-icons" style="margin-top: 4px;" name="logo-instagram"></ion-icon><br>
-            </a>
-            <a href="https://www.linkedin.com/in/doris-mandel-aa8690a6/">
-                <ion-icon class="social-icons" style="margin-top: 4px;" name="logo-linkedin"></ion-icon><br>             
-            </a>
-            </div>
-        <div class="column">
-            <p>+43 676 7504925<br><br>
-            doris@dieMandel.at<br><br>
-            www.dieMandel.at</p>
-        </div>
-    </div>
-    
-    <p class="copyright">© Senior-Talents, 2022</p>
-    </div>
     </div>
 </body>
 
