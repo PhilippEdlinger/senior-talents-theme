@@ -12,13 +12,15 @@ if(session_status() == PHP_SESSION_NONE){
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script> 
 </head>
 
-<header>
-    <div class="header-container">
-        <div class="header-image">
-            <div id="logo-image"></div>
-        </div>
+
+
+<body id="pp">
+<div class="header-container">
+    <div class="header-image">
+        <div id="logo-image"></div>
     </div>
-</header>
+</div>
+
 
 <div id="nav">
 <div id="profile-nav" class="nav-window">
@@ -57,7 +59,6 @@ if(session_status() == PHP_SESSION_NONE){
     </div>
 </div>
 
-<body id="pp">
     <div id="data-wrapper">
             <div id="profile-container">
                   <div id="profile-picture">
