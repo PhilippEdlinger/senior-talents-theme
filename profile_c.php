@@ -44,7 +44,9 @@
     </div>
 
     <div class="settings">
-        <p>Einstellungen</p>
+        <a style="text-decoration: none;" href="https://localhost/wordpress/wordpress/index.php/company-profile-settings/">
+            <p>Einstellungen</p> 
+        </a>
         <ion-icon class="settings-icon" name="settings-outline"></ion-icon>               
     </div>
 </div>
