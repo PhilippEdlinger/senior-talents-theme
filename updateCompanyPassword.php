@@ -1,4 +1,4 @@
-<?php /* Template Name: update senior password */ ?>
+<?php /* Template Name: update company password */ ?>
 
 <head>
     <link rel="stylesheet" href="<?php echo get_template_directory_uri() . '/css/signup-style.css'?>">
@@ -10,7 +10,7 @@
 
     <div class="content-wrapper">
         <h1 class="headline">Passwort Ändern</h1>
-        <form action="<?php echo home_url( '/' ) . "index.php/updateSeniorPasswordRequest" ; ?>" id="signup-form" method="post">
+        <form action="<?php echo home_url( '/' ) . "index.php/updateCompanyPasswordRequest" ; ?>" id="signup-form" method="post">
             <div class="sections">
                 <div class="input-icons02"style="margin-top: 4px;">
                     <input name="signup-form-firstname" class="signup-form-input" id="signup-form-firstname" type="password" placeholder="Altes Passwort"></input>

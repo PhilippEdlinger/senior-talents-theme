@@ -1,4 +1,4 @@
-<?php /* Template Name: update senior password */ ?>
+<?php /* Template Name: update company email */ ?>
 
 <head>
     <link rel="stylesheet" href="<?php echo get_template_directory_uri() . '/css/signup-style.css'?>">
@@ -9,30 +9,23 @@
 <body class="background">
 
     <div class="content-wrapper">
-        <h1 class="headline">Passwort Ändern</h1>
-        <form action="<?php echo home_url( '/' ) . "index.php/updateSeniorPasswordRequest" ; ?>" id="signup-form" method="post">
+        <h1 class="headline">Email Ändern</h1>
+        <form action="<?php echo home_url( '/' ) . "index.php/updateCompanyEmailRequest" ; ?>" id="signup-form" method="post">
             <div class="sections">
-                <div class="input-icons02"style="margin-top: 4px;">
-                    <input name="signup-form-firstname" class="signup-form-input" id="signup-form-firstname" type="password" placeholder="Altes Passwort"></input>
+                <div class="input-icons02">
+                    <input name="signup-form-email" class="signup-form-input" id="signup-form-email" type="text" placeholder="Neue Email"></input>
                     <ion-icon class="icon" name="lock-closed-outline"></ion-icon>
                 </div>
             </div>
             <div class="sections">
                 <div class="input-icons02">
-                    <input name="signup-form-email" class="signup-form-input" id="signup-form-email" type="password" placeholder="Neues Passwort"></input>
-                    <ion-icon class="icon" name="lock-closed-outline"></ion-icon>
-                </div>
-            </div>
-            <div class="sections">
-                <div class="input-icons02">
-                    <input name="signup-form-password" class="signup-form-input" id="signup-form-password" type="password" placeholder="Neues Passwort Erneut"></input>
+                    <input name="signup-form-password" class="signup-form-input" id="signup-form-password" type="text" placeholder="Neue Email Erneut"></input>
                     <ion-icon class="icon" name="lock-closed-outline"></ion-icon>
                 </div>
             </div>
             <button type="submit" id="signup-button"><h2>Speichern</h2></button>
         </form>
-    </div>
-    
+    </div>    
 </body>
 
 
