@@ -49,7 +49,9 @@ if(session_status() == PHP_SESSION_NONE){
             <p class="nav-element">Empfohlen</p>
         </div>
         <div class="nav-box-element">
+        <a href="https://localhost/wordpress/wordpress/index.php/marketplace/">
             <p class="nav-element">Suche</p>
+        </a>
             <ion-icon class="nav-icons" name="search"></ion-icon>
         </div>
         <div class="nav-box-element-last">
@@ -58,7 +60,9 @@ if(session_status() == PHP_SESSION_NONE){
     </div>
 
     <div class="settings">
-        <p>Einstellungen</p>
+    <a style="text-decoration: none;" href="https://localhost/wordpress/wordpress/index.php/senior-settings/">
+        <p>Einstellungen</p> 
+    </a>
         <ion-icon class="settings-icon" name="settings-outline"></ion-icon>               
     </div>
 </div>
