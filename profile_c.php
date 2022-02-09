@@ -230,7 +230,7 @@
             </form>
             <br><br>
        
-            <div class="profile-headline">
+            <div class="profile-headline" style="margin-top: 20px;">
                 <p> Kontaktperson </p>
             </div>
             <form action="<?php echo home_url( '/' ) . "index.php/company-add-contact-person-request" ; ?>" method="post" class="login-form">
