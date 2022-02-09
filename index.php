@@ -38,7 +38,7 @@ get_header();
 
         <h3>
             Ich entwickle für Sie und mit Ihnen zielgerichtete Maßnahmenpakete in den Bereichen:
-</h3>
+        </h3>
         <div class="center-container">
             <div class="four-container">
                 <h4 class="icon-text-bottom">Arbeitsorganisation</h4>
