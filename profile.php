@@ -36,7 +36,7 @@ if(session_status() == PHP_SESSION_NONE){
         </div>
         </a>
         <a href="#ji">
-        <div class="nav-box-element">
+        <div class="nav-box-element-last">
             <p class="nav-element">Job Interessen</p>
         </div>
         </a>
@@ -50,6 +50,7 @@ if(session_status() == PHP_SESSION_NONE){
         </div>
         <div class="nav-box-element">
             <p class="nav-element">Suche</p>
+            <ion-icon class="nav-icons" name="search"></ion-icon>
         </div>
         <div class="nav-box-element-last">
             <p class="nav-element">Gespeichert</p>
@@ -85,7 +86,7 @@ if(session_status() == PHP_SESSION_NONE){
                       </div>
                   </div>
                   <div id="profile-data">
-                      <div class="profile-headline" style="width: 13vw; margin-top: 15px;">
+                      <div class="profile-headline" style="margin-top: 15px;">
                           <p>Persönliche Daten</p>
                       </div>
                       <form action="<?php echo home_url( '/' ) . "index.php/updateprofile" ; ?>" method="post" class="login-form">
@@ -145,11 +146,10 @@ if(session_status() == PHP_SESSION_NONE){
                             </div>
                             <div class="sections">
                                 <div class="input-icons02">
-                                    <textarea id="profile-interestDescr" placeholder="Interessen Beschreibung" class="profile-input-form" rows="5" cols="112" name="interestDescr" ><?php echo $_SESSION["interestDescr"] ?></textarea>
                                         <textarea id="profile-preferableWork" placeholder="Bevorzugte Arbeit" class="profile-input-form"  rows="5" cols="112" name="preferableWork"><?php echo $_SESSION["preferableWork"] ?></textarea>
                                         <ion-icon class="icon"name="briefcase-outline"></ion-icon>
-                                    </div>
                                 </div>
+                            </div>
                             <div class="sections">
                                 <div class="input-icons02">
                                     <textarea id="profile-interestDescr" placeholder="Interessen Beschreibung" class="profile-input-form" rows="5" cols="112" name="interestDescr" ><?php echo $_SESSION["interestDescr"] ?> </textarea>
@@ -167,7 +167,7 @@ if(session_status() == PHP_SESSION_NONE){
                                     <select id="profile-jobBranch" class="profile-input-form" name="jobBranche">
                                         <option value=<?php echo $_SESSION["jobBranche"] ?>> <?php
                                             if($_SESSION["jobBranche"] == null ){
-                                                echo "-- Branche auswählen --";
+                                                echo "Branche auswählen";
                                             }else{
                                                 echo $_SESSION["jobBranche"];
                                             }
