@@ -390,6 +390,10 @@ input {
      border-color: #534c4c;
      width: 20vw;
  }
+ .box-for-button h2 {
+     font-size: 1.2vw;
+     text-align: center;
+ }
  .profile-save-button-suche {
     position: relative;
     width: 10vw;

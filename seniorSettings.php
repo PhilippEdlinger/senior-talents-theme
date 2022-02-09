@@ -71,9 +71,15 @@
                     </div>
                 </div>
                 <div id="profile-data">
-                    <a href="https://localhost/wordpress/wordpress/index.php/update-senior-password/"> <div style="color:black;" id="change-pw-button"> Passwort ändern </div> </a>
-                    <a href="https://localhost/wordpress/wordpress/index.php/update-senior-email/"> <div style="color:black;" id="change-pw-button"> Email ändern </div> </a>
-                    <div style="color:black;" id="delete-profile"> Benutzerkonto löschen </div>
+                    <div class="box-for-button">
+                        <a href="https://localhost/wordpress/wordpress/index.php/update-senior-password/"> <h2 class="profile-save-button" id="change-pw-button"> Passwort ändern </h2> </a>
+                    </div>
+                    <div class="box-for-button">
+                        <a href="https://localhost/wordpress/wordpress/index.php/update-senior-email/"> <h2 class="profile-save-button" id="change-pw-button" > Email ändern </h2> </a>
+                    </div>
+                    <div class="box-for-button">
+                        <h2 class="profile-save-button" id="delete-profile"> Benutzerkonto löschen </h2>
+                    </div>
                 </div> 
             </div>
               
