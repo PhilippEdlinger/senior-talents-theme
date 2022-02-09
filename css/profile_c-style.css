@@ -1,8 +1,10 @@
-.logo-picture{
-    border: 5px dotted violet;
-    height: 100px;
-    width: 100px;
-    border-radius: 10%;
+.picture {
+    margin-bottom: 25px;
+    width: 15vw;
+    height: 15vw;
+    border-radius: 5px;
+    background-color: #78717157;
+    border: 2px solid black;
 }
 
 .joboffer{
@@ -68,20 +70,18 @@ h2 {
 
 /* header */
 .header-container{
-    box-shadow: 0.5px 0.5px 5px black;
-    height: 45px;
-    will-change: 100px;
-    width: 100%;
     position: fixed;
-    background-color: #35393B;
-    padding-top: 1%;
-    padding-bottom: 1%;
+    box-shadow: 0.5px 0.5px 5px black;
+    height: 10vh;
+    width: 100%;
+    background-color: #787171;
+    padding-top: 2vh;
     z-index: 2;
 }
 
 .header-image{
-    height: 100%;
-    width: 300px;
+    height: 8vh;
+    width: 25vw;
     margin-left: 5%;
     margin-right: 34%;
     padding: 0px 5px 0px 5px;
@@ -97,31 +97,27 @@ h2 {
 
 /* navigation */
 #nav {
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.3);
-    height: 100%;
-    width: 220px;
     position: fixed;
-    margin-left: 0%;
-    background-color: #F0F0F0;
+    display: inline-block;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.3);
+    height: 100vh;
+    width: 16.5vw;
+    background-color: #fff;
     z-index: 1;
 }
 #profile-nav {
-    margin-top: 40%;
-    background: -webkit-linear-gradient(left, #a445b2, #d41872, #fa4299);
-    background: -o-linear-gradient(left, #a445b2, #d41872, #fa4299);
-    background: -moz-linear-gradient(left, #a445b2, #d41872, #fa4299);
+    margin-top: 15vh;
+    background-color: #665f5f;
 }
 #job-nav {
     margin-top: 8%;
-    background: -webkit-linear-gradient(left, #a445b2, #d41872, #fa4299);
-    background: -o-linear-gradient(left, #a445b2, #d41872, #fa4299);
-    background: -moz-linear-gradient(left, #a445b2, #d41872, #fa4299);
+    background-color: #665f5f;
 }
 
 .nav-window {
     border-radius: 12px;
-    background-color: navajowhite;
     min-height: 50px;
+    box-shadow:0px 4px 4px 0px rgba(0,0,0,0.3)
 }
 
 .nav-title {
@@ -129,30 +125,32 @@ h2 {
     text-align: center;
     font-size: 0.8vw;
     padding: 5px 10px;
-    padding:10px 0px 10px 0px;
+    padding:12px 0px 12px 0px;
     color: white;
     border-radius: 0px 12px 0px 0px;
+    border-bottom: 1px solid black;
 }
 
 .nav-box-element {
+    position: relative;
     max-width: 100%;
     min-height: 5px;
-    padding: 8px 0px 8px 20px;
+    padding: 12px 0px 12px 32px;
     font-size: 1vw;
     color: #3E5444;
     background-color: white;
-    transition: padding-left ease-in 0.1s;
+    transition: ease-in-out 0.3s;
 }
 
 .nav-box-element-last {
     max-width: 100%;
     min-height: 5px;
-    padding: 8px 0px 8px 20px;
+    padding: 12px 0px 12px 32px;
     font-size: 1vw;
     color: #3E5444;
     border-radius: 0px 0px 12px 0px;
     background-color: white;
-    transition: padding-left ease-in 0.1s;
+    transition: ease-in-out 0.3s;
 }
 
 .nav-element {
@@ -160,33 +158,69 @@ h2 {
 }
 
 .nav-box-element:hover {
-    padding-left: 22px;
+    padding-left: 42px;
     background-color: lightgrey;
 }
 
 .nav-box-element-last:hover {
-    padding-left: 22px;
+    padding-left: 42px;
     background-color: lightgrey;
+}
+
+.nav-box-element:hover .nav-icons {
+    left: 15px;
+}
+.nav-icons {
+    position: absolute;
+    left: 10px;
+    top: 12px;
+    transition: ease-in-out 0.3s;
+}
+.settings {
+    position: absolute;
+    top: 92%;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    background-color: #787171;
+    color: #fff;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.3);
+    padding-top: 1vw;
+    padding-bottom: 1vw;
+    border-radius: 25px;
+    transition: ease-in-out 0.2s;
+}
+.settings-icon {
+    transition: transform ease-in-out 0.3s;
+}
+.settings:hover .settings-icon {
+    transform: rotate(120deg);
+}
+.settings:hover {
+    background-color: #534c4c;
+}
+.settings p {
+    font-size: 1.2vw;
 }
 
 /* content */
 #data-wrapper {
-    position: absolute;
-    top: 90px;
-    margin-left: 18%;
-    width: 82%;
-    min-height: 100%;
-    margin-bottom: 400px;
+    display: inline-block;
+    margin-left: 18vw;
+    margin-top: 10vh;
+    margin-bottom: 2vh;
+    width: 80vw;
+    min-height: 100vh;
 }
 
 #profile-container{
     min-height: 80vh;
-    max-width: 900px;
+    width: 75vw;
     margin: auto;
     border-radius: 12px;
     box-shadow: 0px 0px 10px lightgray;
     padding: 15px;
-    margin-bottom: 50px;
+    margin-top: 2vw;
     background: #fff;
 }
 
@@ -200,27 +234,29 @@ h2 {
 .profile-headline{
     margin: 0 auto;
     min-height: 1px;
-    width: 10vw;
+    width: 20vw;
     text-align: center;
     padding: 5px 0px 5px 0px;
-    box-shadow: 1px 1px 4px grey;
-    border-radius: 15px;
+    box-shadow: 1px 1px 4px grey;;
+    border-radius: 50px;
     color: black;
-    margin-top: 10px;
+    margin-top: 50px;
     margin-bottom:30px;
 }
-
+.profile-headline p {
+    font-size: 1.5vw;
+}
 .picture-container {
     display: flex;
     justify-content: center;
 }
 
 .picture {
-    margin: 25px;
-    width: 80px;
-    height: 80px;
-    border-radius: 40px;
-    background-color: grey;
+    margin-bottom: 25px;
+    width: 15vw;
+    height: 15vw;
+    border-radius: 5px;
+    background-color: #78717157;
     border: 2px solid black;
 }
 
@@ -299,11 +335,11 @@ input {
 }
 
 .profile-company-input-form:focus {
-    border-bottom: 1px solid #fa4299;
+    border-bottom: 1px solid rgb(28, 61, 211);
     padding-left: 45px;
 }
 .profile-company-input-form:focus ~ .icon {
-    color: #d41872;
+    color: rgb(28, 61, 211);
     left: 15px;
 }
 
@@ -331,26 +367,30 @@ input {
     padding: 6px;
     width: 90%;
 }
- .profile-save-button {
-     text-decoration: none;
+.profile-save-button {
     position: relative;
-    left: 35%;
-    width: 30%;
+    width: 15vw;
     margin-top: 10px;
     margin-bottom: 30px;
     padding: 12px 15px;
     border: none;
     border-radius: 30px;
     font-size: 10px;
-    color: white;
-    text-align: center;
-    background: -webkit-linear-gradient(left, #a445b2, #d41872, #fa4299);
-    background: -o-linear-gradient(left, #a445b2, #d41872, #fa4299);
-    background: -moz-linear-gradient(left, #a445b2, #d41872, #fa4299);
- }
- #profile-save-button:hover {
-     background-color: #16E067;
- }
+    color: #fff;
+    background-color: #787171;
+    border: 3px solid #787171;
+    transition: ease-in-out 0.4s;
+}
+.profile-save-button:hover {
+    background-color: #534c4c;
+    border-color: #534c4c;
+    width: 20vw;
+}
+.box-for-button {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
 
 /* resume */
 .profile-resume {
@@ -369,4 +409,46 @@ input {
 
 .joboffer{
     color: black;
+}
+
+
+/* footer */
+#footer-container{
+    min-height: 30vh;
+    width: 84%;
+    margin-left: 16%;
+    background-color: #787171;
+    padding-bottom: 20px;
+}
+.copyright {
+    text-align: center;
+}
+.footer-center {
+    display: flex;
+    justify-content: space-around;
+    margin: 0px auto;
+    margin-bottom: 10px;
+    padding-top: 30px;
+    width: 50vw;
+    height: 20vh;
+}
+.footer-center .column {
+    text-align: center;
+    width: 30%;
+    height: 20vh;
+}
+.icon-div {
+    text-align: center;
+    width: 10%;
+    height: 20vh;
+}
+.social-icons {
+    width: 25px;
+    height: 25px;
+    border-radius: 20px;
+    color: white;
+}
+.social-icons a {
+    text-decoration: none;
+    color: white;
 }
