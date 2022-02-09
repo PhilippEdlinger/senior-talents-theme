@@ -7,9 +7,7 @@
     $request = wp_remote_get( 'http://localhost:8080/job-offer/getJobOffersByPartialString/'. $_POST["job_searchbar_word"] );
     $response   = wp_remote_retrieve_body($request); 
 
-    $_SESSION["searchbar"]["joblist"] =  json_decode($response);
-	
-    echo json_encode($_SESSION);
+    $_SESSION["searchbar"]["joblist"] =  json_decode($response, true);
 
-	//header("Location: https://localhost/wordpress/wordpress/index.php/marketplace");
+	header("Location: https://localhost/wordpress/wordpress/index.php/marketplace");
 ?>

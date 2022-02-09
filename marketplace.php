@@ -13,12 +13,12 @@
     </form>
     
     <?php 
-    
+   
+   if ($_SESSION["searchbar"]["joblist"] == null){
     $request = wp_remote_get( 'http://localhost:8080/job-offer/getRandomJobOffers/1' . $_SESSION["companyId"], $arg );
     $body    = wp_remote_retrieve_body($request); 
     $jobList = json_decode($body, true);
 
-    if ($jobList != null){
     foreach ($jobList as $job){
     echo '<div class="joboffer">
             <h3  class="joboffer-title">' . $job["title"] . '</h3>
@@ -27,8 +27,18 @@
             <p>Kennnummer: '. $job["jobOfferId"] .'</p>
             </div>';
         }
-    }
-    
-    ?>
+    }else {
+    $jobList = $_SESSION["searchbar"]["joblist"];
+        
+    foreach ($jobList as $job){
+        echo '<div class="joboffer">
+                <h3  class="joboffer-title">' . $job["title"] . '</h3>
+                <p name="joboffer-category" class="joboffer-category">Kategory: ' . $job["category"] . '</p>
+                <p class="joboffer-descr">Kurzbeschreibung: '. $job["descr"] .'</p>
+                <p>Kennnummer: '. $job["jobOfferId"] .'</p>
+                </div>';
+            }
+    }    
+        ?>
     </div>
 </body>
