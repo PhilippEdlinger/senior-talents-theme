@@ -37,10 +37,15 @@
         </div>
         </a>
         <a href="#ji">
-        <div class="nav-box-element">
+        <div class="nav-box-element-last">
             <p class="nav-element">Job Interessen</p>
         </div>
         </a>
+    </div>
+
+    <div class="settings">
+        <p>Einstellungen</p>
+        <ion-icon class="settings-icon" name="settings-outline"></ion-icon>               
     </div>
 </div>
 
@@ -48,19 +53,20 @@
     <div id="data-wrapper">
         <div id="profile-container">
             <div id="company-logo">
-                <div class="profile-headline">
+                <div class="profile-headline" style="margin-top: 10px;">
                     <p>Logo</p>
                 </div>
-                <div class="company-profile-headline" style="margin-top: 10px;">
-                    <p>Firmenlogo</p>
-                </div>
                 <div class="picture-container">
-                    <div class="logo-picture" style="background-image: url('<?php echo get_template_directory_uri() . $_SESSION["logoData"] ?>'); background-position: center;"></div>
+                    <div class="picture" style="background-image: url('<?php echo get_template_directory_uri() . $_SESSION["logoData"] ?>'); background-position: center;"></div>
                 </div>
                 <div class="picture-upload-container">
                 <form action="<?php echo home_url( '/' ) . "index.php/uploadlogorequest" ; ?>" method="POST" enctype="multipart/form-data">
-                    <input type="file"  placeholder="Logo hochladen" id="upload_file_fields" name="uploadedFile" /> 
-                    <input type="submit"/>
+                    <div class="box-for-button">
+                            <input type="file" placeholder="Eigenes Foto hochladen" id="upload_file_fields" name="uploadedFile" /> 
+                    </div>
+                    <div class="box-for-button">
+                        <button class="profile-save-button" type="submit"><h2>Speichern</h2></button>
+                    </div>
                 </form>   
                 </div>
             </div>
@@ -117,14 +123,16 @@
                                     <ion-icon class="icon" name="person-outline"></ion-icon>
                                 </div>
                             </div>
-                        <button id="profile-add-address-button" class="profile-save-button" type="submit"><h2> Speichern</h2></button>
-                    </form>
+                            <div class="box-for-button">
+                                <button id="profile-add-address-button" class="profile-save-button" type="submit"><h2> Speichern</h2></button>
+                            </div>
+                         </form>
                     <div class="sections">
                         <div class="input-icons02">
                             <select id="profile-company-branche" class="profile-company-input-form" name="branche">
                                 <option value=<?php echo $_SESSION["branche"] ?>> <?php
                                     if($_SESSION["branche"] == null ){
-                                        echo "-- Branche auswählen --";
+                                        echo "Branche auswählen";
                                     }else{
                                         echo $_SESSION["branche"];
                                     }?>
@@ -172,7 +180,9 @@
                             </select>
                         </div>
                     </div>  
-                    <button id="profile-save-button" class="profile-save-button" type="submit"><h2>Speichern</h2></button>
+                    <div class="box-for-button">
+                        <button id="profile-save-button" class="profile-save-button" type="submit"><h2>Speichern</h2></button>
+                    </div>
                 </div>
                 <br><br>
                 <div id="joboffers-container">
@@ -208,11 +218,14 @@
                                 }
                             }
                         ?>
-                    <div class="profile-save-button">
-                    <a href= "http://localhost/wordpress/wordpress/index.php/create-job" style="color: #fff; float: block;"> 
-                        <div id="joboffer-button"><h2>Job erstellen!</h2></div>          
-                    </a>
+                    <div class="box-for-button">
+                        <div class="profile-save-button" style="text-align: center;">
+                            <a href= "http://localhost/wordpress/wordpress/index.php/create-job" style="color: #fff; float: block;"> 
+                                <div id="joboffer-button"><h2>Job erstellen!</h2></div>          
+                            </a>
+                        </div>
                     </div>
+                    
                 </div>
             </form>
             <br><br>
@@ -227,7 +240,7 @@
                             <select id="contactperson-title" class="profile-company-input-form" name="company-contactperson-title">
                                 <option value=<?php echo $_SESSION["contactperson-title"] ?>> <?php
                                     if($_SESSION["contactperson-title"] == null ){
-                                        echo "-- Anrede auswählen --";
+                                        echo "Anrede auswählen";
                                     }else{
                                         echo $_SESSION["contactperson-title"];
                                     }
@@ -258,8 +271,39 @@
                             <ion-icon class="icon" name="person-outline"></ion-icon>
                         </div>
                 </div>
-                <button id="contact-add-contactperson-button" class="profile-save-button" type="submit"><h2> Speichern</h2></button>
+                <div class="box-for-button">
+                    <button id="contact-add-contactperson-button" class="profile-save-button" type="submit"><h2> Speichern</h2></button>
+                </div>
             </form>
         </div>
     </div>
+                                </div>
 </body>
+
+<div id="footer-container">
+    <div class="footer-center">
+        <div class="column">
+            <p>Mag. Doris Mandel, DA<br><br>
+            Lärchenauerstraße 2e<br><br>
+            4020 Linz-Zaubertal</p> 
+        </div>
+        <div class="icon-div" >
+            <a href="https://www.facebook.com/DieMandel.at/">
+                <ion-icon class="social-icons" name="logo-facebook"></ion-icon><br>
+            </a>
+            <a href="https://www.instagram.com/_diemandel_/">
+                <ion-icon class="social-icons" style="margin-top: 4px;" name="logo-instagram"></ion-icon><br>
+            </a>
+            <a href="https://www.linkedin.com/in/doris-mandel-aa8690a6/">
+                <ion-icon class="social-icons" style="margin-top: 4px;" name="logo-linkedin"></ion-icon><br>             
+            </a>
+            </div>
+        <div class="column">
+            <p>+43 676 7504925<br><br>
+            doris@dieMandel.at<br><br>
+            www.dieMandel.at</p>
+        </div>
+    </div>
+    
+    <p class="copyright">© Senior-Talents, 2022</p>
+</div>

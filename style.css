@@ -93,13 +93,14 @@ p{
     margin: 0px auto;
     width: 80%;
     min-height: 40vh;
+    margin-bottom: 10px;
 }
 .four-container {
-    width: 225px;
+    width: 15vw;
     position: relative;
     display:inline-block;
     border-radius: 200px;
-    height: 225px;
+    height: 15vw;
     background-color: whitesmoke;
     transition: background-color 0.4s ease-in-out;
     margin: 2px;
@@ -345,6 +346,7 @@ p{
     overflow: hidden;
     line-height: 0;
     transform: rotate(180deg);
+    margin-top: 50px;
 }
 
 .custom-shape-divider-bottom-1644079459 svg {
