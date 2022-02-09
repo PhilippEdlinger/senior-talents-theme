@@ -16,13 +16,15 @@
 </header>
 
 <div id="nav">
-    <div id="profile-nav" class="nav-window">
+<div id="profile-nav" class="nav-window">
         <div  class="nav-title">
             <h2 class="nav-element">Profile</h2>
         </div>
         <a href="#pp">
         <div class="nav-box-element">
-            <p class="nav-element">Daten</p>
+            <a href="https://localhost/wordpress/wordpress/index.php/profile">
+                <p class="nav-element">Daten</p>
+            </a>
         </div>
         </a>
         <a href="#pd">
@@ -36,9 +38,26 @@
         </div>
         </a>
     </div>
+    <div id="job-nav" class="nav-window">
+        <div class="nav-title">
+            <h2 class="nav-element">Jobs</h2>
+        </div>
+        <div class="nav-box-element">
+            <p class="nav-element">Empfohlen</p>
+        </div>
+        <div class="nav-box-element">
+            <p class="nav-element">Suche</p>
+            <ion-icon class="nav-icons" name="search"></ion-icon>
+        </div>
+        <div class="nav-box-element-last">
+            <p class="nav-element">Gespeichert</p>
+        </div>
+    </div>
 
     <div class="settings">
-        <p>Einstellungen</p>
+    <a style="text-decoration: none;" href="https://localhost/wordpress/wordpress/index.php/senior-settings/">
+        <p>Einstellungen</p> 
+    </a>
         <ion-icon class="settings-icon" name="settings-outline"></ion-icon>               
     </div>
 </div>

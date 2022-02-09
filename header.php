@@ -5,7 +5,7 @@
     <link rel="stylesheet" href="<?php echo get_template_directory_uri() . '/style.css'?>">
 </head>
 
-<div class="header-container">
+<div class="header-container" style="margin-top: 0px;">
     <div class="header-image">
         <div id="logo-image"></div>
     </div>

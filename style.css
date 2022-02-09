@@ -171,6 +171,7 @@ p{
 
 .header-container{
     position: fixed;
+    top: 0%;
     box-shadow: 0.5px 0.5px 5px black;
     height: 38px;
     will-change: 100px;
