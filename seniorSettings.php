@@ -3,6 +3,7 @@
 
 <head>
     <link rel="stylesheet" href="<?php echo get_template_directory_uri() . '/css/profile-style.css'?>">
+    <script src="<?php echo get_template_directory_uri() . '/js/signup.js'?>"></script>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script> 
 </head>
@@ -63,6 +64,7 @@
 </div>
 
 <body id="pp">
+
     <div id="data-wrapper">
             <div id="profile-container">
                 <div id="profile-picture">
@@ -72,10 +74,10 @@
                 </div>
                 <div id="profile-data">
                     <div class="box-for-button">
-                        <a href="https://localhost/wordpress/wordpress/index.php/update-senior-password/"> <h2 class="profile-save-button" id="change-pw-button"> Passwort ändern </h2> </a>
+                        <h2 onclick="openPwForm()" class="profile-save-button" id="change-pw-button"> Passwort ändern </h2> </a>
                     </div>
                     <div class="box-for-button">
-                        <a href="https://localhost/wordpress/wordpress/index.php/update-senior-email/"> <h2 class="profile-save-button" id="change-pw-button" > Email ändern </h2> </a>
+                        <a href="https://localhost/wordpress/wordpress/index.php/update-senior-email/"> <h2 class="profile-save-button" id="change-email-button" > Email ändern </h2> </a>
                     </div>
                     <div class="box-for-button">
                         <h2 class="profile-save-button" id="delete-profile"> Benutzerkonto löschen </h2>
@@ -116,5 +118,35 @@
 </div>
     </div>
 </body>
+
+<div id="popup-background" class="popup-background-hide">
+    <div class="content-wrapper">
+        <ion-icon onclick="closePwForm()" id="close-form" class="form-close" name="close-outline"></ion-icon>      
+        <h1 class="headline">PASSWORT ÄNDERN</h1>
+        <form action="<?php echo home_url( '/' ) . "index.php/updateSeniorPasswordRequest" ; ?>" id="signup-form" method="post">
+            <div class="sections">
+                <div class="input-icons02"style="margin-top: 4px;">
+                    <input name="signup-form-firstname" class="profile-input-form" id="signup-form-firstname" type="password" placeholder="Altes Passwort"></input>
+                    <ion-icon class="icon" name="lock-closed-outline"></ion-icon>
+                </div>
+            </div>
+            <div class="sections">
+                <div class="input-icons02">
+                    <input name="signup-form-email" class="profile-input-form" id="signup-form-email" type="password" placeholder="Neues Passwort"></input>
+                    <ion-icon class="icon" name="lock-closed-outline"></ion-icon>
+                </div>
+            </div>
+            <div class="sections">
+                <div class="input-icons02">
+                    <input name="signup-form-password" class="profile-input-form" id="signup-form-password" type="password" placeholder="Neues Passwort Erneut"></input>
+                    <ion-icon class="icon" name="lock-closed-outline"></ion-icon>
+                </div>
+            </div>
+            <button type="submit" id="signup-button" class="form-save-button" style="margin-bottom: 0px;"><h2>Speichern</h2></button>
+        </form>
+    </div>
+</div>
+
+
 
 
