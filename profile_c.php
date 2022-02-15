@@ -220,14 +220,18 @@
                                 }
                             }
                         ?>
-                    <div class="box-for-button">
+                    <!--<div class="box-for-button">
                         <div class="profile-save-button" style="text-align: center;">
                             <a href= "http://localhost/wordpress/wordpress/index.php/create-job" style="color: #fff; float: block;"> 
                                 <div id="joboffer-button"><h2>Job erstellen!</h2></div>          
                             </a>
                         </div>
+                    </div>-->
+                    <div class="box-for-button">
+                        <div onclick="openJobForm()" class="profile-save-button" style="text-align: center;">
+                            <div id="joboffer-button"><h2>Job erstellen!</h2></div>          
+                        </div>
                     </div>
-                    
                 </div>
             </form>
             <br><br>
@@ -308,4 +312,48 @@
     </div>
     
     <p class="copyright">© Senior-Talents, 2022</p>
+</div>
+
+<div id="popup-background" class="popup-background-hide">
+    <div class="content-wrapper">
+        <ion-icon onclick="closeJobForm()" id="close-form" class="form-close" name="close-outline"></ion-icon>      
+        <h1 class="headline">JOBANGEBOT ERSTELLEN</h1>
+        <div id="wrapper">
+            <form action="<?php echo home_url( '/' ) . "index.php/create-job-request" ; ?>" method="post" id="job-formular">
+                <div class="sections">
+                    <div class="input-icons">
+                        <input id="job-title" class="profile-input-form" name="job-title" placeholder="Berufsbezeichnung" ></input>
+                        <ion-icon class="icon" name="person-outline"></ion-icon>
+                    </div>
+                </div>
+                <div class="sections">
+                    <div class="input-icons">
+                        <input id="job-category" class="profile-input-form" name="job-category" placeholder="Berufskategorie"></input>
+                        <ion-icon class="icon" name="copy-outline"></ion-icon>
+                    </div>
+                </div>
+                <div class="sections">
+                    <div class="input-icons">
+                        <input id="job-salary" class="profile-input-form" name="job-salary" placeholder="Gehalt"></input>
+                        <ion-icon class="icon" name="cash-outline"></ion-icon>
+                    </div>
+                </div>
+                <div class="sections">
+                    <div class="input-icons">
+                        <textarea id="job-descr" class="profile-input-form" name="job-descr" placeholder="Berufsbeschreibung"></textarea>
+                        <ion-icon class="icon" name="menu-outline"></ion-icon>
+                    </div>
+                </div>
+                <div class="sections">
+                    <div class="input-icons">
+                        <textarea id="job-condition" class="profile-input-form" name="job-condition" placeholder="Berufsbedingung"></textarea>
+                        <ion-icon class="icon" name="menu-outline"></ion-icon>
+                    </div>
+                </div>
+                <button style="margin-bottom: 0px;" type="submit" id="create-job-offer" class="form-save-button">
+                    <h2>Erstellen</h2>
+                </button>
+            </form>
+        </div>
+    </div>
 </div>
