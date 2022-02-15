@@ -12,7 +12,7 @@
         'category' => $_POST["joboffer-category"],
         'condition' => $_POST["joboffer-condition"],
         'salary' => $_POST["joboffer-salary"],
-        'jobOfferId' => $_POST["joboffer-id"],
+        'id' => $_POST["joboffer-id"],
        );  
 
     $arg = array(
@@ -25,6 +25,5 @@
     $request = wp_remote_post( 'http://localhost:8080/job-offer/update', $arg );
     $response     = wp_remote_retrieve_body($request); 
 
-   
    header("Location: https://localhost/wordpress/wordpress/index.php/company-profile");  
 ?>           

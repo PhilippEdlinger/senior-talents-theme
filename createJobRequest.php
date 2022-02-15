@@ -37,6 +37,6 @@
     }else{
         header("Location: https://localhost/wordpress/wordpress/index.php/create-job");
     }
-
+    
 ?>
 

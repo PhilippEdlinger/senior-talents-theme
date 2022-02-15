@@ -46,7 +46,7 @@ if (substr_count( $body, "\n" ) == 0){
     $_SESSION["jobField"] = $json_body["jobField"];
     $_SESSION["password"] = $json_body["password"];
     $_SESSION["preferableWork"] = $json_body["preferableWork"];
-    $_SESSION["seniorId"] = $json_body["seniorId"];
+    $_SESSION["seniorId"] = $json_body["id"];
     $_SESSION["skillDescr"] = $json_body["skillDescr"];
     $_SESSION["imageData"] = $json_body["imageData"];
     

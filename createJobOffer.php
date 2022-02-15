@@ -8,6 +8,7 @@
 </head>
 
 <body>
+   <p>  <?php echo $_SESSION["companyId"]?> </p>
     <h1 class="headline">JOBANGEBOT ERSTELLEN</h1>
     <div id="wrapper">
         <form action="<?php echo home_url( '/' ) . "index.php/create-job-request" ; ?>" method="post" id="job-formular">

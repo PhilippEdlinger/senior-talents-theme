@@ -18,7 +18,7 @@ if (substr_count( $body, "\n" ) == 0){
   $_SESSION["websiteUrl"] = $json_body["websiteUrl"];
   $_SESSION["email"] = $json_body["email"];
   $_SESSION["branche"] = $json_body["branche"];
-  $_SESSION["companyId"] = $json_body["companyId"];
+  $_SESSION["companyId"] = $json_body["id"];
 
   $_SESSION["street"] = null;
   $_SESSION["streetNo"] = null;
@@ -76,7 +76,6 @@ if (substr_count( $body, "\n" ) == 0){
     }
       
   }
-
 
   header("Location: https://localhost/wordpress/wordpress/index.php/company-profile");
 }

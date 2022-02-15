@@ -7,8 +7,8 @@
 ?>
 
 <head>
-    <link rel="stylesheet" href="<?php echo get_template_directory_uri() . '/css/sandbox-style.php'?>">
-    <script src="<?php echo get_template_directory_uri() . '/js/sandbox.php'?>"></script>
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri() . '/css/sandbox-style.css'?>">
+    <script src="<?php echo get_template_directory_uri() . '/js/sandbox.js'?>"></script>
 </head>
 
 <body>
@@ -41,7 +41,20 @@
         <option value="reeses">Reeses</option>
     </select>
 
-    <!--- file uploader --->
+    <!--- Modal object --->
+
+    <!-- Trigger/Open The Modal -->
+    <button id="myBtn">Open Modal</button>
+
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p>Some text in the Modal..</p>
+        </div>
+    </div>
+
 </body>
 
 
