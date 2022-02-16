@@ -11,7 +11,6 @@ window.addEventListener('load', function () {
                 
         currentButtton.addEventListener("click", function() {
             currentModal.style.display = "block";
-            console.log(i);
             } );
         currentSpan.addEventListener("click", function() {
             currentModal.style.display = "none";
