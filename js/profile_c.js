@@ -1,29 +1,31 @@
 window.addEventListener('load', function () {
         
-    var modal = document.getElementsByClassName("modal");
-    var span = document.getElementsByClassName("close");
-    var btn = document.getElementsByClassName("myBtn");
+    let modal = document.getElementsByClassName("modal");
+    let span = document.getElementsByClassName("close");
+    let btn = document.getElementsByClassName("myBtn");
 
-    for(var i = 0; i < btn.length; i++) {
-        var currentButtton = btn[i];
-        var currentModal = modal[i];
-        var currentSpan = span[i];
-        
-        //console.log(currentSpan);
-        
+    for(let i = 0; i < btn.length; i++) {
+        let currentButtton = btn[i];
+        let currentModal = modal[i];
+        let currentSpan = span[i];
+                
         currentButtton.addEventListener("click", function() {
             currentModal.style.display = "block";
+            console.log(i);
             } );
         currentSpan.addEventListener("click", function() {
             currentModal.style.display = "none";
             } );
     }
-
-
-    /*
-    btn.addEventListener("click", function() {
-        modal.style.display = "block";
-        } ); */
-    
-    
 })
+function closeJobForm() {
+    let form = document.getElementById("popup-background");
+    form.classList.remove("popup-background-show")
+    form.classList.add("popup-background-hide")
+ 
+ }
+ function openJobForm() {
+     let form = document.getElementById("popup-background");
+    form.classList.remove("popup-background-hide")
+    form.classList.add("popup-background-show")
+ }

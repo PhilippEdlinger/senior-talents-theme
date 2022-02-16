@@ -5,8 +5,6 @@ window.addEventListener('load', function () {
     let regisButton = document.getElementsByClassName("register-button");
     console.log(regisButton);
     regisButton[0].addEventListener("click", load_signup_page);
-
-
 })
 
 function load_login_page(){
