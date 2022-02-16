@@ -73,7 +73,7 @@
                 <div id="profile-data">
                     <a href="https://localhost/wordpress/wordpress/index.php/update-company-password/"> <div style="color:black;" id="change-pw-button"> Passwort ändern </div> </a>
                     <a href="https://localhost/wordpress/wordpress/index.php/update-company-email/"> <div style="color:black;" id="change-pw-button"> Email ändern </div> </a>
-                    <div style="color:black;" id="delete-profile"> Benutzerkonto löschen </div>
+                    <a href="http://localhost/wordpress/wordpress/index.php/deletecompanyrequest/"> <div style="color:black;" id="delete-profile"> Benutzerkonto löschen </div> </a>
                 </div> 
             </div>
               
