@@ -1,9 +1,5 @@
 <?php /* Template Name: deleteSeniorRequest */ ?>
 <?php 
-
-    echo "V w V";
-    echo $_SESSION["seniorId"];
-
     $arg = array(
         'headers'   => $headers, 
         'body'      => null,

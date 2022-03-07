@@ -12,5 +12,5 @@ function load_login_page(){
 }
 
 function load_signup_page(){
-    window.location.assign("https://localhost/wordpress/wordpress/index.php/signup/ ");
+    window.location.assign("http://diemandel.at/?page_id=47");
 }
