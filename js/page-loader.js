@@ -8,7 +8,7 @@ window.addEventListener('load', function () {
 })
 
 function load_login_page(){
-    window.location.assign("https://localhost/wordpress/wordpress/index.php/login/");
+    window.location.assign("http://diemandel.at/?page_id=29");
 }
 
 function load_signup_page(){
