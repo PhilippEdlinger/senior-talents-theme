@@ -2,7 +2,7 @@
 
 <?php 
     if(session_status() == PHP_SESSION_NONE){
-        header("Location: https://localhost/wordpress/wordpress/index.php");
+        header("Location: http://diemandel.at/");
     }
 ?>
 
@@ -49,7 +49,7 @@
             <p class="nav-element">Empfohlen</p>
         </div>
         <div class="nav-box-element">
-        <a href="https://localhost/wordpress/wordpress/index.php/marketplace-senior/">
+        <a href="http://diemandel.at/?page_id=35">
             <p class="nav-element">Suche</p>
         </a>
             <ion-icon class="nav-icons" name="search"></ion-icon>
@@ -60,7 +60,7 @@
     </div>
 
     <div class="settings">
-        <a style="text-decoration: none;" href="https://localhost/wordpress/wordpress/index.php/company-profile-settings/">
+        <a style="text-decoration: none;" href="http://diemandel.at/?page_id=15">
             <p style="color: #fff;">Einstellungen</p> 
         </a>
         <ion-icon class="settings-icon" name="settings-outline"></ion-icon>               

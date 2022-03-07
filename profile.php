@@ -2,7 +2,7 @@
 
 <?php 
 if(session_status() == PHP_SESSION_NONE){
-    header("Location: https://localhost/wordpress/wordpress/index.php");
+    header("Location: http://diemandel.at/");
 }
 ?>
 
@@ -49,7 +49,7 @@ if(session_status() == PHP_SESSION_NONE){
             <p class="nav-element">Empfohlen</p>
         </div>
         <div class="nav-box-element">
-        <a href="https://localhost/wordpress/wordpress/index.php/marketplace/">
+        <a href="http://diemandel.at/?page_id=33">
             <p class="nav-element">Suche</p>
         </a>
             <ion-icon class="nav-icons" name="search"></ion-icon>
@@ -60,7 +60,7 @@ if(session_status() == PHP_SESSION_NONE){
     </div>
 
     <div class="settings">
-        <a style="text-decoration: none;" href="https://localhost/wordpress/wordpress/index.php/senior-settings/">
+        <a style="text-decoration: none;" href="http://diemandel.at/?page_id=45">
             <p>Einstellungen</p> 
         </a>
         <ion-icon class="settings-icon" name="settings-outline"></ion-icon>               
@@ -218,8 +218,7 @@ if(session_status() == PHP_SESSION_NONE){
                                         <option value="Logistik &verbar; Verkehr &verbar; Transport">Marktforschung</option>
                                     </select>
                                 </div>
-                                <!--<input id="profile-jobField" name="jobField" value="<?php// echo $_SESSION["jobField"] ?>"> </input> -->
-                                <div class="input-icons01">
+                                    <div class="input-icons01">
                                     <select id="profile-jobField" class="profile-input-form" name="jobField">
                                         <option value=<?php echo $_SESSION["jobField"] ?>> 
                                         <?php 
