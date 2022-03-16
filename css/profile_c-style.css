@@ -259,6 +259,7 @@ h2 {
     border-radius: 5px;
     background-color: #78717157;
     border: 2px solid black;
+    background-size: 100%;
 }
 
 .picture-upload-container {
