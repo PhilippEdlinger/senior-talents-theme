@@ -77,11 +77,14 @@
                         <h2 onclick="openPwForm()" class="profile-save-button" id="change-pw-button"> Passwort ändern </h2> </a>
                     </div>
                     <div class="box-for-button">
-                        <a href="https://localhost/wordpress/wordpress/index.php/update-senior-email/"> <h2 class="profile-save-button" id="change-email-button" > Email ändern </h2> </a>
+                        <!-- <a href="https://localhost/wordpress/wordpress/index.php/update-senior-email/">  </a> -->
+                        <h2 class="profile-save-button" id="change-email-button" > Email ändern </h2>
                     </div>
-                    <div class="box-for-button">
-                        <h2 class="profile-save-button" id="delete-profile"> Benutzerkonto löschen </h2>
-                    </div>
+                    <a href="https://localhost/wordpress/wordpress/index.php/deleteseniorrequest/">
+                        <div class="box-for-button">
+                            <h2 class="profile-save-button" id="delete-profile"> Benutzerkonto löschen </h2>
+                        </div>
+                    </a>
                 </div> 
             </div>
               
@@ -123,22 +126,22 @@
     <div class="content-wrapper">
         <ion-icon onclick="closePwForm()" id="close-form" class="form-close" name="close-outline"></ion-icon>      
         <h1 class="headline">PASSWORT ÄNDERN</h1>
-        <form action="<?php echo home_url( '/' ) . "index.php/updateSeniorPasswordRequest" ; ?>" id="signup-form" method="post">
+        <form action="<?php echo home_url( '/' ) . "index.php/updateseniorpasswordrequest" ; ?>" id="signup-form" method="post">
             <div class="sections">
                 <div class="input-icons02"style="margin-top: 4px;">
-                    <input name="signup-form-firstname" class="profile-input-form" id="signup-form-firstname" type="password" placeholder="Altes Passwort"></input>
+                    <input name="old-pasword" class="profile-input-form" id="signup-form-firstname" type="password" placeholder="Altes Passwort"></input>
                     <ion-icon class="icon" name="lock-closed-outline"></ion-icon>
                 </div>
             </div>
             <div class="sections">
                 <div class="input-icons02">
-                    <input name="signup-form-email" class="profile-input-form" id="signup-form-email" type="password" placeholder="Neues Passwort"></input>
+                    <input  name="new-password" class="profile-input-form" id="signup-form-email" type="password" placeholder="Neues Passwort"></input>
                     <ion-icon class="icon" name="lock-closed-outline"></ion-icon>
                 </div>
             </div>
             <div class="sections">
                 <div class="input-icons02">
-                    <input name="signup-form-password" class="profile-input-form" id="signup-form-password" type="password" placeholder="Neues Passwort Erneut"></input>
+                    <input name="new-password2" class="profile-input-form" id="signup-form-password" type="password" placeholder="Neues Passwort Erneut"></input>
                     <ion-icon class="icon" name="lock-closed-outline"></ion-icon>
                 </div>
             </div>
@@ -146,6 +149,33 @@
         </form>
     </div>
 </div>
+
+<div id="popup-background-email" class="popup-background-hide">
+    <div class="content-wrapper">
+        <ion-icon onclick="openEmailForm()" id="close-form" class="form-close" name="close-outline"></ion-icon>      
+        <h1 class="headline">Email ÄNDERN</h1>
+        <form action="<?php echo home_url( '/' ) . "index.php/updateseniorpasswordrequest" ; ?>" id="signup-form" method="post">
+            <div class="sections">
+                <div class="input-icons02"style="margin-top: 4px;">
+                    <input name="old-pasword" class="profile-input-form" id="signup-form-firstname" type="password" placeholder="Altes Passwort"></input>
+                    <ion-icon class="icon" name="lock-closed-outline"></ion-icon>
+                </div>
+            </div>
+            <div class="sections">
+                <div class="input-icons02">
+                    <input  name="new-password" class="profile-input-form" id="signup-form-email" type="password" placeholder="Neues Passwort"></input>
+                    <ion-icon class="icon" name="lock-closed-outline"></ion-icon>
+                </div>
+            </div>
+            <div class="sections">
+                <div class="input-icons02">
+                    <input name="new-password2" class="profile-input-form" id="signup-form-password" type="password" placeholder="Neues Passwort Erneut"></input>
+                    <ion-icon class="icon" name="lock-closed-outline"></ion-icon>
+                </div>
+            </div>
+            <button type="submit" id="signup-button" class="form-save-button" style="margin-bottom: 0px;"><h2>Speichern</h2></button>
+        </form>
+    </div
 
 
 

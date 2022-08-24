@@ -1,6 +1,5 @@
 <?php /* Template Name: uploadLogoRequest */ ?>
 
-
 <?php
 	$i = 0;
 	$file_path = "/opt/lampp/htdocs/wordpress/wordpress/wp-content/themes/senior-talents-theme/img/". $_FILES["uploadedFile"]['name'];
@@ -9,7 +8,6 @@
 		$i++;
 		$file_path = "/opt/lampp/htdocs/wordpress/wordpress/wp-content/themes/senior-talents-theme/img/".  $i . $_FILES["uploadedFile"]['name'];
 		$_FILES["uploadedFile"]['name'] = $i . $_FILES["uploadedFile"]['name'];
-
 	}
 
 	// changed  permissions of img directory and uploadfile.php

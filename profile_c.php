@@ -2,7 +2,7 @@
 
 <?php 
     if(session_status() == PHP_SESSION_NONE){
-        header("Location: https://localhost/wordpress/wordpress/index.php");
+        header("Location: http://diemandel.at/");
     }
 ?>
 
@@ -20,7 +20,6 @@
         </div>
     </div>
 </header>
-
 <div id="nav">
     <div id="profile-nav" class="nav-window">
         <div  class="nav-title">
@@ -42,9 +41,26 @@
         </div>
         </a>
     </div>
+    <div id="job-nav" class="nav-window">
+        <div class="nav-title">
+            <h2 class="nav-element">Senioren</h2>
+        </div>
+        <div class="nav-box-element">
+            <p class="nav-element">Empfohlen</p>
+        </div>
+        <div class="nav-box-element">
+        <a href="http://diemandel.at/?page_id=35">
+            <p class="nav-element">Suche</p>
+        </a>
+            <ion-icon class="nav-icons" name="search"></ion-icon>
+        </div>
+        <div class="nav-box-element-last">
+            <p class="nav-element">Gespeichert</p>
+        </div>
+    </div>
 
     <div class="settings">
-        <a style="text-decoration: none;" href="https://localhost/wordpress/wordpress/index.php/company-profile-settings/">
+        <a style="text-decoration: none;" href="http://diemandel.at/?page_id=15">
             <p style="color: #fff;">Einstellungen</p> 
         </a>
         <ion-icon class="settings-icon" name="settings-outline"></ion-icon>               
@@ -207,31 +223,54 @@
                                         <h3  class="joboffer-title">' . $job["title"] . '</h3>
                                         <p  class="joboffer-category">Kategory: ' . $job["category"] . '</p>
                                         <p class="joboffer-descr">'. $job["descr"] .'</p>
-                                        <form action="https://localhost/wordpress/wordpress/index.php/update-job-offer" method="post">
-                                            <input type="hidden" name="joboffer-title" value='. $job["title"] .'></input>
-                                            <input type="hidden" name="joboffer-category" value='. $job["category"] .'></input>
-                                            <input type="hidden" name="joboffer-descr" value='. $job["descr"] .'></input>
-                                            <input type="hidden" name="joboffer-condition" value='. $job["condition"] .'></input>
-                                            <input type="hidden" name="joboffer-salary" value='. $job["salary"] .'></input>
-                                            <input type="hidden" name="joboffer-id" value='. $job["jobOfferId"] .'></input>
-                                            <button class="profile-update-job-button" class="profile-save-button" type="submit">Bearbeiten</button>
-                                        </form>
+                                        <button class="myBtn">Jobangebot ändern</button>
+                                        <div class="modal">
+                                            <div class="modal-content">
+                                                <span class="close">&times;</span>
+                                                <form action="https://localhost/wordpress/wordpress/index.php/update-job-offer-request" method="post" id="job-formular">
+                                                    <input id="joboffer-title" name="joboffer-title" placeholder="Berufsbezeichnung" value=' . $job["title"] . ' > </input>
+                                                    <input id="joboffer-descr" name="joboffer-descr" placeholder="Berufsbeschreibung" value=' . $job["descr"] . ' ></input>
+                                                    <input id="joboffer-category" name="joboffer-category" placeholder="Berufskategory" value=' . $job["category"] . ' ></input>
+                                                    <input id="joboffer-condition" name="joboffer-condition" placeholder="Berufsbedinung" value=' . $job["condition"] . ' ></input>
+                                                    <input id="joboffer-salary" name="joboffer-salary" placeholder="Gehalt" value=' . $job["salary"] . ' ></input>
+                                                    <input type="hidden" name="joboffer-id" value='. $job["id"] .'></input>
+                                                    <button type="submit" id="update-job-offer">
+                                                        <h1> Jobangebot Ändern </h1>
+                                                    </button>
+                                                </form>
+                                            </div>  
+                                        </div>  
+
                                       </div>';
                                 }
+                                $jobList = null;
                             }
+                            /*
+                            <form action="https://localhost/wordpress/wordpress/index.php/update-job-offer" method="post">
+                            <input type="hidden" name="joboffer-title" value='. $job["title"] .'></input>
+                            <input type="hidden" name="joboffer-category" value='. $job["category"] .'></input>
+                            <input type="hidden" name="joboffer-descr" value='. $job["descr"] .'></input>
+                            <input type="hidden" name="joboffer-condition" value='. $job["condition"] .'></input>
+                            <input type="hidden" name="joboffer-salary" value='. $job["salary"] .'></input>
+                            <input type="hidden" name="joboffer-id" value='. $job["jobOfferId"] .'></input>
+                            <button class="profile-update-job-button" class="profile-save-button" type="submit">Bearbeiten</button>
+                        </form>
+                        */
                         ?>
-                    <!--<div class="box-for-button">
-                        <div class="profile-save-button" style="text-align: center;">
-                            <a href= "http://localhost/wordpress/wordpress/index.php/create-job" style="color: #fff; float: block;"> 
-                                <div id="joboffer-button"><h2>Job erstellen!</h2></div>          
-                            </a>
+                        <div class="box-for-button">
+                            <div class="profile-save-button" style="text-align: center;">
+                                <a href= "http://localhost/wordpress/wordpress/index.php/create-job" style="color: #fff; float: block;"> 
+                                    <div id="joboffer-button"><h2>Job erstellen!</h2></div>          
+                                </a>
+                            </div>
                         </div>
-                    </div>-->
+                    <!--
                     <div class="box-for-button">
                         <div onclick="openJobForm()" class="profile-save-button" style="text-align: center;">
                             <div id="joboffer-button"><h2>Job erstellen!</h2></div>          
                         </div>
                     </div>
+                            -->
                 </div>
             </form>
             <br><br>

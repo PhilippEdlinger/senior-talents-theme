@@ -92,7 +92,7 @@
             <h3  class="joboffer-title">' . $job["title"] . '</h3>
             <p name="joboffer-category" class="joboffer-category">Kategory: ' . $job["category"] . '</p>
             <p class="joboffer-descr">Kurzbeschreibung: '. $job["descr"] .'</p>
-            <p>Kennnummer: '. $job["jobOfferId"] .'</p>
+            <p>Kennnummer: '. $job["id"] .'</p>
             </div>';
         }
     }else {

@@ -21,9 +21,9 @@
                 <ion-icon id="icon" name="lock-closed-outline"></ion-icon>
             </div>
             <p id="signup_info"> Sind Sie ein Unternehmen? <br>Hier
-                <a href="https://localhost/wordpress/wordpress/index.php/login-company/" id="signup_c-link">Anmelden</a>
+                <a href="http://diemandel.at/?page_id=31" id="signup_c-link">Anmelden</a>
                 oder
-                <a href="https://localhost/wordpress/wordpress/index.php/signup_company/" id="signup_c-link">Registrieren</a>!
+                <a href="http://diemandel.at/?page_id=51" id="signup_c-link">Registrieren</a>!
             </p>
             <button id="login-button" type="submit"><h2>ANMELDEN</h2></button>
         </form>

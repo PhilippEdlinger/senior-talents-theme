@@ -46,7 +46,7 @@ if (substr_count( $body, "\n" ) == 0){
     $_SESSION["jobField"] = $json_body["jobField"];
     $_SESSION["password"] = $json_body["password"];
     $_SESSION["preferableWork"] = $json_body["preferableWork"];
-    $_SESSION["seniorId"] = $json_body["seniorId"];
+    $_SESSION["seniorId"] = $json_body["id"];
     $_SESSION["skillDescr"] = $json_body["skillDescr"];
     $_SESSION["imageData"] = $json_body["imageData"];
     
@@ -69,11 +69,11 @@ if (substr_count( $body, "\n" ) == 0){
     }
 
    if(session_status() == PHP_SESSION_ACTIVE){
-     header("Location: https://localhost/wordpress/wordpress/index.php/profile");
+     header("Location: http://diemandel.at/?page_id=37");
    }
    
  }else{
-    header("Location: https://localhost/wordpress/wordpress/index.php/login");
+    header("Location: http://diemandel.at/?page_id=29");
  }
  
 ?>

@@ -5,14 +5,12 @@ window.addEventListener('load', function () {
     let regisButton = document.getElementsByClassName("register-button");
     console.log(regisButton);
     regisButton[0].addEventListener("click", load_signup_page);
-
-
 })
 
 function load_login_page(){
-    window.location.assign("https://localhost/wordpress/wordpress/index.php/login/");
+    window.location.assign("http://diemandel.at/?page_id=29");
 }
 
 function load_signup_page(){
-    window.location.assign("https://localhost/wordpress/wordpress/index.php/signup/ ");
+    window.location.assign("http://diemandel.at/?page_id=47");
 }

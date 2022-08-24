@@ -19,3 +19,18 @@ function openPwForm() {
    form.classList.remove("popup-background-hide")
    form.classList.add("popup-background-show")
 }
+
+
+
+function closeEmailForm() {
+    let form = document.getElementById("popup-background-email");
+    form.classList.remove("popup-background-show")
+    form.classList.add("popup-background-hide")
+ 
+ }
+ function openEmailForm() {
+     let form = document.getElementById("popup-background-email");
+    form.classList.remove("popup-background-hide")
+    form.classList.add("popup-background-show")
+ }
+ 

@@ -1,10 +1,10 @@
-<?php /* Template Name: company profile settings */ ?>
-
+<?php /* Template Name: marketplace senior page*/ ?>
 
 <head>
-    <link rel="stylesheet" href="<?php echo get_template_directory_uri() . '/css/profile-style.css'?>">
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri() . '/css/profile-style.css?'?>">
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script> 
+    <script src="<?php echo get_template_directory_uri() . '/js/marketplace.js'?>"></script>
 </head>
 
 <header>
@@ -22,7 +22,9 @@
         </div>
         <a href="#pp">
         <div class="nav-box-element">
-            <p class="nav-element">Daten</p>
+            <a href="https://localhost/wordpress/wordpress/index.php/profile">
+                <p class="nav-element">Daten</p>
+            </a>
         </div>
         </a>
         <a href="#pd">
@@ -44,9 +46,7 @@
             <p class="nav-element">Empfohlen</p>
         </div>
         <div class="nav-box-element">
-        <a href="https://localhost/wordpress/wordpress/index.php/marketplace/">
             <p class="nav-element">Suche</p>
-        </a>
             <ion-icon class="nav-icons" name="search"></ion-icon>
         </div>
         <div class="nav-box-element-last">
@@ -55,33 +55,68 @@
     </div>
 
     <div class="settings">
-    <a href="http://localhost/wordpress/wordpress/index.php/company-profile-settings/">
+    <a style="text-decoration: none;" href="https://localhost/wordpress/wordpress/index.php/senior-settings/">
         <p>Einstellungen</p> 
     </a>
         <ion-icon class="settings-icon" name="settings-outline"></ion-icon>               
     </div>
 </div>
 
-<body id="pp">
+<body>
     <div id="data-wrapper">
-            <div id="profile-container">
-                <div id="profile-picture">
-                    <div class="profile-headline" style="margin-top: 10px;">
-                    <p>Benutzer Einstellung</p>
-                    </div>
-                </div>
-                <div id="profile-data">
-                    <a href="https://localhost/wordpress/wordpress/index.php/update-company-password/"> <div style="color:black;" id="change-pw-button"> Passwort ändern </div> </a>
-                    <a href="https://localhost/wordpress/wordpress/index.php/update-company-email/"> <div style="color:black;" id="change-pw-button"> Email ändern </div> </a>
-                    <a href="http://localhost/wordpress/wordpress/index.php/deletecompanyrequest/"> <div style="color:black;" id="delete-profile"> Benutzerkonto löschen </div> </a>
-                </div> 
+        <div id="profile-container">
+            <div class="profile-headline", style="margin-top: 10px;">
+                <p>Suche</p>
             </div>
-              
-            <div class="profile-subcontainer subcontainer2">
-                  
+    <form action="<?php echo home_url( '/' ) . "index.php/searchseniorrequest" ; ?>"  method="post">
+        <div class="sections">
+            <div class="input-icons02">
+                <input class="profile-input-form-suche" placeholder="Nach Senioren Per Branche Suchen..." type="text" id="job_searchbar_word" name="senior_searchbar_word"></input>
+                <ion-icon class="icon" name="search"></ion-icon>
             </div>
+            <button id="login-button" class="profile-save-button-suche" type="submit"><h2>Suchen</h2></button>
         </div>
-        <div id="footer-container">
+        
+    </form>
+    
+    <div id="job-container">
+    <?php 
+   
+   if ($_SESSION["searchbar"]["seniorList"] == null){
+    $request = wp_remote_get( 'http://localhost:8080/senior/all');
+    $body    = wp_remote_retrieve_body($request); 
+    $seniorList = json_decode($body, true);
+
+    foreach ($seniorList as $job){
+    echo '<div class="joboffer">
+            <h3  class="joboffer-title">' . $job["skillDescr"] . '</h3>
+            <p name="joboffer-category" class="joboffer-category">Jobfeld: ' . $job["jobField"] . '</p>
+            <p class="joboffer-descr">Branche: '. $job["jobBranche"] .'</p>
+            <p>Kennnummer: '. $job["id"] .'</p>
+            </div>';
+        }
+    }else {
+    $seniorList = $_SESSION["searchbar"]["seniorList"];
+        
+    foreach ($seniorList as $job){
+        echo '<div class="joboffer">
+            <h3  class="joboffer-title">' . $job["skillDescr"] . '</h3>
+            <p name="joboffer-category" class="joboffer-category">Jobfeld: ' . $job["jobField"] . '</p>
+            <p class="joboffer-descr">Branche: '. $job["jobBranche"] .'</p>
+            <p>Kennnummer: '. $job["id"] .'</p>
+            </div>';
+            }
+    }    
+        ?>
+    </div>
+    
+           
+        </div>
+    </div>
+    
+</body>
+
+<div id="footer-container">
     <div class="footer-center">
         <div class="column">
             <p>Mag. Doris Mandel, DA<br><br>
@@ -108,7 +143,3 @@
     
     <p class="copyright">© Senior-Talents, 2022</p>
 </div>
-    </div>
-</body>
-
-
