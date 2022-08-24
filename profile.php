@@ -48,12 +48,12 @@ if(session_status() == PHP_SESSION_NONE){
         <div class="nav-box-element">
             <p class="nav-element">Empfohlen</p>
         </div>
-        <div class="nav-box-element">
         <a href="https://localhost/wordpress/wordpress/index.php/marketplace/">
+        <div class="nav-box-element">
             <p class="nav-element">Suche</p>
-        </a>
             <ion-icon class="nav-icons" name="search"></ion-icon>
         </div>
+        </a>
         <div class="nav-box-element-last">
             <p class="nav-element">Gespeichert</p>
         </div>

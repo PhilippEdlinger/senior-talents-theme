@@ -563,7 +563,7 @@ input {
  .form-close {
      color: #fff;
      position: absolute;
-     font-size: 2vw;
+     font-size: 6vw;
      left: 91%;
      top: 2.5%;
  }
