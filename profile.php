@@ -48,13 +48,8 @@ if(session_status() == PHP_SESSION_NONE){
         <div class="nav-box-element">
             <p class="nav-element">Empfohlen</p>
         </div>
-<<<<<<< HEAD
-        <a href="https://localhost/wordpress/wordpress/index.php/marketplace/">
+        <a href="https://localhost/wordpress/wordpress/index.php/marketplace-senior/">
         <div class="nav-box-element">
-=======
-        <div class="nav-box-element">
-        <a href="http://diemandel.at/?page_id=33">
->>>>>>> ae82f5ccebda17318974d6c057ea49fa720c9efb
             <p class="nav-element">Suche</p>
             <ion-icon class="nav-icons" name="search"></ion-icon>
         </div>
@@ -65,7 +60,7 @@ if(session_status() == PHP_SESSION_NONE){
     </div>
 
     <div class="settings">
-        <a style="text-decoration: none;" href="http://diemandel.at/?page_id=45">
+        <a style="text-decoration: none;" href="https://localhost/wordpress/index.php/senior-settings/">
             <p>Einstellungen</p> 
         </a>
         <ion-icon class="settings-icon" name="settings-outline"></ion-icon>               
