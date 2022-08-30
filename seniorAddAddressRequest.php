@@ -50,6 +50,6 @@ $body    = wp_remote_retrieve_body($request);
 
 echo json_encode($body);
 
-header("Location: https://localhost/wordpress/wordpress/index.php/profile");
+header("Location: https://localhost/wordpress/index.php/profile");
 
 ?> 

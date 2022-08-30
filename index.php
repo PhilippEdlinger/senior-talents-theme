@@ -6,7 +6,7 @@ get_header();
 <head>
     <link rel="stylesheet" href="<?php echo get_template_directory_uri() . '/style.css'?>">
 </head>
-<script> alert("Die Webseite wird aktuell umgebaut!"); </script>
+<!-- <script> alert("Die Webseite wird aktuell umgebaut!"); </script> -->
 <div id="main_content">
     <div id="container_1" class="content-container">
         

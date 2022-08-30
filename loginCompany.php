@@ -21,7 +21,7 @@
                 <ion-icon id="icon" name="lock-closed-outline"></ion-icon>
             </div>
             <p id="signup_info"> Wenn Sie kein Unternehmen sind, bitte hier 
-                <a href="http://diemandel.at/?page_id=29" id="signup-link">Anmelden</a>!
+                <a href="https://localhost/wordpress/index.php/login" id="signup-link">Anmelden</a>!
             </p>
             <button id="login-company-button" type="submit"><h2>ANMELDEN</h2></button>
         </form>
