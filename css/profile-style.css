@@ -112,6 +112,7 @@ h2 {
 }
 
 .nav-box-element-last {
+    position: relative;
     max-width: 100%;
     min-height: 5px;
     padding: 12px 0px 12px 32px;
@@ -568,3 +569,77 @@ input {
      left: 91%;
      top: 2.5%;
  }
+
+ /* job-suggestions */
+ #suggestion-container {
+    min-height: 80vh;
+    width: 80vw;
+    margin: auto;
+    margin-top: 2vw;
+    margin-left: -0.5vw;
+    margin-bottom: 1vw;
+    background: #fff;
+    float: left;
+ }
+ .job_sugg {
+    display: inline-block;
+    width: 25vw;
+    min-height: 15vw;
+    box-shadow: 0px 0px 4px grey;
+    border-radius: 6px;
+    background-color: #78717111;
+    margin: 0.7vw;
+ }
+ .job_unterteilung {
+     width: 24vw;
+     min-height: 4vw;
+     background-color: rgb(238, 238, 238);
+    /*border: 1px solid red;*/
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    padding-left: 1vw;
+    padding-top: 1vw;
+    padding-bottom: 1vw;
+ }
+ .job_buttons {
+     width: 23vw;
+     display: flex;
+     justify-content: space-around;
+     padding: 1vw;
+     /*border: 1px solid red;*/
+ }
+ #job_button {
+    padding: 0.7vw 2vw 0.7vw 2vw;
+    border-radius: 8px
+ }
+ #job_button p {
+     color: white;
+ }
+ .job_save {
+     background-color: rgb(125, 198, 125);
+     transition: ease-in-out 0.2s;
+ }
+ .job_save:hover {
+     background-color: rgb(101, 169, 101);
+ }
+ .job_more {
+     background-color: rgb(125, 125, 255);
+     transition: ease-in-out 0.2s;
+ }
+ .job_more:hover {
+     background-color: rgb(83, 83, 172)
+ }
+hr {
+    background-color: whitesmoke;
+    margin: 0px;
+}
+
+/* saved_senior */
+.saved_job_delete {
+    background-color: rgb(255, 111, 111);
+    transition: ease-in-out 0.2s;
+}
+.saved_job_delete:hover {
+    background-color: rgb(218, 66, 66);
+}
