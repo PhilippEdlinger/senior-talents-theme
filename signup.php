@@ -38,7 +38,7 @@
                 </div>
             </div>
             <p id="signup_info"> Sind Sie ein Unternehmen? Hier 
-                <a href="http://diemandel.at/?page_id=51" id="signup_c-link">Registrieren</a>!
+                <a href="https://localhost/wordpress/index.php/signup-company/" id="signup_c-link">Registrieren</a>!
             </p>
             <button type="submit" id="signup-button"><h2>REGISTRIEREN</h2></button>
         </form>

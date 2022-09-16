@@ -69,7 +69,7 @@ if(session_status() == PHP_SESSION_NONE){
     </div>
 
     <div class="settings">
-        <a style="text-decoration: none;" href="https://localhost/wordpress/wordpress/index.php/senior-settings/">
+        <a style="text-decoration: none;" href="https://localhost/wordpress/index.php/senior-settings/">
             <p>Einstellungen</p> 
         </a>
         <ion-icon class="settings-icon" name="settings-outline"></ion-icon>               

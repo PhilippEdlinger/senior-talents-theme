@@ -69,11 +69,11 @@ if (substr_count( $body, "\n" ) == 0){
     }
 
    if(session_status() == PHP_SESSION_ACTIVE){
-     header("Location: http://diemandel.at/?page_id=37");
+     header("Location: https://localhost/wordpress/index.php/profile/");
    }
    
  }else{
-    header("Location: http://diemandel.at/?page_id=29");
+    header("Location: https://localhost/wordpress/index.php/login/");
  }
  
 ?>
