@@ -49,7 +49,7 @@
             <p class="nav-element">Empfohlen</p>
         </div>
         <div class="nav-box-element">
-        <a href="https://localhost/wordpress/wordpress/index.php/marketplace-senior">
+        <a href="https://localhost/wordpress/index.php/marketplace-senior">
             <p class="nav-element">Suche</p>
         </a>
             <ion-icon class="nav-icons" name="search"></ion-icon>
@@ -227,7 +227,7 @@
                                         <div class="modal">
                                             <div class="modal-content">
                                                 <span class="close">&times;</span>
-                                                <form action="https://localhost/wordpress/wordpress/index.php/update-job-offer-request" method="post" id="job-formular">
+                                                <form action="https://localhost/wordpress/index.php/update-job-offer-request" method="post" id="job-formular">
                                                     <input id="joboffer-title" name="joboffer-title" placeholder="Berufsbezeichnung" value=' . $job["title"] . ' > </input>
                                                     <input id="joboffer-descr" name="joboffer-descr" placeholder="Berufsbeschreibung" value=' . $job["descr"] . ' ></input>
                                                     <input id="joboffer-category" name="joboffer-category" placeholder="Berufskategory" value=' . $job["category"] . ' ></input>
@@ -259,7 +259,7 @@
                         ?>
                         <div class="box-for-button">
                             <div class="profile-save-button" style="text-align: center;">
-                                <a href= "http://localhost/wordpress/wordpress/index.php/create-job" style="color: #fff; float: block;"> 
+                                <a href= "http://localhost/wordpress/index.php/create-job" style="color: #fff; float: block;"> 
                                     <div id="joboffer-button"><h2>Job erstellen!</h2></div>          
                                 </a>
                             </div>

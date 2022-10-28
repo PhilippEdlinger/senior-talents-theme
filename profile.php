@@ -25,19 +25,19 @@ if(session_status() == PHP_SESSION_NONE){
         <div  class="nav-title">
             <h2 class="nav-element">Profile</h2>
         </div>
-        <a href="https://localhost/wordpress/wordpress/profile/#pp">
+        <a href="https://localhost/wordpress/index.php/profile/#pp">
         <div class="nav-box-element">
             <p class="nav-element">Daten</p>
             <ion-icon class="nav-icons" name="reader-outline"></ion-icon>
         </div>
         </a>
-        <a href="https://localhost/wordpress/wordpress/profile/#pd">
+        <a href="https://localhost/wordpress/index.php/profile/#pd">
         <div class="nav-box-element">
             <p class="nav-element">Über Mich</p>
             <ion-icon class="nav-icons" name="person-outline"></ion-icon>
         </div>
         </a>
-        <a href="https://localhost/wordpress/wordpress/profile/#ji">
+        <a href="https://localhost/wordpress/index.php/profile/#ji">
         <div class="nav-box-element" style="border-radius: 0px 0px 12px 0px;">
             <p class="nav-element">Job Interessen</p>
             <ion-icon class="nav-icons" name="star-outline"></ion-icon>
@@ -48,19 +48,19 @@ if(session_status() == PHP_SESSION_NONE){
         <div class="nav-title">
             <h2 class="nav-element">Jobs</h2>
         </div>
-        <a href="https://localhost/wordpress/wordpress/suggestions-senior/">
+        <a href="https://localhost/wordpress/index.php/suggestion-senior/">
         <div class="nav-box-element">
             <p class="nav-element">Empfohlen</p>
             <ion-icon class="nav-icons" name="book-outline"></ion-icon>
         </div>
         </a>
-        <a href="https://localhost/wordpress/wordpress/index.php/marketplace/">
+        <a href="https://localhost/wordpress/index.php/marketplace/">
         <div class="nav-box-element">
             <p class="nav-element">Suche</p>
             <ion-icon class="nav-icons" name="search"></ion-icon>
         </div>
         </a>
-        <a href="https://localhost/wordpress/wordpress/saved-jobs-senior/">
+        <a href="https://localhost/wordpress/index.php/saved-senior/">
         <div class="nav-box-element" style="border-radius: 0px 0px 12px 0px;">
             <p class="nav-element">Gespeichert</p>
             <ion-icon class="nav-icons" name="bookmark-outline"></ion-icon>
