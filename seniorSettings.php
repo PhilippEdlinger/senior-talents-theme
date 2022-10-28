@@ -18,22 +18,25 @@
 
 <div id="nav">
 <div id="profile-nav" class="nav-window">
-        <div  class="nav-title">
+<div  class="nav-title">
             <h2 class="nav-element">Profile</h2>
         </div>
-        <a href="#pp">
+        <a href="https://localhost/wordpress/index.php/profile/#pp">
         <div class="nav-box-element">
             <p class="nav-element">Daten</p>
+            <ion-icon class="nav-icons" name="reader-outline"></ion-icon>
         </div>
         </a>
-        <a href="#pd">
+        <a href="https://localhost/wordpress/index.php/profile/#pd">
         <div class="nav-box-element">
             <p class="nav-element">Über Mich</p>
+            <ion-icon class="nav-icons" name="person-outline"></ion-icon>
         </div>
         </a>
-        <a href="#ji">
-        <div class="nav-box-element-last">
+        <a href="https://localhost/wordpress/index.php/profile/#ji">
+        <div class="nav-box-element" style="border-radius: 0px 0px 12px 0px;">
             <p class="nav-element">Job Interessen</p>
+            <ion-icon class="nav-icons" name="star-outline"></ion-icon>
         </div>
         </a>
     </div>
@@ -41,22 +44,28 @@
         <div class="nav-title">
             <h2 class="nav-element">Jobs</h2>
         </div>
+        <a href="https://localhost/wordpress/index.php/suggestion-senior/">
         <div class="nav-box-element">
             <p class="nav-element">Empfohlen</p>
+            <ion-icon class="nav-icons" name="book-outline"></ion-icon>
         </div>
-        <div class="nav-box-element">
-        <a href="https://localhost/wordpress/wordpress/index.php/marketplace/">
-            <p class="nav-element">Suche</p>
         </a>
+        <a href="https://localhost/wordpress/index.php/marketplace/">
+        <div class="nav-box-element">
+            <p class="nav-element">Suche</p>
             <ion-icon class="nav-icons" name="search"></ion-icon>
         </div>
-        <div class="nav-box-element-last">
+        </a>
+        <a href="https://localhost/wordpress/index.php/saved-senior/">
+        <div class="nav-box-element" style="border-radius: 0px 0px 12px 0px;">
             <p class="nav-element">Gespeichert</p>
+            <ion-icon class="nav-icons" name="bookmark-outline"></ion-icon>
         </div>
+        </a>
     </div>
 
     <div class="settings">
-    <a href="https://localhost/wordpress/wordpress/index.php/senior-settings/">
+    <a href="https://localhost/wordpress/index.php/senior-settings/">
         <p>Einstellungen</p> 
     </a>
         <ion-icon class="settings-icon" name="settings-outline"></ion-icon>               
@@ -80,7 +89,7 @@
                         <!-- <a href="https://localhost/wordpress/wordpress/index.php/update-senior-email/">  </a> -->
                         <h2 class="profile-save-button" id="change-email-button" > Email ändern </h2>
                     </div>
-                    <a href="https://localhost/wordpress/wordpress/index.php/deleteseniorrequest/">
+                    <a href="https://localhost/wordpress/index.php/deleteseniorrequest/">
                         <div class="box-for-button">
                             <h2 class="profile-save-button" id="delete-profile"> Benutzerkonto löschen </h2>
                         </div>
