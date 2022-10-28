@@ -25,19 +25,22 @@ if(session_status() == PHP_SESSION_NONE){
         <div  class="nav-title">
             <h2 class="nav-element">Profile</h2>
         </div>
-        <a href="#pp">
+        <a href="https://localhost/wordpress/wordpress/profile/#pp">
         <div class="nav-box-element">
             <p class="nav-element">Daten</p>
+            <ion-icon class="nav-icons" name="reader-outline"></ion-icon>
         </div>
         </a>
-        <a href="#pd">
+        <a href="https://localhost/wordpress/wordpress/profile/#pd">
         <div class="nav-box-element">
             <p class="nav-element">Über Mich</p>
+            <ion-icon class="nav-icons" name="person-outline"></ion-icon>
         </div>
         </a>
-        <a href="#ji">
-        <div class="nav-box-element-last">
+        <a href="https://localhost/wordpress/wordpress/profile/#ji">
+        <div class="nav-box-element" style="border-radius: 0px 0px 12px 0px;">
             <p class="nav-element">Job Interessen</p>
+            <ion-icon class="nav-icons" name="star-outline"></ion-icon>
         </div>
         </a>
     </div>
@@ -45,18 +48,24 @@ if(session_status() == PHP_SESSION_NONE){
         <div class="nav-title">
             <h2 class="nav-element">Jobs</h2>
         </div>
+        <a href="https://localhost/wordpress/wordpress/suggestions-senior/">
         <div class="nav-box-element">
             <p class="nav-element">Empfohlen</p>
+            <ion-icon class="nav-icons" name="book-outline"></ion-icon>
         </div>
-        <a href="https://localhost/wordpress/wordpress/index.php/marketplace-senior/">
+        </a>
+        <a href="https://localhost/wordpress/wordpress/index.php/marketplace/">
         <div class="nav-box-element">
             <p class="nav-element">Suche</p>
             <ion-icon class="nav-icons" name="search"></ion-icon>
         </div>
         </a>
-        <div class="nav-box-element-last">
+        <a href="https://localhost/wordpress/wordpress/saved-jobs-senior/">
+        <div class="nav-box-element" style="border-radius: 0px 0px 12px 0px;">
             <p class="nav-element">Gespeichert</p>
+            <ion-icon class="nav-icons" name="bookmark-outline"></ion-icon>
         </div>
+        </a>
     </div>
 
     <div class="settings">
@@ -78,12 +87,12 @@ if(session_status() == PHP_SESSION_NONE){
                         <div class="picture" style="background-image: url('<?php echo get_template_directory_uri() . $_SESSION["imageData"] ?>'); background-position: center;">
                       </div>
                       </div>
-                      <div id="pd" class="picture-upload-container">
+                      <div class="picture-upload-container">
                           <form action="<?php echo home_url( '/' ) . "index.php/uploadFiles" ; ?>" method="POST" enctype="multipart/form-data">
                           <div class="box-for-button">
                             <input type="file" placeholder="Eigenes Foto hochladen" id="upload_file_fields" name="uploadedFile" /> 
                           </div>
-                          <div class="box-for-button">
+                          <div id="pd" class="box-for-button">
                             <button class="profile-save-button" type="submit"><h2>Speichern</h2></button>
                           </div>
                           </form>
@@ -99,7 +108,7 @@ if(session_status() == PHP_SESSION_NONE){
                                     <input id="profile-firstName" placeholder="Vorname" class="profile-input-form" name="firstName" value="<?php echo $_SESSION["firstName"] ?>" > </input>
                                     <ion-icon class="icon" name="person-outline"></ion-icon>
                                 </div>
-                                <div id="ji" class="input-icons01">
+                                <div class="input-icons01">
                                     <input id="profile-lastName" placeholder="Nachname" class="profile-input-form" name="lastName" value="<?php echo $_SESSION["lastName"] ?>">  </input>
                                     <ion-icon class="icon" name="person-outline"></ion-icon>
                                 </div>
@@ -135,7 +144,7 @@ if(session_status() == PHP_SESSION_NONE){
                                     <ion-icon class="icon"name="briefcase-outline"></ion-icon>
                                 </div>
                         </div>
-                        <div class="box-for-button">
+                        <div id="ji" class="box-for-button">
                             <button id="profile-add-address-button" class="profile-save-button" type="submit"><h2> Speichern</h2></button>
                         </div>
                     </form>

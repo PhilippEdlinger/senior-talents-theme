@@ -1,4 +1,4 @@
-<?php /* Template Name: suggestion_senior */ ?>
+<?php /* Template Name: saved_senior */ ?>
 
 <?php 
 if(session_status() == PHP_SESSION_NONE){
@@ -96,108 +96,8 @@ if(session_status() == PHP_SESSION_NONE){
                 </div>
                 <hr>
                 <div class="job_buttons">
-                    <div id="job_button" class="job_save">
-                        <p>Vormerken</p>
-                    </div>
-                    <div id="job_button" class="job_more">
-                        <p>Mehr Erfahren</p>
-                    </div>
-                </div>
-            </div>
-            <div class="job_sugg">
-                <div class="job_unterteilung" style="min-height: 2vw; background-color: whitesmoke; padding: 0px 0px 0px 1vw; border-radius: 6px;">
-                    <h3>Der Job Titel</h3>
-                </div>
-                <hr>
-                <div class="job_unterteilung">
-                    <p>Genauere Bezeichnung der Job Tätigkeit.<br>
-                    Kurzbeschreibung was zu tun wäre.</p>
-                </div>
-                <hr>
-                <div class="job_unterteilung">
-                    <p>Postleitzahl des Ortes<br>
-                    Kurzbezeichnung der Arbeitszeit (Vollzeit, Halbzeit, etc.<br>
-                    Lohn, entweder Stundenlohn, oder Monatslohn</p>
-                </div>
-                <hr>
-                <div class="job_buttons">
-                    <div id="job_button" class="job_save">
-                        <p>Vormerken</p>
-                    </div>
-                    <div id="job_button" class="job_more">
-                        <p>Mehr Erfahren</p>
-                    </div>
-                </div>
-            </div>
-            <div class="job_sugg">
-                <div class="job_unterteilung" style="min-height: 2vw; background-color: whitesmoke; padding: 0px 0px 0px 1vw; border-radius: 6px 6px 0px 0px;">
-                    <h3>Der Job Titel</h3>
-                </div>
-                <hr>
-                <div class="job_unterteilung">
-                    <p>Genauere Bezeichnung der Job Tätigkeit.<br>
-                    Kurzbeschreibung was zu tun wäre.</p>
-                </div>
-                <hr>
-                <div class="job_unterteilung">
-                    <p>Postleitzahl des Ortes<br>
-                    Kurzbezeichnung der Arbeitszeit (Vollzeit, Halbzeit, etc.<br>
-                    Lohn, entweder Stundenlohn, oder Monatslohn</p>
-                </div>
-                <hr>
-                <div class="job_buttons">
-                    <div id="job_button" class="job_save">
-                        <p>Vormerken</p>
-                    </div>
-                    <div id="job_button" class="job_more">
-                        <p>Mehr Erfahren</p>
-                    </div>
-                </div>
-            </div>
-            <div class="job_sugg">
-                <div class="job_unterteilung" style="min-height: 2vw; background-color: whitesmoke; padding: 0px 0px 0px 1vw; border-radius: 6px;">
-                    <h3>Der Job Titel</h3>
-                </div>
-                <hr>
-                <div class="job_unterteilung">
-                    <p>Genauere Bezeichnung der Job Tätigkeit.<br>
-                    Kurzbeschreibung was zu tun wäre.</p>
-                </div>
-                <hr>
-                <div class="job_unterteilung">
-                    <p>Postleitzahl des Ortes<br>
-                    Kurzbezeichnung der Arbeitszeit (Vollzeit, Halbzeit, etc.<br>
-                    Lohn, entweder Stundenlohn, oder Monatslohn</p>
-                </div>
-                <hr>
-                <div class="job_buttons">
-                    <div id="job_button" class="job_save">
-                        <p>Vormerken</p>
-                    </div>
-                    <div id="job_button" class="job_more">
-                        <p>Mehr Erfahren</p>
-                    </div>
-                </div>
-            </div>
-            <div class="job_sugg">
-                <div class="job_unterteilung" style="min-height: 2vw; background-color: whitesmoke; padding: 0px 0px 0px 1vw; border-radius: 6px;">
-                    <h3>Der Job Titel</h3>
-                </div>
-                <hr>
-                <div class="job_unterteilung">
-                    <p>Genauere Bezeichnung der Job Tätigkeit.<br>
-                    Kurzbeschreibung was zu tun wäre.</p>
-                </div>
-                <hr>
-                <div class="job_unterteilung">
-                    <p>Postleitzahl des Ortes<br>
-                    Kurzbezeichnung der Arbeitszeit (Vollzeit, Halbzeit, etc.<br>
-                    Lohn, entweder Stundenlohn, oder Monatslohn</p>
-                </div>
-                <hr>
-                <div class="job_buttons">
-                    <div id="job_button" class="job_save">
-                        <p>Vormerken</p>
+                    <div id="job_button" class="saved_job_delete">
+                        <p>Entfernen</p>
                     </div>
                     <div id="job_button" class="job_more">
                         <p>Mehr Erfahren</p>

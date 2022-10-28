@@ -20,21 +20,22 @@
         <div  class="nav-title">
             <h2 class="nav-element">Profile</h2>
         </div>
-        <a href="#pp">
+        <a href="https://localhost/wordpress/wordpress/profile/#pp">
         <div class="nav-box-element">
-            <a href="https://localhost/wordpress/wordpress/index.php/profile">
-                <p class="nav-element">Daten</p>
-            </a>
+            <p class="nav-element">Daten</p>
+            <ion-icon class="nav-icons" name="reader-outline"></ion-icon>
         </div>
         </a>
-        <a href="#pd">
+        <a href="https://localhost/wordpress/wordpress/profile/#pd">
         <div class="nav-box-element">
             <p class="nav-element">Über Mich</p>
+            <ion-icon class="nav-icons" name="person-outline"></ion-icon>
         </div>
         </a>
-        <a href="#ji">
-        <div class="nav-box-element-last">
+        <a href="https://localhost/wordpress/wordpress/profile/#ji">
+        <div class="nav-box-element" style="border-radius: 0px 0px 12px 0px;">
             <p class="nav-element">Job Interessen</p>
+            <ion-icon class="nav-icons" name="star-outline"></ion-icon>
         </div>
         </a>
     </div>
@@ -42,22 +43,29 @@
         <div class="nav-title">
             <h2 class="nav-element">Jobs</h2>
         </div>
+        <a href="https://localhost/wordpress/wordpress/suggestions-senior/">
         <div class="nav-box-element">
             <p class="nav-element">Empfohlen</p>
+            <ion-icon class="nav-icons" name="book-outline"></ion-icon>
         </div>
+        <a href="https://localhost/wordpress/wordpress/index.php/marketplace/">
         <div class="nav-box-element">
             <p class="nav-element">Suche</p>
             <ion-icon class="nav-icons" name="search"></ion-icon>
         </div>
-        <div class="nav-box-element-last">
+        </a>
+        <a href="https://localhost/wordpress/saved-jobs-senior/">
+        <div class="nav-box-element" style="border-radius: 0px 0px 12px 0px;">
             <p class="nav-element">Gespeichert</p>
+            <ion-icon class="nav-icons" name="bookmark-outline"></ion-icon>
         </div>
+        </a>
     </div>
 
     <div class="settings">
-    <a style="text-decoration: none;" href="https://localhost/wordpress/wordpress/index.php/senior-settings/">
-        <p>Einstellungen</p> 
-    </a>
+        <a style="text-decoration: none;" href="https://localhost/wordpress/wordpress/index.php/senior-settings/">
+            <p>Einstellungen</p> 
+        </a>
         <ion-icon class="settings-icon" name="settings-outline"></ion-icon>               
     </div>
 </div>
