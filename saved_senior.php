@@ -79,6 +79,9 @@ if(session_status() == PHP_SESSION_NONE){
 <body>
     <div id="data-wrapper">
         <div id="suggestion-container">
+            <?php 
+            for($i=10;$i>0;$i--){
+            echo '
             <div class="job_sugg">
                 <div class="job_unterteilung" style="min-height: 2vw; background-color: whitesmoke; padding: 0px 0px 0px 1vw; border-radius: 6px;">
                     <h3>Der Job Titel</h3>
@@ -103,7 +106,9 @@ if(session_status() == PHP_SESSION_NONE){
                         <p>Mehr Erfahren</p>
                     </div>
                 </div>
-            </div>
+            </div>' ; 
+            }
+            ?>
         </div>
     </div>
 

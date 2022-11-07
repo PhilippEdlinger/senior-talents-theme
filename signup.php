@@ -33,7 +33,7 @@
                     <ion-icon class="icon" name="lock-closed-outline"></ion-icon>
                 </div>
                 <div class="input-icons01">    
-                    <input name="signup-form-password2" class="signup-form-input" id="signup-form-password2" type="password" placeholder="Passwort"></input>
+                    <input name="signup-form-password2" class="signup-form-input" id="signup-form-password2" type="password" placeholder="Passwort Erneut"></input>
                     <ion-icon class="icon" name="lock-open-outline"></ion-icon>
                 </div>
             </div>
