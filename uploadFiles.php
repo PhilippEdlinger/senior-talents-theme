@@ -2,11 +2,11 @@
 
 <?php
 	$i = 0;
-	$file_path = "/opt/lampp/htdocs/wordpress/wordpress/wp-content/themes/senior-talents-theme/img/". $_FILES["uploadedFile"]['name'];
+	$file_path = "/opt/lampp/htdocs/wordpress/wp-content/themes/senior-talents-theme/img/". $_FILES["uploadedFile"]['name'];
 
 	while( file_exists( $file_path ) ) {
 		$i++;
-		$file_path = "/opt/lampp/htdocs/wordpress/wordpress/wp-content/themes/senior-talents-theme/img/".  $i . $_FILES["uploadedFile"]['name'];
+		$file_path = "/opt/lampp/htdocs/wordpress/wp-content/themes/senior-talents-theme/img/".  $i . $_FILES["uploadedFile"]['name'];
 		$_FILES["uploadedFile"]['name'] = $i . $_FILES["uploadedFile"]['name'];
 	}
 
@@ -39,5 +39,5 @@
 	   echo "File not uploadedFile";
 	}
 	
-		header("Location: https://localhost/wordpress/wordpress/index.php/profile");
+		header("Location: https://localhost/wordpress/index.php/profile");
 	?>

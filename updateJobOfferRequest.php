@@ -25,5 +25,5 @@
     $request = wp_remote_post( 'http://localhost:8080/job-offer/update', $arg );
     $response     = wp_remote_retrieve_body($request); 
 
-   header("Location: https://localhost/wordpress/wordpress/index.php/company-profile");  
+   header("Location: https://localhost/wordpress/index.php/company-profile");  
 ?>           

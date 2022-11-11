@@ -10,5 +10,5 @@
     $request = wp_remote_post( 'http://localhost:8080/senior/'. $_SESSION["seniorId"] , $arg );
     $response     = wp_remote_retrieve_header($request , 'location');
 
-    header("Location: https://localhost/wordpress/wordpress/index.php/login");
+    header("Location: https://localhost/wordpress/index.php/login");
 ?>

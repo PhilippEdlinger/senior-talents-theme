@@ -44,7 +44,7 @@
             <p class="nav-element">Empfohlen</p>
         </div>
         <div class="nav-box-element">
-        <a href="https://localhost/wordpress/wordpress/index.php/marketplace/">
+        <a href="https://localhost/wordpress/index.php/marketplace/">
             <p class="nav-element">Suche</p>
         </a>
             <ion-icon class="nav-icons" name="search"></ion-icon>
@@ -55,7 +55,7 @@
     </div>
 
     <div class="settings">
-    <a href="http://localhost/wordpress/wordpress/index.php/company-profile-settings/">
+    <a href="http://localhost/wordpress/index.php/company-profile-settings/">
         <p>Einstellungen</p> 
     </a>
         <ion-icon class="settings-icon" name="settings-outline"></ion-icon>               
@@ -71,9 +71,9 @@
                     </div>
                 </div>
                 <div id="profile-data">
-                    <a href="https://localhost/wordpress/wordpress/index.php/update-company-password/"> <div style="color:black;" id="change-pw-button"> Passwort ändern </div> </a>
-                    <a href="https://localhost/wordpress/wordpress/index.php/update-company-email/"> <div style="color:black;" id="change-pw-button"> Email ändern </div> </a>
-                    <a href="http://localhost/wordpress/wordpress/index.php/deletecompanyrequest/"> <div style="color:black;" id="delete-profile"> Benutzerkonto löschen </div> </a>
+                    <a href="https://localhost/wordpress/index.php/update-company-password/"> <div style="color:black;" id="change-pw-button"> Passwort ändern </div> </a>
+                    <a href="https://localhost/wordpress/index.php/update-company-email/"> <div style="color:black;" id="change-pw-button"> Email ändern </div> </a>
+                    <a href="http://localhost/wordpress/index.php/deletecompanyrequest/"> <div style="color:black;" id="delete-profile"> Benutzerkonto löschen </div> </a>
                 </div> 
             </div>
               

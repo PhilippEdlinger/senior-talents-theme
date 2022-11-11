@@ -2,8 +2,8 @@
 
 <?php 
     session_start();
-    $newImg = "https://localhost/wordpress/wordpress/wp-content/themes/senior-talents-theme/img/002.png"; 
-    setcookie("test", "https://localhost/wordpress/wordpress/wp-content/themes/senior-talents-theme/img/002.png" );
+    $newImg = "https://localhost/wordpress/wp-content/themes/senior-talents-theme/img/002.png"; 
+    setcookie("test", "https://localhost/wordpress/wp-content/themes/senior-talents-theme/img/002.png" );
 ?>
 
 <head>

@@ -33,5 +33,5 @@
     //echo $_SESSION["jobField"] . '#######' . $_SESSION["jobBranche"];
     //echo json_encode($request);
     
-    header("Location: https://localhost/wordpress/wordpress/index.php/profile");  
+    header("Location: https://localhost/wordpress/index.php/profile");  
 ?>

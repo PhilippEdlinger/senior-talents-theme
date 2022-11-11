@@ -77,7 +77,7 @@ if (substr_count( $body, "\n" ) == 0){
       
   }
 
-  header("Location: https://localhost/wordpress/wordpress/index.php/company-profile");
+  header("Location: https://localhost/wordpress/index.php/company-profile");
 }
 
 else{ 

@@ -22,7 +22,7 @@
         </div>
         <a href="#pp">
         <div class="nav-box-element">
-            <a href="https://localhost/wordpress/wordpress/index.php/profile">
+            <a href="https://localhost/wordpress/index.php/profile">
                 <p class="nav-element">Daten</p>
             </a>
         </div>
@@ -55,7 +55,7 @@
     </div>
 
     <div class="settings">
-    <a style="text-decoration: none;" href="https://localhost/wordpress/wordpress/index.php/senior-settings/">
+    <a style="text-decoration: none;" href="https://localhost/wordpress/index.php/senior-settings/">
         <p>Einstellungen</p> 
     </a>
         <ion-icon class="settings-icon" name="settings-outline"></ion-icon>               

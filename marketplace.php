@@ -96,6 +96,7 @@
     $jobList = json_decode($body, true);
 
     foreach ($jobList as $job){
+        
     echo '<div class="joboffer">
             <h3  class="joboffer-title">' . $job["title"] . '</h3>
             <p name="joboffer-category" class="joboffer-category">Kategory: ' . $job["category"] . '</p>

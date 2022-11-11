@@ -29,9 +29,9 @@
     echo json_decode($body);
 
     if(substr_count($body, "n") == 0){
-        header("Location: https://localhost/wordpress/wordpress/index.php/login-company");
+        header("Location: https://localhost/wordpress/index.php/login-company");
     }else{
-        header("Location: https://localhost/wordpress/wordpress/index.php/signup_company");
+        header("Location: https://localhost/wordpress/index.php/signup_company");
     } 
     
 ?>

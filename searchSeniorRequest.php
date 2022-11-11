@@ -9,5 +9,5 @@
 
     $_SESSION["searchbar"]["seniorList"] =  json_decode($response, true);
 
-	header("Location: https://localhost/wordpress/wordpress/index.php/marketplace-senior");
+	header("Location: https://localhost/wordpress/index.php/marketplace-senior");
 ?>

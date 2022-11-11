@@ -33,9 +33,9 @@
     $body    = wp_remote_retrieve_body($request); 
 
     if(substr_count($body, "n") == 0){
-        header("Location: https://localhost/wordpress/wordpress/index.php/company-profile");
+        header("Location: https://localhost/wordpress/index.php/company-profile");
     }else{
-        header("Location: https://localhost/wordpress/wordpress/index.php/create-job");
+        header("Location: https://localhost/wordpress/index.php/create-job");
     }
     
 ?>

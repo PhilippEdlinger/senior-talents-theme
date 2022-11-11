@@ -80,22 +80,23 @@ if(session_status() == PHP_SESSION_NONE){
     <div id="data-wrapper">
         <div id="suggestion-container">
             <?php 
-            for($i=10;$i>0;$i--){
+             $request = wp_remote_get( 'http://localhost:8080/job-offer/getRandomJobOffers/1');
+             $body    = wp_remote_retrieve_body($request); 
+             $jobList = json_decode($body, true);
+
+            foreach($jobList as $job){
             echo '
             <div class="job_sugg">
                 <div class="job_unterteilung" style="min-height: 2vw; background-color: whitesmoke; padding: 0px 0px 0px 1vw; border-radius: 6px;">
-                    <h3>Der Job Titel</h3>
+                    <h3>' . $job["title"] .'</h3>
                 </div>
                 <hr>
                 <div class="job_unterteilung">
-                    <p>Genauere Bezeichnung der Job Tätigkeit.<br>
-                    Kurzbeschreibung was zu tun wäre.</p>
+                    <p>'. $job["descr"] . '</p>
                 </div>
                 <hr>
                 <div class="job_unterteilung">
-                    <p>Postleitzahl des Ortes<br>
-                    Kurzbezeichnung der Arbeitszeit (Vollzeit, Halbzeit, etc.<br>
-                    Lohn, entweder Stundenlohn, oder Monatslohn</p>
+                    <p> ' . $job["condition"] . ' </p>
                 </div>
                 <hr>
                 <div class="job_buttons">
