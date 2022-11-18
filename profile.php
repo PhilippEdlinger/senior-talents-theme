@@ -48,7 +48,7 @@ if(session_status() == PHP_SESSION_NONE){
         <div class="nav-title">
             <h2 class="nav-element">Jobs</h2>
         </div>
-        <a href="https://localhost/wordpress/index.php/suggestion-senior/">
+        <a href="https://localhost/wordpress/index.php/suggestion-company/">
         <div class="nav-box-element">
             <p class="nav-element">Empfohlen</p>
             <ion-icon class="nav-icons" name="book-outline"></ion-icon>

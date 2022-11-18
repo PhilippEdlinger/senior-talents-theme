@@ -43,20 +43,26 @@
     </div>
     <div id="job-nav" class="nav-window">
         <div class="nav-title">
-            <h2 class="nav-element">Senioren</h2>
+            <h2 class="nav-element">Jobs</h2>
         </div>
+        <a href="https://localhost/wordpress/index.php/suggestion-company/">
         <div class="nav-box-element">
             <p class="nav-element">Empfohlen</p>
+            <ion-icon class="nav-icons" name="book-outline"></ion-icon>
         </div>
-        <div class="nav-box-element">
-        <a href="https://localhost/wordpress/index.php/marketplace-senior">
-            <p class="nav-element">Suche</p>
         </a>
+        <a href="https://localhost/wordpress/index.php/marketplace-senior/">
+        <div class="nav-box-element">
+            <p class="nav-element">Suche</p>
             <ion-icon class="nav-icons" name="search"></ion-icon>
         </div>
-        <div class="nav-box-element-last">
+        </a>
+        <a href="https://localhost/wordpress/index.php/saved-company/">
+        <div class="nav-box-element" style="border-radius: 0px 0px 12px 0px;">
             <p class="nav-element">Gespeichert</p>
+            <ion-icon class="nav-icons" name="bookmark-outline"></ion-icon>
         </div>
+        </a>
     </div>
 
     <div class="settings">
